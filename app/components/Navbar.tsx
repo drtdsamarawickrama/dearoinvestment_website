@@ -29,7 +29,7 @@ export default function Navbar() {
       {/* --- TOP BAR --- */}
       <div className="bg-blue-950 text-white py-2">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-4 text-sm">
-          <p>A Leading Financial Company in Sri Lanka</p>
+          <p>A Leading Investment Company in Sri Lanka</p>
           <div className="flex gap-6 text-white items-center">
             {/* Phone */}
             <span className="flex items-center gap-2">
@@ -43,7 +43,7 @@ export default function Navbar() {
               <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 fill-white" viewBox="0 0 24 24">
                 <path d="M2 6a2 2 0 012-2h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6zm2 0l8 5 8-5H4zm16 12V8l-8 5-8-5v10h16z"/>
               </svg>
-              info@dearo.lk
+              info@dearoinvestment.com
             </span>
             <a href="/login" className="text-white">Login</a>
             <span>|</span>
@@ -85,53 +85,35 @@ export default function Navbar() {
                 <a href="/annual-reports" className="block px-4 py-2 hover:bg-gray-100">Annual Reports</a>
               </div>
             </div>
-
-            {/* Business Services Dropdown */}
-            <div
-              className="relative cursor-pointer"
-              onMouseEnter={() => setShowBusinessDropdown(true)}
-              onMouseLeave={() => setShowBusinessDropdown(false)}
-            >
-              <div className="flex items-center gap-1 text-black py-2 px-1 font-semibold transition hover:text-blue-600 cursor-pointer">
-                Business Services <ChevronDown size={14} />
+            
+            
+            {/* Business Services */}
+            <div className="group relative cursor-pointer">
+              <div className="flex items-center gap-1 hover:text-blue-600 transition">
+                 Business Services <ChevronDown size={16} />
               </div>
-              {showBusinessDropdown && (
-                <ul className="absolute top-full mt-2 w-64 bg-white text-gray-800 rounded-lg shadow-xl py-2 z-50 border border-gray-200">
-                  {businessServicesList.map((item, index) => (
-                    <li
-                      key={index}
-                      className="px-4 py-2 hover:bg-blue-100 hover:text-blue-700 cursor-pointer transition-colors duration-200"
-                    >
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              )}
+              <div className="absolute left-0 mt-2 hidden group-hover:block bg-white shadow-xl rounded-md py-2 w-52 z-50">
+                <a href="/msme-loans" className="block px-4 py-2 hover:bg-gray-100">MSME Loans</a>
+                <a href="/business-loans" className="block px-4 py-2 hover:bg-gray-100">Business Loans</a>
+                <a href="/project-loans" className="block px-4 py-2 hover:bg-gray-100">Project Loans</a>
+                <a href="/agriculture-loans" className="block px-4 py-2 hover:bg-gray-100">Agriculture Loans</a>
+                <a href="/join-venture-loans" className="block px-4 py-2 hover:bg-gray-100">Join Venture Loans</a>
+              </div>
             </div>
 
-            {/* Personal Services Dropdown */}
-            <div
-              className="relative cursor-pointer"
-              onMouseEnter={() => setShowPersonalDropdown(true)}
-              onMouseLeave={() => setShowPersonalDropdown(false)}
-            >
-              <div className="flex items-center gap-1 text-black py-2 px-1 font-semibold transition hover:text-blue-600 cursor-pointer">
-                Personal Services <ChevronDown size={14} />
+            {/* Business Services */}
+            <div className="group relative cursor-pointer">
+              <div className="flex items-center gap-1 hover:text-blue-600 transition">
+                Personal Services <ChevronDown size={16} />
               </div>
-              {showPersonalDropdown && (
-                <ul className="absolute top-full mt-2 w-64 bg-white text-gray-800 rounded-lg shadow-xl py-2 z-50 border border-gray-200">
-                  {personalServicesList.map((item, index) => (
-                    <li
-                      key={index}
-                      className="px-4 py-2 hover:bg-blue-100 hover:text-blue-700 cursor-pointer transition-colors duration-200"
-                    >
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              )}
+              <div className="absolute left-0 mt-2 hidden group-hover:block bg-white shadow-xl rounded-md py-2 w-52 z-50">
+                <a href="/personnel-loans" className="block px-4 py-2 hover:bg-gray-100">Personnel Loans</a>
+                <a href="/hirepurchase-loans" className="block px-4 py-2 hover:bg-gray-100">Hire Purchase Loans</a>
+                <a href="/mortgage-loans" className="block px-4 py-2 hover:bg-gray-100">Mortgage Loans</a>
+                <a href="/housing-loans" className="block px-4 py-2 hover:bg-gray-100">Housing Loans</a> 
+              </div>
             </div>
-
+  
             <a href="/news" className="hover:text-blue-600 transition">News</a>
             <a href="/career" className="hover:text-blue-600 transition font-semibold">Career</a>
             <a href="/contact" className="hover:text-blue-600 transition">Contact</a>
