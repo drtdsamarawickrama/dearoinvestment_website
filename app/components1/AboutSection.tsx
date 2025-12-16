@@ -15,7 +15,7 @@ export default function AboutSection() {
       <div className="max-w-6xl mx-auto px-6">
         
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-10 text-gray-900  ">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-10 text-gray-900">
           About Our Company
         </h2>
 

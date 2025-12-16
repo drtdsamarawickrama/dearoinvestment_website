@@ -8,32 +8,19 @@ export default function CustomerServiceSection() {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-20 text-center">
+        <h2 className="text-4xl font-bold mb-8 text-gray-800">Dearo Customer Service</h2>
         
-        {/* Title */}
-        <h2 className="text-4xl font-bold mb-10 text-[#182359]">
-          Dearo Customer Service
-        </h2>
-
-        {/* Content Box */}
-        <div className="bg-blue-700 p-10 rounded-3xl shadow-xl border border-gray-100">
-          <ul className="space-y-8 text-left">
+        
+        <div className="bg-gradient-to-l from-blue-100 to-blue-700 text-white p-10 rounded-3xl shadow-xl">
+          <ul className="space-y-6 text-left">
             {services.map((service, idx) => (
               <li key={idx} className="flex items-start gap-4">
-                
-                {/* Bullet */}
-                <span className="text-[#182359] font-bold text-3xl mt-1">
-                  •
-                </span>
-
-                {/* Text */}
-                <p className="text-white-700 text-lg leading-relaxed">
-                  {service}
-                </p>
+                <span className="text-white font-semibold text-4xl mt-1">•</span>
+                <p className="text-black text-lg leading-relaxed">{service}</p>
               </li>
             ))}
           </ul>
         </div>
-
       </div>
     </section>
   );

@@ -33,7 +33,7 @@ export default function BusinessSectorsSection() {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-20">
-        <h2 className="text-4xl font-bold text-center mb-12  text-[#182359]">Business Sectors</h2>
+        <h2 className="text-4xl font-bold text-center mb-12">Business Sectors</h2>
 
         {/* Grid for first 6 items */}
         <div className="grid md:grid-cols-3 gap-8 mb-6">

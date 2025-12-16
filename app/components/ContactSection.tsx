@@ -42,38 +42,61 @@ export default function ContactSection() {
             </div>
           </div>
 
-          {/* RIGHT: Contact Form */}
-          <div className="bg-white shadow-xl p-8 rounded-2xl border border-gray-200 md:col-span-2 hover:shadow-2xl transition-all duration-300">
-            <h3 className="text-3xl font-semibold mb-6 text-center text-gray-800">
-              Send Us a Message
-            </h3>
+          {/* RIGHT: Two separate boxes */}
+          <div className="md:col-span-2 flex flex-col md:flex-row gap-6">
 
-            <form className="space-y-5">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition"
-              />
+            {/* Box 1: Message Form */}
+            <div className="flex-1 bg-white shadow-xl p-8 rounded-2xl border border-gray-200 hover:shadow-2xl transition-all duration-300">
+              <h3 className="text-2xl font-semibold mb-6 text-gray-800">
+                Send Us a Message
+              </h3>
 
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition"
-              />
+              <form className="space-y-5">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition"
+                />
 
-              <textarea
-                rows={5}
-                placeholder="Your Message"
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition"
-              ></textarea>
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition"
+                />
 
-              <button
-                type="submit"
-                className="w-full bg-blue-600 text-white py-3 rounded-lg text-lg font-medium hover:bg-blue-700 transition"
-              >
-                Send Message
-              </button>
-            </form>
+                <textarea
+                  rows={5}
+                  placeholder="Your Message"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition"
+                ></textarea>
+
+                <button
+                  type="submit"
+                  className="w-full bg-blue-600 text-white py-3 rounded-lg text-lg font-medium hover:bg-blue-700 transition"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+           {/* Box 2: Sri Lanka Map Image */}
+<div className="flex-1 bg-white shadow-xl p-6 rounded-2xl border border-gray-200 hover:shadow-2xl transition-all duration-300 flex flex-col items-center justify-center">
+
+  {/* Title */}
+  <h3 className="text-2xl font-semibold mb-6 text-gray-800">
+    Our Branches
+  </h3>
+
+  {/* Map Image */}
+  <img
+    src="/assests/sl.png" // replace with your map image
+    alt="Sri Lanka Map"
+    className="w-full h-auto rounded-lg"
+  />
+
+</div>
+
+
           </div>
 
         </div>
