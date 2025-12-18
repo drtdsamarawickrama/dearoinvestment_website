@@ -4,19 +4,19 @@ export default function BoardMembersPage() {
   const boardMembers = [
     {
       name: "Mr. Nalin Kumara",
-      title: "Regional Manager – Uva and East",
+      title: "Senior Manager – Branch Operations",
       img: "/assests/management/team-nalin.jpg",
       
     },
     {
       name: "Mr. Dilshan Nuwantha",
-      title: "Assistant Manager – Operations",
+      title: "Senior Manager – Branch Development",
       img: "/assests/management/team-dilshan-nuwantha.jpg",
       
     },
     {
       name: "Mr. Rajitha Madushanka",
-      title: "Regional Manager – North Central",
+      title: "Senior Manager – Leasing",
       img: "/assests/management/team-rajitha.jpg",
       description: "",
     },
@@ -28,22 +28,22 @@ export default function BoardMembersPage() {
     },
     {
       name: "Mrs. Nishadi Saumaya",
-      title: "Branch Manager – Ampara",
+      title: "Senior Manager – Ampara Branch",
       img: "/assests/management/team-nishadi-saumaya.jpg",
       
     },{
       name: "Mr. Deepal Piris",
-      title: "Finance Head – Head Office",
+      title: "Finance Of Head – Head Office",
       img: "/assests/management/deepal.jpeg",
       
     },{
       name: "Mr. Sumith Weerawardene",
-      title: "Area Manager – Ampara",
+      title: "Zonal Manager ",
       img: "/assests/management/sumith.jpeg",
       
     },{
       name: "Mr. Chathura Ubesekara ",
-      title: "Regional Manager – Ampara",
+      title: "Regional Manager ",
       img: "/assests/management/chathura.jpeg",
       
     },{
@@ -52,8 +52,8 @@ export default function BoardMembersPage() {
       img: "/assests/management/Vakeeshvary Branch Manager Chenkalady.jpeg",
       
     },{
-      name: "Mr. Priyatharshan",
-      title: " Branch Manager –  Sockalingam",
+      name: "Mr. Sockalingam Priyatharshan",
+      title: " Branch Manager – Batticaloa",
       img: "/assests/management/Sockalingam Priyatharshan Branch Manager.jpeg",
       
     },{
@@ -66,7 +66,22 @@ export default function BoardMembersPage() {
       title: "Senior HR Manager ",
       img: "/assests/management/D.M.N.N Dassanayaka.jpeg",
       
-    },
+    },{
+      name: "Mr. Iresh Udayanga",
+      title: "Branch Manager – Polonnaruwa",
+      img: "/assests/management/iresh.jpeg",
+      
+    },{
+      name: "Mr. Mohomed Nifri",
+      title: "Manager Branch Operation and Development ",
+      img: "/assests/management/M.A.M Nifri Manager Branch Operation & Development.jpeg",
+      
+    },{
+      name: "Mr. Mahesh Gunarathna ",
+      title: "Manager Audit ",
+      img: "/assests/management/Mahesh Gunarathna Manager Audit.jpeg",
+      
+    }
   ];
 
   return (

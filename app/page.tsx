@@ -19,7 +19,7 @@ export default function HomePage() {
        <ServicesSection />
      <TestimonialsSection />
       <BusinessSectorsSection />
-      <CustomerServiceSection />
+      {/* <CustomerServiceSection /> */}
       <LegalStatusSection />
        {/* <NewsSection /> */}
       <OnlineStoreSection />
