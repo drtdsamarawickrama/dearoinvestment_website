@@ -22,18 +22,18 @@ export default function BoardMembersPage() {
     },
     {
       name: "Mr. Asitha Suranjith",
-      title: "Manager – Investment",
+      title: "Branch Manager – Investment",
       img: "/assests/management/team-asitha-suranjith.jpg",
       
     },
     {
       name: "Mrs. Nishadi Saumaya",
-      title: "Manager – Ampara",
+      title: "Branch Manager – Ampara",
       img: "/assests/management/team-nishadi-saumaya.jpg",
       
     },{
       name: "Mrs. Deepal Piris",
-      title: "Finance head – Head Office",
+      title: "Finance Head – Head Office",
       img: "/assests/management/deepal.jpeg",
       
     },{
@@ -43,7 +43,7 @@ export default function BoardMembersPage() {
       
     },{
       name: "Mr. Chathura Ubesekara ",
-      title: "RM – Ampara",
+      title: "Regional Manager – Ampara",
       img: "/assests/management/chathura.jpeg",
       
     },{
@@ -63,7 +63,7 @@ export default function BoardMembersPage() {
       
     },{
       name: "Mrs. D.M.N.N Dassanayaka",
-      title: "Senior HR Manager – ",
+      title: "Senior HR Manager ",
       img: "/assests/management/D.M.N.N Dassanayaka.jpeg",
       
     },
