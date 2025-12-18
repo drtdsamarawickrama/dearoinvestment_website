@@ -1,7 +1,7 @@
 const sectors = [
   {
     name: "Dearo Engineering (Pvt) Ltd.Construction Services",
-    image: "/assests/con.jpg",
+    image: "/assests/construction.jpg",
   },
   {
     name: "Agriculture & Plantation - Dearo Agri",

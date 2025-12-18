@@ -16,14 +16,14 @@ export default function HomePage() {
       <Hero />
        <AboutSection />
       <StatsSection />
-      <ServicesSection />
-     
+       <ServicesSection />
+     <TestimonialsSection />
       <BusinessSectorsSection />
       <CustomerServiceSection />
       <LegalStatusSection />
+       {/* <NewsSection /> */}
       <OnlineStoreSection />
-      <TestimonialsSection />
-      <NewsSection />
+      
     </>
   );
 }

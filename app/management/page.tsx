@@ -6,27 +6,31 @@ export default function ManagementPage() {
   const management = [
     {
       name: "Mr. Prasanna Sanjeewa Ranasinghe",
-      title: "Group Director / Chief Executive Officer",
+      title: "Excicutive Director / Chief Executive Officer",
       img: "/assests/team-prasanna.jpg",
     },
     {
       name: "Mr. Niranjan Warnasooriya",
-      title: "Group Director / Deputy Chief Executive Officer",
+      title: "Non Board Director / Deputy Chief Executive Officer",
       img: "/assests/team-niranjan-warnasooriya.jpg",
     },
     {
       name: "Mr. Upul Edirisooriya",
-      title: "Group Director (Independent Executive Director)",
+      title: "Non Independent Executive Director",
       img: "/assests/team-upul.jpg",
     },
     {
       name: "Mr. Prabash Gunarathne",
-      title: "Group Director / Operations",
+      title: "Non Independent Executive Director / Operations",
       img: "/assests/team-prabhash.jpg",
     },
     {
+      name: "Mr. Arun Kumar",
+      title: "Non Independent Executive Director",
+      img: "/assests/team-tharindu.jpg",
+    },  {
       name: "Mr. Tharindu Dananjaya",
-      title: "Group Executive / CTO",
+      title: "Non Board Director/ Chief Information Officer",
       img: "/assests/team-tharindu.jpg",
     },
   ];
@@ -77,8 +81,8 @@ export default function ManagementPage() {
         </div>
 
         {/* 🔹 SECOND ROW – 2 MEMBERS CENTERED */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-3xl mx-auto">
-          {management.slice(3).map((person) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 ">
+          {management.slice(3,6).map((person) => (
             <div
               key={person.name}
               className="flex flex-col items-center text-center"
@@ -86,7 +90,7 @@ export default function ManagementPage() {
               <img
                 src={person.img}
                 alt={person.name}
-                className="w-36 h-36 md:w-40 md:h-40 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
+                className="w-40 h-40 md:w-48 md:h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
               />
               <h2 className="mt-4 text-xl font-bold text-gray-800">
                 {person.name}

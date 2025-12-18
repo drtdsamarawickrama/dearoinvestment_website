@@ -23,7 +23,7 @@ export default function LegalStatusSection() {
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-4">
-              We are a registered Loans and Hire Purchase Company with the Act No 29 of 1982 Consumer Credit, Law of Contract, Small Claims Procedure Act No. 33 of 2022, Registration of Documents Act 2022 No. 32 (as amended), Debt Recovery Act, Mortgage Act, Bills of Exchange Ordinance Act, and Stamp Duty Act.
+              We are a registered Loans and Hire Purchase Company with the Act No 29 of 1982 Consumer Credit, Law of Contract, Registration of Documents Act 2022 No. 32 (as amended), Debt Recovery Act, Mortgage Act, Bills of Exchange Ordinance Act, and Stamp Duty Act.
             </p>
           </div>
         </div>

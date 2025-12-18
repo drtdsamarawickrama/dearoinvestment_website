@@ -21,11 +21,14 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center px-4">
+    
+    <div className="min-h-screen bg-white top-20 flex flex-col items-center justify-center px-4">
+      
       {/* Top Header */}
-      <div className="bg-[#061D77] text-white pt-10 pb-16 px-6 w-full rounded-b-[32px] ">
-        <h1 className="text-3xl font-semibold">Hello Guest!</h1>
+      <div className="bg-[#061D77] text-white   pt-10 pb-16 px-6 w-full rounded-b-[32px] ">
+        <h1 className=" text-5xl   [font-semibold">Hello Guest!</h1>
       </div>
+      
 
       {/* Form Container */}
       <div className="-mt-10 w-full max-w-md">

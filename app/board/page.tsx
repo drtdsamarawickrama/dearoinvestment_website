@@ -5,31 +5,66 @@ export default function BoardMembersPage() {
     {
       name: "Mr. Nalin Kumara",
       title: "Regional Manager – Uva and East",
-      img: "/assests/team-nalin.jpg",
+      img: "/assests/management/team-nalin.jpg",
       
     },
     {
       name: "Mr. Dilshan Nuwantha",
       title: "Assistant Manager – Operations",
-      img: "/assests/team-dilshan-nuwantha.jpg",
+      img: "/assests/management/team-dilshan-nuwantha.jpg",
       
     },
     {
       name: "Mr. Rajitha Madushanka",
       title: "Regional Manager – North Central",
-      img: "/assests/team-rajitha.jpg",
+      img: "/assests/management/team-rajitha.jpg",
       description: "",
     },
     {
       name: "Mr. Asitha Suranjith",
       title: "Manager – Investment",
-      img: "/assests/team-asitha-suranjith.jpg",
+      img: "/assests/management/team-asitha-suranjith.jpg",
       
     },
     {
       name: "Mrs. Nishadi Saumaya",
       title: "Manager – Ampara",
-      img: "/assests/team-nishadi-saumaya.jpg",
+      img: "/assests/management/team-nishadi-saumaya.jpg",
+      
+    },{
+      name: "Mrs. Deepal Piris",
+      title: "Finance head – Head Office",
+      img: "/assests/management/deepal.jpeg",
+      
+    },{
+      name: "Mr. Sumith Weerawardene",
+      title: "Area Manager – Ampara",
+      img: "/assests/management/sumith.jpeg",
+      
+    },{
+      name: "Mr. Chathura Ubesekara ",
+      title: "RM – Ampara",
+      img: "/assests/management/chathura.jpeg",
+      
+    },{
+      name: "Mrs. Vakeeshvary ",
+      title: "Branch Manager – Chenkalady",
+      img: "/assests/management/Vakeeshvary Branch Manager Chenkalady.jpeg",
+      
+    },{
+      name: "Mrs. Priyatharshan",
+      title: " Branch Manager –  Sockalingam",
+      img: "/assests/management/Sockalingam Priyatharshan Branch Manager.jpeg",
+      
+    },{
+      name: "Mr. Harsha Priyankara",
+      title: "Branch Manager – Mahiyanganaya",
+      img: "/assests/management/harsha.jpeg",
+      
+    },{
+      name: "Mrs. D.M.N.N Dassanayaka",
+      title: "Senior HR Manager – ",
+      img: "/assests/management/D.M.N.N Dassanayaka.jpeg",
       
     },
   ];
@@ -40,7 +75,7 @@ export default function BoardMembersPage() {
         Dearo <span className="text-blue-900">Management</span>
       </h1>
 
-      <div className="grid md:grid-cols-2 gap-10">
+      <div className="grid md:grid-cols-3 gap-10">
         {boardMembers.map((member, index) => (
           <div key={index} className="flex gap-6 items-center">
             {/* Profile Image */}

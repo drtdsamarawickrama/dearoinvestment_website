@@ -133,3 +133,18 @@
   -webkit-text-stroke: 2px black; /* black outline */
   text-stroke: 2px black; /* fallback */
 }
+
+
+.map-path{
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 2s ease forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
