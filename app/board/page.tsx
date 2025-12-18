@@ -52,7 +52,7 @@ export default function BoardMembersPage() {
       img: "/assests/management/Vakeeshvary Branch Manager Chenkalady.jpeg",
       
     },{
-      name: "Mrs. Priyatharshan",
+      name: "Mr. Priyatharshan",
       title: " Branch Manager –  Sockalingam",
       img: "/assests/management/Sockalingam Priyatharshan Branch Manager.jpeg",
       

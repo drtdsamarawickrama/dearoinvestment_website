@@ -27,7 +27,7 @@ export default function ManagementPage() {
     {
       name: "Mr. Arun Kumar",
       title: "Non Independent Executive Director",
-      img: "/assests/team-tharindu.jpg",
+      img: "/assests/",
     },  {
       name: "Mr. Tharindu Dananjaya",
       title: "Non Board Director/ Chief Information Officer",
