@@ -32,7 +32,7 @@ export default function BoardMembersPage() {
       img: "/assests/management/team-nishadi-saumaya.jpg",
       
     },{
-      name: "Mrs. Deepal Piris",
+      name: "Mr. Deepal Piris",
       title: "Finance Head – Head Office",
       img: "/assests/management/deepal.jpeg",
       
