@@ -79,13 +79,66 @@ export default function AboutSection() {
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-blue-300 opacity-20 rounded-full blur-3xl -z-10"></div>
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
-        {/* Heading */}
+        {/* About Description */}
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-gray-900">
+          About Our Company
+        </h2>
+        <p className="text-lg text-gray-700 justify-center text-center mb-16 max-w-4xl mx-auto">
+          Dearo Investment Ltd was established under the Companies Act No. 07 of 2007 and officially incorporated on 1st September 2022 under registration number PB 262527. Though relatively young, the company has quickly positioned itself as a trusted and forward-looking financial services provider, addressing the growing need for secure, accessible, and well-governed financing solutions.
+          Dearo Investment Ltd operates with a strong emphasis on risk management, financial discipline, and stakeholder protection. Robust internal controls and comprehensive risk mitigation frameworks are embedded across all financial activities. As part of this approach, insurance-backed protection mechanisms are implemented to safeguard customers and enhance operational resilience against unforeseen risks.
+          With a network of 25 branches islandwide, Dearo Investment Ltd has established a strong nationwide presence, enabling inclusive access to financial services across diverse communities. This extensive reach, combined with professional governance and a commitment to sustainable growth, reinforces the company’s focus on long-term value creation, customer confidence, and financial stability.
+        </p>
+
+        {/* Vision / Mission / Goals / Process Boxes */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-20">
+          <div className="p-6 bg-white shadow-lg rounded-2xl border hover:shadow-2xl transition">
+            <div className="flex items-center gap-3 mb-4">
+              <Target className="text-blue-600" />
+              <h3 className="text-xl font-semibold">Our Mission</h3>
+            </div>
+            <p className="text-gray-700">Empowering customers through innovative solutions and service excellence.</p>
+          </div>
+
+          <div className="p-6 bg-white shadow-lg rounded-2xl border hover:shadow-2xl transition">
+            <div className="flex items-center gap-3 mb-4">
+              <Eye className="text-purple-600" />
+              <h3 className="text-xl font-semibold">Our Vision</h3>
+            </div>
+            <p className="text-gray-700">Inspiring progress through innovation and sustainability.</p>
+          </div>
+
+          <div className="p-6 bg-white shadow-lg rounded-2xl border hover:shadow-2xl transition">
+            <div className="flex items-center gap-3 mb-4">
+              <Goal className="text-red-600" />
+              <h3 className="text-xl font-semibold">Our Goals</h3>
+            </div>
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <li>Long-term value creation</li>
+              <li>Continuous innovation</li>
+              <li>Sustainable growth</li>
+            </ul>
+          </div>
+
+          <div className="p-6 bg-white shadow-lg rounded-2xl border hover:shadow-2xl transition">
+            <div className="flex items-center gap-3 mb-4">
+              <Workflow className="text-green-600" />
+              <h3 className="text-xl font-semibold">Our Process</h3>
+            </div>
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <li>Quality & reliability</li>
+              <li>Continuous improvement</li>
+              <li>Responsible growth</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* DEARO ACHIEVEMENTS heading */}
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-10 text-gray-900">
           DEARO ACHIEVEMENTS
         </h2>
 
         {/* Two animated gold images below heading */}
-        <div className="flex justify-center gap-30 mb-2">
+        <div className="flex justify-center gap-6 mb-10">
           <div className="w-100 h-100 rounded-lg overflow-hidden relative bg-white animate-scale">
             <img src="/assests/award2.jpeg" alt="Left" className="w-full h-full object-contain" />
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none gold-shine"></div>
