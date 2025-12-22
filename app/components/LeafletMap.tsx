@@ -1,6 +1,4 @@
 "use client";
-
-
 import { useRef, useEffect } from "react"; 
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import type { Map as LeafletMaps, DivIcon } from "leaflet";
@@ -14,7 +12,6 @@ L.Icon.Default.mergeOptions({
   shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
 });
 
- 
 /* 🔴 Red blinking marker + blue text label (no box) */
 const createRedBlinkIcon = (name: string): DivIcon =>
   new (require("leaflet").DivIcon)({
@@ -24,7 +21,6 @@ const createRedBlinkIcon = (name: string): DivIcon =>
     iconAnchor: [80, 30],
   });
 
-  
 export default function LeafletMap() {
     const mapRef = useRef<LeafletMaps | null>(null);
     
@@ -35,7 +31,7 @@ export default function LeafletMap() {
         { city: "Embilipitiya", lat: 6.3328, lng: 80.8663 },
         { city: "Hungama", lat: 6.1156, lng: 80.9291 },
         { city: "Nelliady", lat: 9.8027, lng: 80.1973 },
-        { city: "Head Office - Colombo", lat: 6.927, lng: 79.861 },
+        { city: "Head Office", lat: 6.927, lng: 79.861 },
         { city: "Chunnakam", lat: 9.7376, lng: 80.0245 },
         { city: "Thissamaharama", lat: 6.27, lng: 81.28 },
         { city: "Trincomalee", lat: 8.5874, lng: 81.2152 },
