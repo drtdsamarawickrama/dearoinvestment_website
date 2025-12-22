@@ -2,66 +2,68 @@
 
 import { useState, useEffect } from "react";
 
-const heroImages = [
-  "/assests/slide1.png",
-  "/assests/slide2.png"
+const slides = [
+  {
+    image: "/assests/slide1.png",
+    title: ["The heartbeat", "of a nation shaping", "better lives"],
+    subtitle: "Providing trusted financial solution for a brighter future.",
+    align: "right",
+  },
+  {
+    image: "/assests/slide2.png",
+    title: ["Empowering", "Sri Lanka’s", "Financial Growth"],
+    subtitle: "Your trusted partner in every financial journey.",
+    align: "left",
+  },
 ];
-
-
-
-
 
 export default function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
- 
 
-  // Auto-slide every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      console.log(heroImages.length);
-      // console.log(prev);
-      setCurrentIndex((prev) => (prev + 1) % (heroImages.length));
+      setCurrentIndex((prev) => (prev + 1) % slides.length);
     }, 5000);
     return () => clearInterval(interval);
   }, []);
 
+  const isLeft = slides[currentIndex].align === "left";
+
   return (
     <section
-      className="relative w-full top-20 h-screen bg-cover bg-center flex flex-col justify-center items-center text-center text-white transition-all duration-1000"
-      style={{ backgroundImage: `url(${heroImages[currentIndex]})` }}
+      key={currentIndex} // 🔥 forces animation restart
+      className="relative w-full top-20 h-screen bg-cover bg-center flex items-center animate-hero transition-all duration-1000"
+      style={{ backgroundImage: `url(${slides[currentIndex].image})` }}
     >
-      {/* Logo Top Left */}
-<div className="absolute top-0.5 left-0.5 z-50">
- 
-</div>
-
-      {/* Dark Overlay */}
+      {/* Overlay */}
       <div className="absolute inset-0  bg-opacity-50"></div>
 
       {/* Content */}
-<div className="relative z-10 max-w-3xl px-10 ml-auto text-right">
-  <h1 className="text-5xl md:text-6xl font-bold mb-4 flex flex-col gap-2 items-end">
-    <span className="text-blue-500 text-[2rem] md:text-7xl">
-      The heartbeat
-    </span>
-    <span className="text-gray-500 text-[2rem] md:text-7xl ">
-      of a nation shaping
-    </span>
-    <span className="text-gray-800 text-[2rem] md:text-6xl">
-      better lives
-    </span>
-  </h1>
+      <div
+        className={`relative z-10 w-full max-w-4xl px-10 text-white
+          ${isLeft ? "mr-auto text-left animate-slide-left" : "ml-auto text-right animate-slide-right"}
+        `}
+      >
+        <h1
+          className={`font-bold mb-4 flex flex-col gap-2
+            ${isLeft ? "items-start" : "items-end"}
+          `}
+        >
+          <span className="text-[2rem] md:text-7xl">
+            {slides[currentIndex].title[0]}
+          </span>
+          <span className="text-[2rem] md:text-7xl">
+            {slides[currentIndex].title[1]}
+          </span>
+          <span className="text-[2rem] md:text-6xl">
+            {slides[currentIndex].title[2]}
+          </span>
+        </h1>
 
-  <p className="text-xl md:text-2xl mb-6 font-bold">
-    Providing trusted financial solution for a brighter future.
-  </p>
-
-  <div className="flex flex-wrap justify-end gap-4 relative">
-    
-  </div>
-</div>
-
-     
+        <p className="text-xl md:text-2xl font-bold text-gray-200">
+          {slides[currentIndex].subtitle}
+        </p>
+      </div>
     </section>
   );
 }

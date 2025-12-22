@@ -5,22 +5,24 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import type { Map as LeafletMap, DivIcon } from "leaflet";
 import "leaflet/dist/leaflet.css";
 
-// 🔴 Custom Marker
-const createYellowIcon = (name: string): DivIcon =>
+/* 🔴 Red blinking marker + blue text label (no box) */
+const createRedBlinkIcon = (name: string): DivIcon =>
   new (require("leaflet").DivIcon)({
-    className: "custom-yellow-marker-with-label",
+    className: "custom-red-marker",
     html: `
-      <div class="pulse-marker"></div>
-      <span class="branch-label">${name}</span>
+      <div class="marker-wrapper">
+        <div class="red-dot"></div>
+        <div class="marker-label">${name}</div>
+      </div>
     `,
-    iconSize: [140, 40],
-    iconAnchor: [10, 10],
+    iconSize: [160, 40],
+    iconAnchor: [80, 30],
   });
 
 export default function ContactSection() {
   const mapRef = useRef<LeafletMap | null>(null);
 
-  const branches = [ 
+  const branches = [
     { city: "Dehiattakandiya", lat: 7.567, lng: 81.85 },
     { city: "Batticaloa", lat: 7.711, lng: 81.678 },
     { city: "Dambulla", lat: 7.86, lng: 80.65 },
@@ -47,14 +49,12 @@ export default function ContactSection() {
     { city: "Ampara", lat: 7.3, lng: 81.67 },
   ];
 
-  // ✅ Force Leaflet resize
   useEffect(() => {
     if (mapRef.current) {
       setTimeout(() => mapRef.current?.invalidateSize(), 200);
     }
   }, []);
 
-  // ✅ Open Google Maps
   const openGoogleMaps = (lat: number, lng: number) => {
     window.open(`https://www.google.com/maps?q=${lat},${lng}`, "_blank");
   };
@@ -62,18 +62,63 @@ export default function ContactSection() {
   return (
     <section className="py-28 bg-gray-100">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8">
 
-          {/* CONTACT INFO + MAP */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg flex flex-col gap-8">
-            <h3 className="text-2xl font-semibold text-gray-800 text-center">
-              Contact Information
-            </h3>
-            <p><strong>Address:</strong>We are located at 8th floor, Ceylinco House, No 69,Janadhipathi Mawatha, Colombo 01</p>
-            <p><strong>Phone:</strong> 074 390 8274</p>
-            <p><strong>Email:</strong> info@dearoinvestment.com</p>
+        {/* ONE ROW LAYOUT */}
+        <div className="grid lg:grid-cols-3 gap-8 items-stretch">
 
-            <div className="w-full h-[400px] rounded-xl overflow-hidden border">
+         {/* CONTACT INFO */}
+<div className="bg-white p-8 rounded-2xl shadow-lg flex flex-col justify-start">
+  <h3 className="text-2xl font-semibold text-center text-gray-800 mb-6">
+    Contact Information
+  </h3>
+
+
+  
+
+  {/* Office Details */}
+  <div className="space-y-3 text-gray-700">
+    <p>
+      <strong>Address:</strong> 8th Floor, Ceylinco House, No 69,
+      Janadhipathi Mawatha, Colombo 01
+    </p>
+    <p>
+      <strong>Phone:</strong>{" "}
+      <span className="text-blue-600 font-medium">074 390 8274</span>
+    </p>
+    <p>
+      <strong>Email:</strong>{" "}
+      <span className="text-blue-600 font-medium">
+        info@dearoinvestment.com
+      </span>
+    </p><br/>
+  </div>
+  {/* Divider */}
+  <hr className="my-2" /> 
+  
+  {/* Department Contacts */}
+  <div className="space-y-3 mb-6 text-gray-700">
+    
+    <p>
+      <strong>General Inquiries:</strong>{" "}
+      <span className="text-blue-600 font-medium">+94 74 390 8274</span>
+    </p>
+    <p>
+      <strong>Treasury Services:</strong>{" "}
+      <span className="text-blue-600 font-medium">+94 74 987 6543</span>
+    </p>
+    <strong>Financing Services :</strong>{" "}
+      <span className="text-blue-600 font-medium">+94 74 390 8274</span>
+    <p>
+      
+    </p>
+  </div>
+</div>
+
+
+
+          {/* MAP – CENTER BOX */}
+          <div className="bg-white p-4 rounded-2xl shadow-lg">
+            <div className="w-full h-[450px] rounded-xl overflow-hidden border">
               <MapContainer
                 center={[7.8731, 80.7718]}
                 zoom={7}
@@ -82,18 +127,19 @@ export default function ContactSection() {
                 ref={mapRef}
               >
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+
                 {branches.map((b, i) => (
                   <Marker
                     key={i}
                     position={[b.lat, b.lng]}
-                    icon={createYellowIcon(b.city) as any}
+                    icon={createRedBlinkIcon(b.city) as any}
                     eventHandlers={{
                       click: () => openGoogleMaps(b.lat, b.lng),
                     }}
                   >
                     <Popup>
                       <button
-                        className="text-blue-600 underline font-medium"
+                        className="text-blue-600 underline"
                         onClick={() => openGoogleMaps(b.lat, b.lng)}
                       >
                         Open in Google Maps
@@ -105,51 +151,20 @@ export default function ContactSection() {
             </div>
           </div>
 
-          {/* OUR BRANCHES */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg">
-            <h3 className="text-2xl font-semibold mb-6 text-gray-800 text-center">
-              Our Branches
-            </h3>
-
-            <div className="grid grid-cols-2 gap-3">
-              {branches.map((b, i) => (
-                <button
-                  key={i}
-                  onClick={() => openGoogleMaps(b.lat, b.lng)}
-                  className="text-left px-4 py-2 rounded-lg border border-blue-200
-                             bg-blue-50 text-blue-800 font-medium
-                             hover:bg-blue-600 hover:text-white
-                             transition-all duration-200 shadow-sm"
-                >
-                  {b.city}
-                </button>
-              ))}
-            </div>
-          </div>
-
           {/* SEND MESSAGE */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg">
-            <h3 className="text-2xl font-semibold mb-6 text-gray-800 text-center">
+          <div className="bg-white p-8 rounded-2xl shadow-lg flex flex-col justify-center">
+            <h3 className="text-2xl font-semibold mb-6 text-center text-gray-800">
               Send Us a Message
             </h3>
             <form className="space-y-4">
-              <input
-                className="w-full border p-3 rounded-lg focus:ring-2 focus:ring-blue-400"
-                placeholder="Name"
-              />
-              <input
-                className="w-full border p-3 rounded-lg focus:ring-2 focus:ring-blue-400"
-                placeholder="Email"
-              />
+              <input className="w-full border p-3 rounded-lg" placeholder="Name" />
+              <input className="w-full border p-3 rounded-lg" placeholder="Email" />
               <textarea
-                className="w-full border p-3 rounded-lg focus:ring-2 focus:ring-blue-400"
+                className="w-full border p-3 rounded-lg"
                 rows={4}
                 placeholder="Message"
               />
-              <button
-                className="w-full bg-blue-600 text-white py-3 rounded-lg
-                           hover:bg-blue-700 transition font-semibold"
-              >
+              <button className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">
                 Send Message
               </button>
             </form>
@@ -158,12 +173,44 @@ export default function ContactSection() {
         </div>
       </div>
 
-      {/* Leaflet stability */}
+      {/* 🔴 Marker CSS */}
       <style>{`
         .leaflet-container {
-          position: relative !important; color: red; animation: blink 1s infinite;
-          font-size: 10px !important ;
-          z-index: 0 !important;   !important;
+          position: relative !important;
+          z-index: 0 !important;
+        }
+
+        .custom-red-marker {
+          background: transparent;
+          border: none;
+        }
+
+        .marker-wrapper {
+          text-align: center;
+        }
+
+        .red-dot {
+          width: 14px;
+          height: 14px;
+          background: red;
+          border-radius: 50%;
+          margin: 0 auto;
+          animation: pulse 1.4s infinite;
+        }
+
+        .marker-label {
+          margin-top: 2px;
+          font-size: 12px;
+          font-weight: 600;
+          color: #2563eb;
+          background: transparent;
+          white-space: nowrap;
+        }
+
+        @keyframes pulse {
+          0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255,0,0,.6); }
+          70% { transform: scale(1.3); box-shadow: 0 0 0 12px rgba(255,0,0,0); }
+          100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255,0,0,0); }
         }
       `}</style>
     </section>

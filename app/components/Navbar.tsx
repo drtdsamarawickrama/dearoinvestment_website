@@ -8,6 +8,7 @@ export default function Navbar() {
 
 
   return (
+    <div className="mb-3">
     <header className="w-full shadow-md fixed top-0 left-0 z-50">
       {/* --- TOP BAR --- */}
       <div className="bg-blue-950 text-white py-2">
@@ -57,7 +58,7 @@ export default function Navbar() {
       <nav className="bg-white">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
           {/* LOGO */}
-          <a href="/" className="flex items-center gap-3">
+          <a href="/" className="flex items-center gap-2 ">
             <img src="/assests/company_logo.png" alt="Dearo Logo" className="w-32 hover:scale-105 transition-transform duration-200" />
           </a>
 
@@ -71,15 +72,15 @@ export default function Navbar() {
                 Management <ChevronDown size={16} />
               </div>
               <div className="absolute left-0 mt-0 hidden group-hover:block bg-white shadow-xl rounded-md py-2 w-52 z-50">
-                <a href="/management" className="block px-4 py-2 hover:bg-gray-100">Our Management</a>
-                <a href="/board" className="block px-4 py-2 hover:bg-gray-100">Board Members</a>
+                <a href="/management" className="block px-4 py-2 hover:bg-gray-100">Board Of Directors</a>
+                <a href="/board" className="block px-4 py-2 hover:bg-gray-100">Senior Management</a>
               </div>
             </div>
 
            {/* Financials Dropdown */}
 <div className="group relative cursor-pointer">
   <div className="flex items-center gap-1 hover:text-blue-600 transition">
-    Investors Relation <ChevronDown size={16} />
+    Investors Relations <ChevronDown size={16} />
   </div>
 
   {/* Dropdown menu */}
@@ -94,7 +95,7 @@ export default function Navbar() {
       href="/insurance-partner"
       className="block px-4 py-2 hover:bg-gray-100"
     >
-      Insurance Partner
+    Our Finanicial Partner
     </a>
     <a
       href="/investor-invitation"
@@ -174,5 +175,7 @@ export default function Navbar() {
         )}
       </nav>
     </header>
+
+    </div>
   );
 }

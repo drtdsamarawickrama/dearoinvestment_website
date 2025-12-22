@@ -1,8 +1,6 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface NewsItem {
   title: string;
@@ -25,56 +23,25 @@ const newsItems: NewsItem[] = [
     title: "Chenkalady Branch Opening",
     image: "/assests/Checn.jpg",
     slug: "chenkalady-branch-opening",
-  },
-  {
+  },{
     title: "Batticolo Branch Opening",
     image: "/assests/baticolo.jpg",
     slug: "batticolo-branch-opening",
   },
+ 
 ];
 
-const ITEMS_PER_PAGE = 4;
-
-export default function NewsSection() {
-  const [page, setPage] = useState(0);
-
-  const totalPages = Math.ceil(newsItems.length / ITEMS_PER_PAGE);
-
-  const visibleItems = newsItems.slice(
-    page * ITEMS_PER_PAGE,
-    page * ITEMS_PER_PAGE + ITEMS_PER_PAGE
-  );
-
+export default function NewsPagecontent() {
   return (
-    <div className="relative px-6 py-10">
-      {/* Left Arrow */}
-      {page > 0 && (
-        <button
-          onClick={() => setPage(page - 1)}
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white p-3 rounded-full shadow hover:bg-blue-100"
-        >
-          <ChevronLeft size={28} />
-        </button>
-      )}
-
-      {/* Right Arrow */}
-      {page < totalPages - 1 && (
-        <button
-          onClick={() => setPage(page + 1)}
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white p-3 rounded-full shadow hover:bg-blue-100"
-        >
-          <ChevronRight size={28} />
-        </button>
-      )}
-
-      {/* News Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        {visibleItems.map((news) => (
+    <div className="px-6 py-10">
+      {/* Grid Container */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {newsItems.map((news) => (
           <div
             key={news.slug}
             className="bg-blue-100 p-4 rounded-2xl shadow-md border border-blue-500 hover:shadow-xl flex flex-col"
           >
-            <div className="w-full h-56 overflow-hidden rounded-2xl mb-4">
+            <div className="w-full h-64 overflow-hidden rounded-2xl mb-4">
               <img
                 src={news.image}
                 alt={news.title}
@@ -82,7 +49,7 @@ export default function NewsSection() {
               />
             </div>
 
-            <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-center">
               {news.title}
             </h3>
 

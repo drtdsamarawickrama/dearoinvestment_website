@@ -21,7 +21,7 @@ export default function HomePage() {
       <BusinessSectorsSection />
       {/* <CustomerServiceSection /> */}
       <LegalStatusSection />
-       {/* <NewsSection /> */}
+       <NewsSection />
       <OnlineStoreSection />
       
     </>
