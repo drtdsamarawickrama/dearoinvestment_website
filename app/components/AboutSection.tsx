@@ -1,30 +1,44 @@
 "use client";
-
 import { Target, Eye, Workflow, Goal, Award, ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef } from "react";
+ 
+import { useEffect, useState } from "react";
 
-/* ❄️ Snow Component */
-function Snow() {
-  return (
-    <div className="snow-container">
-      {Array.from({ length: 120 }).map((_, i) => (
-        <span
-          key={i}
-          className="snowflake"
-          style={{
-            left: `${Math.random() * 100}%`,
-            animationDuration: `${10 + Math.random() * 20}s`,
-            animationDelay: `${Math.random() * 10}s`,
-            fontSize: `${10 + Math.random() * 14}px`,
-            opacity: Math.random(),
-          }}
-        >
-          ❄
-        </span>
-      ))}
-    </div>
-  );
-}
+type SnowStyle = {
+  left: string;
+  animationDuration: string;
+  animationDelay: string;
+  fontSize: string;
+  opacity: number;
+};
+
+// function Snow() {
+//   const [flakes, setFlakes] = useState<SnowStyle[]>([]);
+
+//   useEffect(() => {
+//     const generated = Array.from({ length: 120 }).map(() => ({
+//       left: `${Math.random() * 100}%`,
+//       animationDuration: `${10 + Math.random() * 20}s`,
+//       animationDelay: `${Math.random() * 10}s`,
+//       fontSize: `${10 + Math.random() * 14}px`,
+//       opacity: Math.random(),
+//     }));
+
+//     setFlakes(generated);
+//   }, []);
+
+//   if (flakes.length === 0) return null; // prevents mismatch
+
+//   return (
+//     <div className="snow-container">
+//       {flakes.map((style, i) => (
+//         <span key={i} className="snowflake" style={style}>
+//           ❄
+//         </span>
+//       ))}
+//     </div>
+//   );
+// }
 
 export default function AboutSection() {
   const awardsRef = useRef<HTMLDivElement>(null);
@@ -72,7 +86,7 @@ export default function AboutSection() {
 
   return (
     <section id="about" className="relative py-24 overflow-hidden bg-white">
-      <Snow />
+      {/* <Snow /> */}
 
       {/* Background Blobs */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-green-300 opacity-20 rounded-full blur-3xl -z-10"></div>
