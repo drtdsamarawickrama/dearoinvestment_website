@@ -13,10 +13,14 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "incremental": true,
-    "baseUrl": "./",              // <-- Add this line
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["app/*"]            // <-- Ensure this points to your app folder
+      "@/*": ["./*"]
     },
+    // "baseUrl": "./",              // <-- Add this line
+    // "paths": {
+    //   "@/*": ["app/*"]            // <-- Ensure this points to your app folder
+    // },
     "plugins": [
       {
         "name": "next"
