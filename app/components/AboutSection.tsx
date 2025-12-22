@@ -12,33 +12,33 @@ type SnowStyle = {
   opacity: number;
 };
 
-// function Snow() {
-//   const [flakes, setFlakes] = useState<SnowStyle[]>([]);
+function Snow() {
+  const [flakes, setFlakes] = useState<SnowStyle[]>([]);
 
-//   useEffect(() => {
-//     const generated = Array.from({ length: 120 }).map(() => ({
-//       left: `${Math.random() * 100}%`,
-//       animationDuration: `${10 + Math.random() * 20}s`,
-//       animationDelay: `${Math.random() * 10}s`,
-//       fontSize: `${10 + Math.random() * 14}px`,
-//       opacity: Math.random(),
-//     }));
+  useEffect(() => {
+    const generated = Array.from({ length: 120 }).map(() => ({
+      left: `${Math.random() * 100}%`,
+      animationDuration: `${10 + Math.random() * 20}s`,
+      animationDelay: `${Math.random() * 10}s`,
+      fontSize: `${10 + Math.random() * 14}px`,
+      opacity: Math.random(),
+    }));
 
-//     setFlakes(generated);
-//   }, []);
+    setFlakes(generated);
+  }, []);
 
-//   if (flakes.length === 0) return null; // prevents mismatch
+  if (flakes.length === 0) return null; // prevents mismatch
 
-//   return (
-//     <div className="snow-container">
-//       {flakes.map((style, i) => (
-//         <span key={i} className="snowflake" style={style}>
-//           ❄
-//         </span>
-//       ))}
-//     </div>
-//   );
-// }
+  return (
+    <div className="snow-container">
+      {flakes.map((style, i) => (
+        <span key={i} className="snowflake" style={style}>
+          ❄
+        </span>
+      ))}
+    </div>
+  );
+}
 
 export default function AboutSection() {
   const awardsRef = useRef<HTMLDivElement>(null);
