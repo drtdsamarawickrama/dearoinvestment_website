@@ -94,7 +94,7 @@ export default function AboutSection() {
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         {/* About Description */}
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-gray-900">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-[#15203EFF]">
           About Our Company
         </h2>
         <p className="text-lg text-gray-700 justify-center text-center mb-16 max-w-4xl mx-auto">
@@ -147,7 +147,7 @@ export default function AboutSection() {
         </div>
 
         {/* DEARO ACHIEVEMENTS heading */}
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-10 text-gray-900">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-10 text-[#15203EFF]">
           DEARO ACHIEVEMENTS
         </h2>
 
