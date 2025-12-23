@@ -18,7 +18,7 @@ export default function Navbar() {
   {/* Left Text */}
   <div className="flex justify-center md:justify-start text-white">
     <p className="text-center md:text-left">
-     Building Wealth, Empowering Futures in Sri Lanka
+      A Leading Investment Company in Sri Lanka
     </p>
   </div>
 
@@ -128,7 +128,7 @@ export default function Navbar() {
                 Personal Services <ChevronDown size={16} />
               </div>
               <div className="absolute left-0 mt-0 hidden group-hover:block bg-white shadow-xl rounded-md py-2 w-52 z-50">
-                <a href="/personnel-loans" className="block px-4 py-2 hover:bg-gray-100">Personal Loans</a>
+                <a href="/personnel-loans" className="block px-4 py-2 hover:bg-gray-100">Personnel Loans</a>
                 <a href="/hirepurchase-loans" className="block px-4 py-2 hover:bg-gray-100">Hire Purchase Loans</a>
                 <a href="/mortgage-loans" className="block px-4 py-2 hover:bg-gray-100">Mortgage Loans</a>
                 <a href="/housing-loans" className="block px-4 py-2 hover:bg-gray-100">Housing Loans</a> 
@@ -146,10 +146,9 @@ export default function Navbar() {
           </button>
         </div>
 
-       {/* MOBILE MENU */}
-   {mobileOpen && (
-  <div className="md:hidden bg-white p-4 space-y-4 border-t">
-
+        {/* MOBILE MENU */}
+        {mobileOpen && (
+          <div className="md:hidden bg-white p-4 space-y-4 border-t">
             <a href="/about" className="block">About</a>
 
             <details>
@@ -168,29 +167,6 @@ export default function Navbar() {
                 <a href="/investor-invitation" className="block">Investor Invitation</a>
               </div>
             </details>
-
-            {/* Business Services */}
-    <details>
-      <summary className="cursor-pointer font-medium">Business Services</summary>
-      <div className="pl-4 mt-2 space-y-2">
-        <a href="/msme-loans" className="block">MSME Loans</a>
-        <a href="/business-loans" className="block">Business Loans</a>
-        <a href="/project-loans" className="block">Project Loans</a>
-        <a href="/agriculture-loans" className="block">Agriculture Loans</a>
-        <a href="/join-venture-loans" className="block">Joint Venture Loans</a>
-      </div>
-    </details>
-
-     {/* Personal Services */}
-    <details>
-      <summary className="cursor-pointer font-medium">Personal Services</summary>
-      <div className="pl-4 mt-2 space-y-2">
-        <a href="/personnel-loans" className="block">Personal Loans</a>
-        <a href="/hirepurchase-loans" className="block">Hire Purchase Loans</a>
-        <a href="/mortgage-loans" className="block">Mortgage Loans</a>
-        <a href="/housing-loans" className="block">Housing Loans</a>
-      </div>
-    </details>
 
             <a href="/news" className="block">News</a>
             <a href="/career" className="hover:text-blue-600 transition font-semibold">Career</a>

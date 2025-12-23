@@ -1,24 +1,38 @@
 "use client";
-
 import { Target, Eye, Workflow, Goal, Award, ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef } from "react";
+ 
+import { useEffect, useState } from "react";
 
-/* ❄️ Snow Component */
+type SnowStyle = {
+  left: string;
+  animationDuration: string;
+  animationDelay: string;
+  fontSize: string;
+  opacity: number;
+};
+
 function Snow() {
+  const [flakes, setFlakes] = useState<SnowStyle[]>([]);
+
+  useEffect(() => {
+    const generated = Array.from({ length: 120 }).map(() => ({
+      left: `${Math.random() * 100}%`,
+      animationDuration: `${10 + Math.random() * 20}s`,
+      animationDelay: `${Math.random() * 10}s`,
+      fontSize: `${10 + Math.random() * 14}px`,
+      opacity: Math.random(),
+    }));
+
+    setFlakes(generated);
+  }, []);
+
+  if (flakes.length === 0) return null; // prevents mismatch
+
   return (
     <div className="snow-container">
-      {Array.from({ length: 120 }).map((_, i) => (
-        <span
-          key={i}
-          className="snowflake"
-          style={{
-            left: `${Math.random() * 100}%`,
-            animationDuration: `${10 + Math.random() * 20}s`,
-            animationDelay: `${Math.random() * 10}s`,
-            fontSize: `${10 + Math.random() * 14}px`,
-            opacity: Math.random(),
-          }}
-        >
+      {flakes.map((style, i) => (
+        <span key={i} className="snowflake" style={style}>
           ❄
         </span>
       ))}
@@ -72,7 +86,7 @@ export default function AboutSection() {
 
   return (
     <section id="about" className="relative py-24 overflow-hidden bg-white">
-      <Snow />
+      {/* <Snow /> */}
 
       {/* Background Blobs */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-green-300 opacity-20 rounded-full blur-3xl -z-10"></div>
@@ -80,7 +94,7 @@ export default function AboutSection() {
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         {/* About Description */}
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-[#15203EFF]">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-gray-900">
           About Our Company
         </h2>
         <p className="text-lg text-gray-700 justify-center text-center mb-16 max-w-4xl mx-auto">
@@ -133,7 +147,7 @@ export default function AboutSection() {
         </div>
 
         {/* DEARO ACHIEVEMENTS heading */}
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-10 text-[#15203EFF]">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-10 text-gray-900">
           DEARO ACHIEVEMENTS
         </h2>
 
@@ -192,61 +206,7 @@ export default function AboutSection() {
             ))}
           </div>
         </div>
-      </div>
-
-      {/* ❄️ Snow & Shine Styles */}
-      <style>{`
-        .snow-container {
-          pointer-events: none;
-          position: fixed;
-          inset: 0;
-          z-index: 50;
-          overflow: hidden;
-        }
-
-        .snowflake {
-          position: absolute;
-          top: -10%;
-          color: white;
-          animation-name: snow-fall;
-          animation-timing-function: linear;
-          animation-iteration-count: infinite;
-          filter: drop-shadow(0 0 3px rgba(255,255,255,0.6));
-        }
-
-        @keyframes snow-fall {
-          to { transform: translateY(120vh) translateX(40px); }
-        }
-
-        .scrollbar-hide::-webkit-scrollbar { display: none; }
-        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
-
-        /* Silver shine for award images */
-        .shine {
-          background: linear-gradient(120deg, rgba(255, 255, 255, 0.0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.0) 100%);
-          transform: translateX(-100%) rotate(20deg);
-          animation: shine 2s infinite;
-        }
-        @keyframes shine { 0% { transform: translateX(-100%) rotate(20deg); } 100% { transform: translateX(200%) rotate(20deg); } }
-
-        /* Gold shine for side images */
-        .gold-shine {
-          background: linear-gradient(120deg, rgba(255, 215, 0, 0.0) 0%, rgba(255, 215, 0, 0.5) 50%, rgba(255, 215, 0, 0.0) 100%);
-          transform: translateX(-100%) rotate(20deg);
-          animation: goldShine 3s infinite;
-        }
-        @keyframes goldShine { 0% { transform: translateX(-100%) rotate(20deg); } 100% { transform: translateX(200%) rotate(20deg); } }
-
-        /* Scale/pulse animation for side images */
-        @keyframes scalePulse {
-          0% { transform: scale(0.8); }
-          50% { transform: scale(1); }
-          100% { transform: scale(0.8); }
-        }
-        .animate-scale {
-          animation: scalePulse 3s infinite ease-in-out;
-        }
-      `}</style>
+      </div> 
     </section>
   );
 }

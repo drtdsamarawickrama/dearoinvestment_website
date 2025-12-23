@@ -25,7 +25,7 @@ export default function BoardMembersPage() {
     },
     {
       name: "Mr. Dilshan Nuwantha",
-      title: "Chief Manager – Branch Development",
+      title: "Senior Manager – Branch Development",
       img: "/assests/management/team-dilshan-nuwantha.jpg",
       
     }, {
@@ -35,12 +35,12 @@ export default function BoardMembersPage() {
       
     }, {
       name: "Mrs. Rex",
-      title: "Chief Manager –North and East",
+      title: "Senior Manager – Region 01",
       img: "/assests/management/A Rex Senior Manager.jpeg",
       
     },{
       name: "Mr. Sumith Weerawardene",
-      title: "Zonal Manager - East",
+      title: "Zonal Manager ",
       img: "/assests/management/sumith.jpeg",
       
     },{
