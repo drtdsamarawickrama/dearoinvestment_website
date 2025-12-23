@@ -5,8 +5,8 @@ export default function Footer() {
   return (
     <footer className="relative bg-[#15203EFF] text-gray-300 py-10 overflow-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10 bg-right bg-contain bg-no-repeat pointer-events-none"></div>
-{/* bg-[url('/patterns/hex-pattern.png')] */}
+      <div className="absolute inset-0 opacity-10 bg-[url('/patterns/hex-pattern.png')] bg-right bg-contain bg-no-repeat pointer-events-none"></div>
+
       {/* Main Grid */}
       <div className="relative max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-6">
 
