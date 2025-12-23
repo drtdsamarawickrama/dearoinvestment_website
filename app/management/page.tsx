@@ -21,12 +21,12 @@ export default function ManagementPage() {
     },
     {
       name: "Mr. Prabash Gunarathne",
-      title: "Non Independent Executive Director / Operations",
+      title: "Non Independent Non Executive Director ",
       img: "/assests/team-prabhash.jpg",
     },
     {
       name: "Mr. Arun Kumar",
-      title: "Non Independent Executive Director",
+      title: "Non Independent Non Executive Director",
       img: "/assests/",
     },  {
       name: "Mr. Tharindu Dananjaya",
@@ -40,7 +40,7 @@ export default function ManagementPage() {
       {/* 🔹 HERO IMAGE */}
       <div className="relative w-full h-[300px] md:h-[420px]">
         <img
-          src="/assests/room.jpg"
+          src="/assests/boardroom.jpg"
           alt="Board of Directors"
           className="w-full h-full object-cover"
         />

@@ -4,136 +4,99 @@ export const metadata = {
   title: "Financial & Insurance Partners | Dearo Investment Limited",
 };
 
-export default function InsurancePartnerPage() {
+export default function PartnersPage() {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-20 space-y-16">
+    <div className="max-w-7xl mx-auto px-4 py-20 space-y-24">
 
       {/* PAGE HEADER */}
-      <div className="text-center max-w-3xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-          Financial & Insurance Partners
-        </h1>
-        <p className="text-gray-700 text-lg leading-relaxed">
-          At Dearo Investment Limited, we work closely with Sri Lanka’s leading
-          banks and insurance providers to ensure financial strength,
-          operational transparency, and comprehensive risk protection.
-        </p>
-      </div>
-
-      {/* FIRST ROW: BOC, HNB (center), HNB Assurance */}
-      <div className="grid md:grid-cols-3 gap-10 justify-items-center">
-
-        {/* BOC */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center max-w-xs">
-          <Image
-            src="/assests/BOC.jpg"
-            alt="boc"
-            width={200}
-            height={200}
-            className="object-contain mb-4"
-          />
-          <h3 className="text-2xl font-semibold text-gray-900">
-            Bank of Ceylon (BOC)
-          </h3>
-          <p className="text-blue-600 font-medium mb-3">
-            Banking & Treasury Partner
-          </p>
-          <p className="text-gray-700 leading-relaxed">
-            Bank of Ceylon supports Dearo’s core banking operations and treasury
-            functions, providing secure fund management, transaction processing,
-            and regulatory-aligned banking services.
+      
+      {/* FINANCIAL PARTNERS SECTION */}
+      <section className="space-y-12">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Financial Partners
+          </h2>
+          <p className="text-gray-700 max-w-2xl mx-auto">
+            Our banking partners provide secure fund management, seamless transactions, and strategic financial support to drive our growth and operations.
           </p>
         </div>
 
-        {/* HNB - CENTER */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center max-w-xs">
-          <Image
-            src="/assests/hnb.jpg"
-            alt="Hatton National Bank Logo"
-            width={200}
-            height={200}
-            className="object-contain mb-4"
-          />
-          <h3 className="text-2xl font-semibold text-gray-900">
-            Hatton National Bank (HNB)
-          </h3>
-          <p className="text-blue-600 font-medium mb-3">
-            Primary Banking Partner
-          </p>
-          <p className="text-gray-700 leading-relaxed">
-            HNB delivers trusted banking, fund management, and payment solutions
-            supporting Dearo’s transparent operations and growth.
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-items-center">
+          {/* BOC */}
+          <div className="bg-white rounded-3xl shadow-lg p-8 flex flex-col items-center text-center transition-transform hover:-translate-y-2 hover:shadow-2xl max-w-xs">
+            <Image src="/assests/BOC.jpg" alt="BOC" width={180} height={180} className="object-contain mb-4" />
+            <h3 className="text-2xl font-semibold text-gray-900">Bank of Ceylon (BOC)</h3>
+            <p className="text-blue-600 font-medium mb-3">Banking & Treasury Partner</p>
+            <p className="text-gray-700 leading-relaxed">
+              BOC supports our treasury operations and ensures secure banking services aligned with regulatory standards.
+            </p>
+          </div>
+
+          {/* HNB */}
+          <div className="bg-white rounded-3xl shadow-lg p-8 flex flex-col items-center text-center transition-transform hover:-translate-y-2 hover:shadow-2xl max-w-xs">
+            <Image src="/assests/hnb.jpg" alt="HNB" width={180} height={180} className="object-contain mb-4" />
+            <h3 className="text-2xl font-semibold text-gray-900">Hatton National Bank (HNB)</h3>
+            <p className="text-blue-600 font-medium mb-3">Primary Banking Partner</p>
+            <p className="text-gray-700 leading-relaxed">
+              HNB provides trusted financial solutions and transaction support, enabling transparency and growth.
+            </p>
+          </div>
+
+          {/* Seylan Bank */}
+          <div className="bg-white rounded-3xl shadow-lg p-8 flex flex-col items-center text-center transition-transform hover:-translate-y-2 hover:shadow-2xl max-w-xs">
+            <Image src="/assests/seylan.jpg" alt="Seylan Bank" width={180} height={180} className="object-contain mb-4" />
+            <h3 className="text-2xl font-semibold text-gray-900">Seylan Bank</h3>
+            <p className="text-blue-600 font-medium mb-3">Banking Partner</p>
+            <p className="text-gray-700 leading-relaxed">
+              Seylan Bank supports our core banking operations, providing robust and reliable financial services.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* INSURANCE PARTNERS SECTION */}
+      <section className="space-y-12">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Insurance Partners
+          </h2>
+          <p className="text-gray-700 max-w-2xl mx-auto">
+            Our insurance partners provide comprehensive risk coverage, protecting our loans, assets, and operations with innovative solutions.
           </p>
         </div>
 
-        {/* HNB Assurance */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center max-w-xs">
-          <Image
-            src="/assests/hnbA.jpg"
-            alt="HNB Assurance Logo"
-            width={150}
-            height={150}
-            className="object-contain mb-4"
-          />
-          <h3 className="text-2xl font-semibold text-gray-900">
-            HNB Assurance
-          </h3>
-          <p className="text-blue-600 font-medium mb-3">
-            Insurance Risk Protection Partner
-          </p>
-          <p className="text-gray-700 leading-relaxed">
-            HNB Assurance provides structured insurance coverage across Dearo’s
-            lending activities, mitigating credit and operational risks.
-          </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-items-center">
+          {/* HNB Assurance */}
+          <div className="bg-white rounded-3xl shadow-lg p-8 flex flex-col items-center text-center transition-transform hover:-translate-y-2 hover:shadow-2xl max-w-xs">
+            <Image src="/assests/hnbA.jpg" alt="HNB Assurance" width={150} height={150} className="object-contain mb-4" />
+            <h3 className="text-2xl font-semibold text-gray-900">HNB Assurance</h3>
+            <p className="text-blue-600 font-medium mb-3">Insurance Risk Protection Partner</p>
+            <p className="text-gray-700 leading-relaxed">
+              Provides structured insurance coverage mitigating operational and credit risks across our lending activities.
+            </p>
+          </div>
+
+          {/* People’s Insurance */}
+          <div className="bg-white rounded-3xl shadow-lg p-8 flex flex-col items-center text-center transition-transform hover:-translate-y-2 hover:shadow-2xl max-w-xs">
+            <Image src="/assests/people.jpg" alt="People’s Insurance" width={120} height={120} className="object-contain mb-4" />
+            <h3 className="text-2xl font-semibold text-gray-900">People’s Insurance</h3>
+            <p className="text-blue-600 font-medium mb-3">Portfolio Risk Coverage Partner</p>
+            <p className="text-gray-700 leading-relaxed">
+              Enhances portfolio security with additional credit and asset protection.
+            </p>
+          </div>
+
+          {/* Janashakthi Insurance */}
+          <div className="bg-white rounded-3xl shadow-lg p-8 flex flex-col items-center text-center transition-transform hover:-translate-y-2 hover:shadow-2xl max-w-xs">
+            <Image src="/assests/janashakthi.jpg" alt="Janashakthi Insurance" width={140} height={140} className="object-contain mb-4" />
+            <h3 className="text-2xl font-semibold text-gray-900">Janashakthi Insurance</h3>
+            <p className="text-blue-600 font-medium mb-3">Life & General Insurance Partner</p>
+            <p className="text-gray-700 leading-relaxed">
+              Provides life and general insurance solutions supporting long-term financial stability.
+            </p>
+          </div>
         </div>
-      </div>
-
-      {/* SECOND ROW: Ceylinco & People Insurance centered */}
-      <div className="grid md:grid-cols-2 gap-10 justify-items-center">
-
-        {/* Ceylinco Insurance */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center max-w-xs">
-          <Image
-            src="/assests/ceylinco.jpg"
-            alt="Ceylinco Insurance Logo"
-            width={90}
-            height={90}
-            className="object-contain mb-4"
-          />
-          <h3 className="text-2xl font-semibold text-gray-900">
-            Ceylinco Insurance
-          </h3>
-          <p className="text-blue-600 font-medium mb-3">
-            Loan & Asset Insurance Partner
-          </p>
-          <p className="text-gray-700 leading-relaxed">
-            Ceylinco Insurance ensures protection for insured loan portfolios
-            through customized insurance solutions.
-          </p>
-        </div>
-
-        {/* Peoples Insurance */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center max-w-xs">
-          <Image
-            src="/assests/people.jpg"
-            alt="People’s Insurance Logo"
-            width={100}
-            height={100}
-            className="object-contain mb-4"
-          />
-          <h3 className="text-2xl font-semibold text-gray-900">
-            People’s Insurance
-          </h3>
-          <p className="text-blue-600 font-medium mb-3">
-            Portfolio Risk Coverage Partner
-          </p>
-          <p className="text-gray-700 leading-relaxed">
-            Enhances portfolio security with additional credit and asset
-            protection across lending operations.
-          </p>
-        </div>
-
-      </div>
+      </section>
 
       {/* TRUST SECTION */}
       <div className="bg-blue-50 rounded-3xl p-10 text-center">

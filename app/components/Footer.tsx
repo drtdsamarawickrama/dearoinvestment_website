@@ -55,11 +55,11 @@ export default function Footer() {
           <ul className="space-y-1 text-sm">
             {[
               "Personal Loans",
-              "Auto Loans",
+              "Mortgage Loans",
               "Hire Purchase",
               "Housing Loans",
-              "Renovation Loans",
-              "Personal Investments",
+              
+              
             ].map((item) => (
               <li key={item} className="hover:text-blue-400 transition">{item}</li>
             ))}
@@ -74,12 +74,14 @@ export default function Footer() {
           <ul className="space-y-1 text-sm">
             {[
               "Joint Venture Loans",
-              "Mortgage Loans",
-              "Project Financing",
-              "Daily Loans",
-              "Hire Purchase",
-              "Factoring Facility",
-              "Working Capital Loan",
+             "MSME Loans",
+             "Business Loans",
+             "Project Loans",
+             "Agriculture Loans",
+             "Join Venture Loans",
+             
+             
+             
             ].map((item) => (
               <li key={item} className="hover:text-blue-400 transition">{item}</li>
             ))}
@@ -99,7 +101,7 @@ export default function Footer() {
               Phone: <a href="tel:+94743908274" className="hover:text-blue-400 transition">074 390 8274</a>
             </li>
             <li>
-              8th Floor, Ceylinco House, No 69, Janadhipathi Mawatha, Colombo 01
+              8ᵗʰ Floor, Ceylinco House, No. 69, Janadhipathi Mawatha, Colombo 01
             </li>
           </ul>
         </div>
