@@ -18,7 +18,7 @@ export default function Navbar() {
   {/* Left Text */}
   <div className="flex justify-center md:justify-start text-white">
     <p className="text-center md:text-left">
-      A Leading Investment Company in Sri Lanka
+     Building Wealth, Empowering Futures in Sri Lanka
     </p>
   </div>
 
