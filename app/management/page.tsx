@@ -16,7 +16,7 @@ export default function ManagementPage() {
     },
     {
       name: "Mr. Upul Edirisooriya",
-      title: "Non Independent Executive Director",
+      title: "Non Independent Non Executive Director",
       img: "/assests/team-upul.jpg",
     },
     {

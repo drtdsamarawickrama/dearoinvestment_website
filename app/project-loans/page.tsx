@@ -1,72 +1,115 @@
+import Image from "next/image";
+import { Building, ChartLine, Settings, Clock } from "lucide-react"; // corrected icon import
+
 export const metadata = {
-  title: "Project Loans",
+  title: "Project Loans | Dearo Investment Limited",
   description:
     "Structured project loan solutions to support large-scale developments and long-term investments.",
 };
 
 export default function ProjectLoansPage() {
+  const features = [
+    {
+      icon: <Building className="w-8 h-8 text-blue-600" />,
+      title: "Construction & Real Estate",
+      desc: "Finance large-scale construction and property development projects.",
+    },
+    {
+      icon: <ChartLine className="w-8 h-8 text-blue-600" />,
+      title: "Infrastructure Development",
+      desc: "Support roads, bridges, utilities, and other infrastructure initiatives.",
+    },
+    {
+      icon: <Settings className="w-8 h-8 text-blue-600" />,
+      title: "Manufacturing Projects",
+      desc: "Invest in machinery, factories, and production expansion.",
+    },
+    {
+      icon: <Clock className="w-8 h-8 text-blue-600" />,
+      title: "Renewable Energy",
+      desc: "Fund solar, wind, and other sustainable energy projects.",
+    },
+  ];
+
+  const process = [
+    "Project feasibility assessment",
+    "Financial structuring & approval",
+    "Loan disbursement in phases",
+    "Ongoing monitoring & support",
+  ];
+
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6">
-        {/* Title */}
-        <h1 className="text-4xl font-bold text-gray-900 mb-6">
-          Project Loans
-        </h1>
+    <section className="bg-gray-50">
 
-        {/* Description */}
-        <p className="text-gray-700 text-lg mb-8">
-          Our project loan facilities are designed to finance large-scale
-          developments such as construction, infrastructure, manufacturing,
-          and commercial projects with customized repayment structures.
-        </p>
-
-        {/* Content Sections */}
-        <div className="grid md:grid-cols-2 gap-6 mb-10">
-          <div className="bg-white p-6 rounded-xl shadow">
-            <h3 className="font-semibold text-xl mb-3">
-              Project Loan Coverage
-            </h3>
-            <ul className="list-disc pl-5 text-gray-700 space-y-2">
-              <li>Construction & real estate projects</li>
-              <li>Infrastructure development</li>
-              <li>Manufacturing & industrial projects</li>
-              <li>Renewable energy initiatives</li>
-            </ul>
+      {/* ================= HERO SECTION ================= */}
+      <div className="relative w-full h-[300px] md:h-[350px] overflow-hidden">
+        <Image
+          src="/assests/project1.jpg"
+          alt="Project Loans"
+          fill
+          priority
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-tr from-black/60 via-black/40 to-black/60 flex items-center">
+          <div className="max-w-6xl mx-auto px-6 text-white transform -translate-y-8 md:-translate-y-0">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fadeIn">
+              Project Loans
+            </h1>
+            <p className="max-w-2xl text-lg text-gray-200 animate-fadeIn delay-200">
+              Structured financing solutions for large-scale developments, construction, and long-term projects.
+            </p>
           </div>
+        </div>
+      </div>
 
-          <div className="bg-white p-6 rounded-xl shadow">
-            <h3 className="font-semibold text-xl mb-3">
-              Key Benefits
-            </h3>
-            <ul className="list-disc pl-5 text-gray-700 space-y-2">
-              <li>Customized financing structures</li>
-              <li>Long-term repayment options</li>
-              <li>Competitive interest rates</li>
-              <li>Dedicated project advisory support</li>
-            </ul>
+      {/* ================= FEATURES ================= */}
+      <div className="max-w-6xl mx-auto px-6 py-20 space-y-16">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Why Choose Our Project Loans?</h2>
+          <p className="text-gray-700 mt-3 max-w-2xl mx-auto">
+            Our project loans are designed to empower businesses and developers with flexible, structured financing.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {features.map((f, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
+            >
+              <div className="mb-4">{f.icon}</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">{f.title}</h3>
+              <p className="text-gray-700 text-sm">{f.desc}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* ================= PROCESS ================= */}
+        <div>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Our Project Loan Process</h2>
+          <div className="relative flex flex-col md:flex-row md:justify-between items-start md:items-center space-y-6 md:space-y-0 md:space-x-6">
+            {process.map((step, idx) => (
+              <div key={idx} className="flex items-start md:flex-col md:items-center text-left md:text-center space-x-3 md:space-x-0">
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
+                  {idx + 1}
+                </div>
+                <p className="text-gray-700 max-w-xs">{step}</p>
+                {idx !== process.length - 1 && <div className="hidden md:block flex-1 h-1 bg-blue-200 mt-5"></div>}
+              </div>
+            ))}
           </div>
         </div>
 
-        {/* Process */}
-        <div className="bg-white p-6 rounded-xl shadow mb-10">
-          <h3 className="font-semibold text-xl mb-3">
-            Our Project Loan Process
+        {/* ================= CTA ================= */}
+        <div className="text-center mt-16">
+          <h3 className="text-3xl font-bold text-gray-900 mb-4">
+            Ready to Start Your Project?
           </h3>
-          <ol className="list-decimal pl-5 text-gray-700 space-y-2">
-            <li>Project feasibility assessment</li>
-            <li>Financial structuring & approval</li>
-            <li>Loan disbursement in phases</li>
-            <li>Ongoing monitoring & support</li>
-          </ol>
+          <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
+            Apply for a Project Loan today and secure the financing your large-scale development needs.
+          </p>
+          
         </div>
-
-        {/* CTA */}
-        <a
-          href="/contact"
-          className="inline-block bg-indigo-600 text-white px-7 py-3 rounded-lg font-medium hover:bg-indigo-700 transition"
-        >
-          Apply for Project Loan
-        </a>
       </div>
     </section>
   );
