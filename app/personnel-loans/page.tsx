@@ -93,7 +93,8 @@ export default function CommunityLoanPage() {
               <div className="flex justify-between items-center">
                 <div>
                   <span className="text-2xl font-bold text-[#335DD0FF]">
-                    Rs 75,000/-
+                    Rs. 150,000/-
+                    
                   </span>
                   <p>Minimum Monthly Income</p>
                 </div>
