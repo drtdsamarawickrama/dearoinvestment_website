@@ -21,7 +21,7 @@ export default function Snow() {
 
     for (let i = 0; i < totalFlakes; i++) {
       const snowflake = document.createElement("span");
-      snowflake.innerHTML = "'";
+      snowflake.innerHTML = ".";
       snowflake.style.position = "absolute";
       snowflake.style.top = "-50px";
       snowflake.style.left = Math.random() * 100 + "vw";
