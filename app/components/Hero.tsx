@@ -31,14 +31,14 @@ export default function Hero() {
 
   return (
     <section
-      key={currentIndex} // 🔥 forces animation restart
-      className="relative w-full top-20 h-screen bg-cover bg-center flex items-center animate-hero transition-all duration-1000"
+      key={currentIndex}
+      className="relative w-full mt-20 h-[80vh] md:h-screen bg-cover bg-center flex items-center transition-all duration-1000"
       style={{ backgroundImage: `url(${slides[currentIndex].image})` }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0  bg-opacity-50"></div>
+      <div className="absolute inset-0 bg-black/50"></div>
 
-      {/* Content */}
+       {/* Content */}
       <div
         className={`relative z-10 w-full max-w-4xl px-10 text-white
           ${isLeft ? "mr-auto text-left animate-slide-left" : "ml-auto text-right animate-slide-right"}
@@ -64,6 +64,7 @@ export default function Hero() {
           {slides[currentIndex].subtitle}
         </p>
       </div>
+
     </section>
   );
 }

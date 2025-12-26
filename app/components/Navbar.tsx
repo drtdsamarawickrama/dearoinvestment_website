@@ -12,50 +12,51 @@ export default function Navbar() {
 
   return (
     <div className="mb-3">
-    <header className="w-full shadow-md fixed top-0 left-0 z-50">
-      {/* --- TOP BAR --- */}
-      <div className="bg-blue-950 text-white py-2">
-        <div className="max-w-7xl mx-auto flex flex-col gap-4 px-4 text-sm 
-                md:flex-row md:justify-between md:items-center">
+  <header className="w-full shadow-md fixed top-0 left-0 z-50">
+    {/* --- TOP BAR --- */}
+    <div className="bg-blue-950 text-white py-2">
+      <div className="max-w-7xl mx-auto flex flex-col gap-4 px-4 text-sm
+                      text-center
+                      md:flex-row md:justify-between md:items-center md:text-left">
 
-  {/* Left Text */}
-  <div className="flex justify-center md:justify-start text-white">
-    <p className="text-center md:text-left">
-    Building Wealth, Empowering Futures in Sri Lanka
-    </p>
-  </div>
+        {/* Left Text */}
+        <div className="flex justify-center md:justify-start">
+          <p>
+            Building Wealth, Empowering Futures in Sri Lanka
+          </p>
+        </div>
 
-  {/* Right Info */}
-  <div className="flex flex-col gap-3 text-white items-center
-                  md:flex-row md:gap-6">
+        {/* Right Info */}
+        <div className="flex flex-col gap-3 items-center
+                        md:flex-row md:gap-6 md:items-center">
 
-    {/* Phone */}
-    <span className="flex items-center gap-2">
-      <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 fill-white" viewBox="0 0 24 24">
-        <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.59a1 1 0 01-.25 1.01l-2.2 2.19z"/>
-      </svg>
-      +94 74 390 8274
-    </span>
+          {/* Phone */}
+          <span className="flex items-center gap-2 justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 fill-white" viewBox="0 0 24 24">
+              <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.59a1 1 0 01-.25 1.01l-2.2 2.19z"/>
+            </svg>
+            +94 74 390 8274
+          </span>
 
-    {/* Email */}
-    <span className="flex items-center gap-2">
-      <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 fill-white" viewBox="0 0 24 24">
-        <path d="M2 6a2 2 0 012-2h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6zm2 0l8 5 8-5H4zm16 12V8l-8 5-8-5v10h16z"/>
-      </svg>
-      info@dearoinvestment.com
-    </span>
+          {/* Email */}
+          <span className="flex items-center gap-2 justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 fill-white" viewBox="0 0 24 24">
+              <path d="M2 6a2 2 0 012-2h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6zm2 0l8 5 8-5H4zm16 12V8l-8 5-8-5v10h16z"/>
+            </svg>
+            info@dearoinvestment.com
+          </span>
 
-    {/* Auth Links */}
-    <div className="flex items-center gap-2">
-      <a href="/login" className="hover:underline">Login</a>
-      <span>|</span>
-      <a href="/register" className="hover:underline">Register</a>
-    </div>
+          {/* Auth Links */}
+          <div className="flex items-center gap-2 justify-center">
+            <a href="/login" className="hover:underline">Login</a>
+            <span>|</span>
+            <a href="/register" className="hover:underline">Register</a>
+          </div>
 
-  </div>
-</div>
-
+        </div>
       </div>
+    </div>
+ 
 
       {/* --- MAIN NAVBAR --- */}
       <nav className="bg-white">
@@ -131,7 +132,7 @@ export default function Navbar() {
                 Personal Services <ChevronDown size={16} />
               </div>
               <div className="absolute left-0 mt-0 hidden group-hover:block bg-white shadow-xl rounded-md py-2 w-52 z-50">
-                <a href="/personnel-loans" className="block px-4 py-2 hover:bg-gray-100">Personnel Loans</a>
+                <a href="/personnel-loans" className="block px-4 py-2 hover:bg-gray-100">Personal Loans</a>
                 <a href="/hirepurchase-loans" className="block px-4 py-2 hover:bg-gray-100">Hire Purchase Loans</a>
                 <a href="/mortgage-loans" className="block px-4 py-2 hover:bg-gray-100">Mortgage Loans</a>
                 <a href="/housing-loans" className="block px-4 py-2 hover:bg-gray-100">Housing Loans</a> 
@@ -201,8 +202,6 @@ export default function Navbar() {
         )}
       </nav>
     </header>
-    
-
-    </div>
+     </div>
   );
 }
