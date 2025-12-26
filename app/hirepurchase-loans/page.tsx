@@ -13,34 +13,27 @@ export default function HirePurchaseLoansPage() {
     <main className="pt-0">
       {/* ===== HERO SECTION ===== */}
       <section className="bg-gray-50">
-        <div className="relative w-full h-[300px] md:h-[420px] overflow-hidden">
-          {/* Background Image */}
+        {/* Hero Image */}
+        <div className="w-full overflow-hidden">
           <img
             src="/assests/hire.jpg"
             alt="Dearo Hire Purchase"
-            className="absolute inset-0 w-full h-full object-cover scale-105"
+            className="w-full h-[300px] md:h-[420px] object-cover"
           />
+        </div>
 
-          {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/40"></div>
-
-          {/* Right Aligned Text */}
-          <div className="relative z-10 h-full flex items-center">
-            <div className="max-w-7xl mx-auto px-6 w-full flex justify-end">
-              <div className="max-w-xl text-right">
-                <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight">
-                  Dearo Hire Purchase
-                </h1>
-                <p className="mt-4 text-base md:text-lg text-gray-200">
-                  Owning your dream vehicle or essential equipment is now within
-                  reach. Dearo Investment Limited Hire Purchase offers fast,
-                  flexible, and tailor-made financing solutions for new, used,
-                  or pre-owned vehicles and machinery—so you can move forward
-                  with confidence.
-                </p>
-              </div>
-            </div>
-          </div>
+        {/* Text Below Image */}
+        <div className="max-w-3xl mx-auto px-6 py-8 md:py-12 text-center">
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+            Dearo Hire Purchase
+          </h1>
+          <p className="mt-4 text-base md:text-lg text-gray-700">
+            Owning your dream vehicle or essential equipment is now within
+            reach. Dearo Investment Limited Hire Purchase offers fast,
+            flexible, and tailor-made financing solutions for new, used,
+            or pre-owned vehicles and machinery—so you can move forward
+            with confidence.
+          </p>
         </div>
 
         {/* ===== PAGE CONTENT ===== */}

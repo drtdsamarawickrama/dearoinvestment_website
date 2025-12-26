@@ -15,34 +15,32 @@ export default function CommunityLoanPage() {
     <main className="pt-0">
       {/* ===== HERO SECTION ===== */}
       <section className="bg-gray-50">
-        <div className="relative w-full h-[300px] md:h-[420px] overflow-hidden">
+        <div className="w-full overflow-hidden">
           {/* Background Image */}
           <img
             src="/assests/personal.jpg"
             alt="Dearo Personal Loans"
-            className="absolute inset-0 w-full h-full object-cover scale-105"
+            className="w-full h-[300px] md:h-[420px] object-cover"
           />
-
-          {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/40"></div>
-
-          {/* Left Aligned Text */}
-          <div className="relative z-10 h-full flex items-center">
-            <div className="max-w-7xl mx-auto px-6 w-full">
-              <div className="max-w-xl text-left">
-                <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight">
-                  Dearo Personal Loans
-                </h1>
-                <p className="mt-4 text-base md:text-lg text-gray-200">
-                  Fulfill your dreams and manage your financial needs effortlessly
-                  with a Personal Loan from Dearo Investment. Whether it’s for
-                  education, home improvements, or personal milestones, we make it
-                  easy to access funds when you need them.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
+
+        {/* Text Below Image */}
+        <div className="max-w-7xl mx-auto px-6 py-8 md:py-12">
+          <div className="max-w-3xl mx-auto px-6 py-8 md:py-12 text-center">
+  <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+    Dearo Personal Loans
+  </h1>
+  <p className="mt-4 text-base md:text-lg text-gray-700">
+    Fulfill your dreams and manage your financial needs effortlessly
+    with a Personal Loan from Dearo Investment. Whether it’s for
+    education, home improvements, or personal milestones, we make it
+    easy to access funds when you need them.
+  </p>
+  </div>
+  </div>
+
+
+       
 
         {/* ===== PAGE CONTENT ===== */}
         <div className="max-w-7xl mx-auto px-6 py-16">
@@ -94,7 +92,6 @@ export default function CommunityLoanPage() {
                 <div>
                   <span className="text-2xl font-bold text-[#335DD0FF]">
                     Rs. 150,000/-
-                    
                   </span>
                   <p>Minimum Monthly Income</p>
                 </div>

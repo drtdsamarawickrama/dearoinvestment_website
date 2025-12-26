@@ -15,38 +15,31 @@ export default function HousingLoansPage() {
   return (
     <main className="pt-0">
       {/* ===== HERO SECTION ===== */}
+      {/* Hero Image */}
       <section className="bg-gray-50">
-        <div className="relative w-full h-[300px] md:h-[420px] overflow-hidden">
-          {/* Background Image */}
+        <div className="w-full overflow-hidden">
           <img
             src="/assests/house.jpg"
             alt="Dearo Housing Loans"
-            className="absolute inset-0 w-full h-full object-cover scale-105"
+            className="w-full h-[300px] md:h-[420px] object-cover"
           />
-
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black/40"></div>
-
-          {/* Right Aligned Text */}
-          <div className="relative z-10 h-full flex items-center">
-            <div className="max-w-7xl mx-auto px-6 w-full flex justify-center">
-              <div className="max-w-xl text-center">
-                <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight">
-                  Dearo Housing Loans
-                </h1>
-                <p className="mt-4 text-base md:text-lg text-gray-200">
-                  Turn your dream of owning a home into reality with Dearo
-                  Housing Loans. We provide secure, long-term financing
-                  solutions to help you build, purchase, or renovate your
-                  home—backed by transparent terms and dependable service you
-                  can trust.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
 
-        {/* ===== CONTENT ===== */}
+        {/* Text Below Image */}
+        <div className="max-w-3xl mx-auto px-6 py-8 md:py-12 text-center">
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+            Dearo Housing Loans
+          </h1>
+          <p className="mt-4 text-base md:text-lg text-gray-700">
+            Turn your dream of owning a home into reality with Dearo
+            Housing Loans. We provide secure, long-term financing
+            solutions to help you build, purchase, or renovate your
+            home—backed by transparent terms and dependable service you
+            can trust.
+          </p>
+        </div>
+
+        {/* ===== PAGE CONTENT ===== */}
         <div className="max-w-7xl mx-auto px-6 py-16">
           {/* Grid */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">
