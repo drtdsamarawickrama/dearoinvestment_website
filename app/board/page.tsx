@@ -89,30 +89,25 @@ export default function BoardMembersPage() {
       {/* 🔝 TOP IMAGE SECTION */}
       <div className="w-full h-[300px] md:h-[420px] relative">
         <img
-          src="/assests/boardroom.jpg" 
+          src="/assests/boardroom1.jpg" 
           alt="Management"
           className="w-full h-full object-cover"
-
-          
         />
-        <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-3">
-            Dearo Senior Management 
-          </h1>
-          <p className="text-gray-200 max-w-2xl">
-             Driven by experience and vision, Dearo’s Senior Management team provides strong leadership to support innovation, 
-             financial inclusion, and sustainable business expansion.
-          </p>
-        </div>
+      </div>
 
-        {/* Optional overlay */}
-        
+      {/* HERO TEXT BELOW IMAGE */}
+      <div className="text-center mt-6 px-4 sm:px-6 md:px-0">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+          Dearo Senior Management
+        </h1>
+        <p className="text-gray-700 max-w-2xl mx-auto">
+          Driven by experience and vision, Dearo’s Senior Management team provides strong leadership to support innovation, 
+          financial inclusion, and sustainable business expansion.
+        </p>
       </div>
 
       {/* CONTENT */}
       <div className="px-6 py-10 max-w-6xl mx-auto">
-
-
         <div className="grid md:grid-cols-3 gap-10">
           {boardMembers.map((member, index) => (
             <div key={index} className="flex gap-6 items-center">

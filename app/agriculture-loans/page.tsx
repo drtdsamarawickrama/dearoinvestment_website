@@ -25,7 +25,7 @@ export default function AgricultureLoansPage() {
   return (
     <section className="bg-gray-50">
 
-      {/* ================= HERO SECTION ================= */}
+      {/* ================= HERO IMAGE ================= */}
       <div className="relative w-full h-[300px] md:h-[350px] overflow-hidden">
         <Image
           src="/assests/agrits.png" // replace with your image
@@ -34,16 +34,16 @@ export default function AgricultureLoansPage() {
           priority
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-black/50 flex items-center justify-end">
-          <div className="max-w-6xl mx-auto px-6 text-white text-right">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Agriculture Loans
-            </h1>
-            <p className="max-w-2xl text-lg text-gray-200">
-              Flexible financing solutions for farmers, agribusinesses, and rural development.
-            </p>
-          </div>
-        </div>
+      </div>
+
+      {/* ================= HERO TEXT (Centered) ================= */}
+      <div className="text-center mt-6 px-4 sm:px-6 md:px-0">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+          Agriculture Loans
+        </h2>
+        <p className="max-w-2xl mx-auto text-lg md:text-xl text-gray-700">
+          Flexible financing solutions for farmers, agribusinesses, and rural development.
+        </p>
       </div>
 
       {/* ================= FEATURES ================= */}
@@ -87,7 +87,6 @@ export default function AgricultureLoansPage() {
           <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
             Apply for an Agriculture Loan today and secure the financial support your farm or agribusiness needs.
           </p>
-        
         </div>
       </div>
     </section>

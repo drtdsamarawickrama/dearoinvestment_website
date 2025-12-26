@@ -28,7 +28,8 @@ export default function ManagementPage() {
       name: "Mr. Arun Kumar",
       title: "Non Independent Non Executive Director",
       img: "/assests/",
-    },  {
+    },
+    {
       name: "Mr. Tharindu Dananjaya",
       title: "Non Board Director/ Chief Information Officer",
       img: "/assests/team-tharindu.jpg",
@@ -40,19 +41,21 @@ export default function ManagementPage() {
       {/* 🔹 HERO IMAGE */}
       <div className="relative w-full h-[300px] md:h-[420px]">
         <img
-          src="/assests/boardroom.jpg"
+          src="/assests/boardroom1.jpg"
           alt="Board of Directors"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-3">
-            Board of Directors
-          </h1>
-          <p className="text-gray-200 max-w-2xl">
-            Guided by vision and innovation, our leaders have played a key role in
-            driving Dearo Investment’s growth and success.
-          </p>
-        </div>
+      </div>
+
+      {/* 🔹 HERO TEXT BELOW IMAGE */}
+      <div className="text-center mt-6 px-4 sm:px-6 md:px-0">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+          Board of Directors
+        </h1>
+        <p className="text-gray-600 max-w-2xl mx-auto">
+          Guided by vision and innovation, our leaders have played a key role in
+          driving Dearo Investment’s growth and success.
+        </p>
       </div>
 
       {/* 🔹 MEMBERS SECTION */}
@@ -81,8 +84,8 @@ export default function ManagementPage() {
         </div>
 
         {/* 🔹 SECOND ROW – 2 MEMBERS CENTERED */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 ">
-          {management.slice(3,6).map((person) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+          {management.slice(3, 6).map((person) => (
             <div
               key={person.name}
               className="flex flex-col items-center text-center"

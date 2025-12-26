@@ -36,7 +36,7 @@ export default function Hero() {
       style={{ backgroundImage: `url(${slides[currentIndex].image})` }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-black/30"></div>
 
        {/* Content */}
       <div

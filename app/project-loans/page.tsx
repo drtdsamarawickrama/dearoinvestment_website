@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Building, ChartLine, Settings, Clock } from "lucide-react"; // corrected icon import
+import { Building, ChartLine, Settings, Clock } from "lucide-react";
 
 export const metadata = {
   title: "Project Loans | Dearo Investment Limited",
@@ -41,7 +41,7 @@ export default function ProjectLoansPage() {
   return (
     <section className="bg-gray-50">
 
-      {/* ================= HERO SECTION ================= */}
+      {/* ================= HERO SECTION (VISIBLE ON ALL DEVICES) ================= */}
       <div className="relative w-full h-[300px] md:h-[350px] overflow-hidden">
         <Image
           src="/assests/project1.jpg"
@@ -50,16 +50,15 @@ export default function ProjectLoansPage() {
           priority
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-tr from-black/60 via-black/40 to-black/60 flex items-center">
-          <div className="max-w-6xl mx-auto px-6 text-white transform -translate-y-8 md:-translate-y-0">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fadeIn">
-              Project Loans
-            </h1>
-            <p className="max-w-2xl text-lg text-gray-200 animate-fadeIn delay-200">
-              Structured financing solutions for large-scale developments, construction, and long-term projects.
-            </p>
-          </div>
-        </div>
+      </div>
+
+      <div className="text-center mt-6 px-6">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          Project Loans
+        </h2>
+        <p className="max-w-2xl text-lg text-gray-700 mx-auto">
+          Structured financing solutions for large-scale developments, construction, and long-term projects.
+        </p>
       </div>
 
       {/* ================= FEATURES ================= */}
@@ -108,7 +107,6 @@ export default function ProjectLoansPage() {
           <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
             Apply for a Project Loan today and secure the financing your large-scale development needs.
           </p>
-          
         </div>
       </div>
     </section>
