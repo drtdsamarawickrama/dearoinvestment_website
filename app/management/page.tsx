@@ -24,11 +24,7 @@ export default function ManagementPage() {
       title: "Non Independent Non Executive Director ",
       img: "/assests/team-prabhash.jpg",
     },
-    {
-      name: "Mr. Arun Kumar",
-      title: "Non Independent Non Executive Director",
-      img: "/assests/",
-    },
+   
     {
       name: "Mr. G Dananjaya",
       title: "Chief Operating Officerr",
