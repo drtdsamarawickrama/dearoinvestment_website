@@ -5,7 +5,7 @@ export default function StatsSection() {
   const stats = [
     {
       label: "Branches",
-      value: "44+",
+      value: "25+",
       icon: Building2,
     },
     {

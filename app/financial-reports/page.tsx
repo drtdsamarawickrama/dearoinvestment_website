@@ -75,12 +75,12 @@ export default function FinancialReportsPage() {
             {/* 2025 */}
             <div className="bg-white p-10 rounded-2xl border shadow-sm text-center">
               <h3 className="text-2xl font-bold mb-4">2025</h3>
-              <p className="text-gray-600 mb-6">
-                 Total Assets - 1721.14 Mn
-               Started Capital - 100 Mn
-               Directors Contribution For Shares - 552 Mn
-               Liabilities - 828.44 Mn (Directors Loans and Deferred Intrest)
-               Total Equity -768.7 Mn
+              <p className="text-gray-600 mb-4  justify-center">
+                Total Assets - 1721.14 Mn <br/>
+               Started Capital - 100 Mn<br/>
+               Directors Contribution For Shares - 552 Mn<br/>
+               Liabilities - 828.44 Mn (Directors Loans and Deferred Intrest)<br/>
+               Total Equity -768.7 Mn<br/>
                Profit & Loss After tax - 55.39 Mn
               </p>
               <div className="flex flex-col gap-3">
