@@ -76,7 +76,12 @@ export default function FinancialReportsPage() {
             <div className="bg-white p-10 rounded-2xl border shadow-sm text-center">
               <h3 className="text-2xl font-bold mb-4">2025</h3>
               <p className="text-gray-600 mb-6">
-                Latest financial performance and strategic insights.
+                 Total Assets - 1721.14 Mn
+               Started Capital - 100 Mn
+               Directors Contribution For Shares - 552 Mn
+               Liabilities - 828.44 Mn (Directors Loans and Deferred Intrest)
+               Total Equity -768.7 Mn
+               Profit & Loss After tax - 55.39 Mn
               </p>
               <div className="flex flex-col gap-3">
                 <button className="px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition">
@@ -90,7 +95,11 @@ export default function FinancialReportsPage() {
             <div className="bg-white p-10 rounded-2xl border shadow-sm text-center">
               <h3 className="text-2xl font-bold mb-4">2024</h3>
               <p className="text-gray-600 mb-6">
-                Strong growth year with expanded operations.
+              Total Assets - 849.90 Mn
+               Started Capital - 100 Mn
+               Directors Contribution For Shares - 552 Mn
+               Total Equity - 713.34 Mn
+               Profit & Loss After tax - 45.95 Mn
               </p>
               <div className="flex flex-col gap-3">
                 <button className="px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition">
@@ -104,7 +113,11 @@ export default function FinancialReportsPage() {
             <div className="bg-white p-10 rounded-2xl border shadow-sm text-center">
               <h3 className="text-2xl font-bold mb-4">2023</h3>
               <p className="text-gray-600 mb-6">
-                Foundation year performance and portfolio overview.
+               Total Assets - 595.3 Mn
+               Started Capital - 100 Mn
+               Directors Contribution For Shares - 470 Mn
+               Total Equity - 585.3 Mn
+               Profit & Loss After tax - 15.3 Mn 
               </p>
               <div className="flex flex-col gap-3">
                 <button className="px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition">
