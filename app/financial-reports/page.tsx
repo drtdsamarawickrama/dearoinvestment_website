@@ -1,11 +1,59 @@
-export const metadata = {
-  title: "Financial Reports | Dearo Investment Limited",
-};
+"use client";
+
+import { useState, useRef } from "react";
 
 export default function FinancialReportsPage() {
+  const [openYear, setOpenYear] = useState<number | null>(null);
+  const cardRefs = useRef<{ [key: number]: HTMLDivElement | null }>({});
+
+  const reports = [
+    {
+      year: 2025,
+      description:
+        "Strong asset growth and improved profitability supported by strategic capital structuring.",
+      totalAssets: "1,721.14 Mn",
+      startupCapital: "100 Mn",
+      directorsContribution: "552 Mn",
+      liabilities: "828.44 Mn (Directors’ Loans & Deferred Interest)",
+      totalEquity: "768.70 Mn",
+      profitAfterTax: "55.39 Mn",
+      pdf: "/reports/Audit Report 2025.pdf",
+    },
+    {
+      year: 2024,
+      description:
+        "Continued expansion with stable equity growth and improved operational performance.",
+      totalAssets: "849.90 Mn",
+      startupCapital: "100 Mn",
+      directorsContribution: "552 Mn",
+      totalEquity: "713.34 Mn",
+      profitAfterTax: "45.95 Mn",
+      pdf: "/reports/financial-report-2024.pdf",
+    },
+    {
+      year: 2023,
+      description:
+        "Foundation year focused on capital formation, asset buildup, and initial profitability.",
+      totalAssets: "595.30 Mn",
+      startupCapital: "100 Mn",
+      directorsContribution: "470 Mn",
+      totalEquity: "585.30 Mn",
+      profitAfterTax: "15.30 Mn",
+      pdf: "/reports/financial-report-2023.pdf",
+    },
+  ];
+
+  const toggleYear = (year: number) => {
+    setOpenYear((prev) => (prev === year ? null : year));
+    const el = cardRefs.current[year];
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <section className="bg-gray-50">
-      {/* HERO */}
+      {/* ================= HERO ================= */}
       <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white">
         <div className="max-w-7xl mx-auto px-6 py-24 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -17,19 +65,19 @@ export default function FinancialReportsPage() {
         </div>
       </div>
 
-      {/* INTRO */}
+      {/* ================= INTRO ================= */}
       <div className="max-w-7xl mx-auto px-6 py-20">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <p className="text-gray-700 text-lg leading-relaxed">
             At <strong>Dearo Investment Limited</strong>, we believe in complete
             financial transparency. Our financial reports provide a clear view
-            of our performance, risk management practices, and growth
-            strategy—ensuring investors and stakeholders have the insights they
-            need to make informed decisions.
+            of our performance, risk management practices, and growth strategy—
+            ensuring investors and stakeholders have the insights they need to
+            make informed decisions.
           </p>
         </div>
 
-        {/* REPORT DETAILS */}
+        {/* ================= REPORT DETAILS ================= */}
         <div className="mb-20">
           <h2 className="text-3xl font-bold text-center mb-12">
             What You’ll Find in Our Reports
@@ -65,82 +113,67 @@ export default function FinancialReportsPage() {
           </div>
         </div>
 
-        {/* YEAR WISE DOWNLOADS */}
+        {/* ================= YEAR WISE DOWNLOADS ================= */}
         <div className="mb-20">
           <h2 className="text-3xl font-bold text-center mb-12">
             Download Financial Reports by Year
           </h2>
 
           <div className="grid gap-8 md:grid-cols-3">
-            {/* 2025 */}
-            <div className="bg-white p-10 rounded-2xl border shadow-sm text-center">
-              <h3 className="text-2xl font-bold mb-4">2025</h3>
-              <p className="text-gray-600 mb-4  justify-center">
-                Total Assets - 1721.14 Mn <br/>
-               Started Capital - 100 Mn<br/>
-               Directors Contribution For Shares - 552 Mn<br/>
-               Liabilities - 828.44 Mn (Directors Loans and Deferred Intrest)<br/>
-               Total Equity -768.7 Mn<br/>
-               Profit & Loss After tax - 55.39 Mn
-              </p>
-              <div className="flex flex-col gap-3">
-                <button className="px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition">
-                  Download Annual Report
-                </button>
-               
-              </div>
-            </div>
+            {reports.map((report) => (
+              <div
+                key={report.year}
+                ref={(el) => { cardRefs.current[report.year] = el; }} // ✅ TypeScript fixed
+                className="bg-white p-10 rounded-2xl border shadow-sm text-center"
+              >
+                <h3 className="text-2xl font-bold mb-3">{report.year}</h3>
+                <p className="text-gray-600 text-sm mb-6">{report.description}</p>
 
-            {/* 2024 */}
-            <div className="bg-white p-10 rounded-2xl border shadow-sm text-center">
-              <h3 className="text-2xl font-bold mb-4">2024</h3>
-              <p className="text-gray-600 mb-6">
-              Total Assets - 849.90 Mn
-               Started Capital - 100 Mn
-               Directors Contribution For Shares - 552 Mn
-               Total Equity - 713.34 Mn
-               Profit & Loss After tax - 45.95 Mn
-              </p>
-              <div className="flex flex-col gap-3">
-                <button className="px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition">
-                  Download Annual Report
+                <button
+                  className="inline-block px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold mb-4 hover:bg-gray-800 transition"
+                  onClick={() => toggleYear(report.year)}
+                >
+                  {openYear === report.year
+                    ? "Hide Financial Summary"
+                    : "View Financial Summary"}
                 </button>
-                
-              </div>
-            </div>
 
-            {/* 2023 */}
-            <div className="bg-white p-10 rounded-2xl border shadow-sm text-center">
-              <h3 className="text-2xl font-bold mb-4">2023</h3>
-              <p className="text-gray-600 mb-6">
-               Total Assets - 595.3 Mn
-               Started Capital - 100 Mn
-               Directors Contribution For Shares - 470 Mn
-               Total Equity - 585.3 Mn
-               Profit & Loss After tax - 15.3 Mn 
-              </p>
-              <div className="flex flex-col gap-3">
-                <button className="px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition">
-                  Download Annual Report
-                </button>
-                
+                {openYear === report.year && (
+                  <ul className="mt-6 text-gray-700 space-y-2 text-sm text-left">
+                    <li>
+                      <strong>Total Assets:</strong> {report.totalAssets}
+                    </li>
+                    <li>
+                      <strong>Start Up Capital:</strong> {report.startupCapital}
+                    </li>
+                    <li>
+                      <strong>Directors’ Share Contribution:</strong>{" "}
+                      {report.directorsContribution}
+                    </li>
+                    {report.liabilities && (
+                      <li>
+                        <strong>Liabilities:</strong> {report.liabilities}
+                      </li>
+                    )}
+                    <li>
+                      <strong>Total Equity:</strong> {report.totalEquity}
+                    </li>
+                    <li>
+                      <strong>Profit After Tax:</strong> {report.profitAfterTax}
+                    </li>
+                  </ul>
+                )}
+
+                <a
+                  href={report.pdf}
+                  download
+                  className="inline-block mt-5 px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition"
+                >
+                  Download Annual Report ({report.year})
+                </a>
               </div>
-            </div>
+            ))}
           </div>
-        </div>
-
-        {/* FOOTER CTA */}
-        <div className="bg-white border rounded-2xl p-12 text-center shadow-sm">
-          <h2 className="text-3xl font-bold mb-4">
-            Need More Information?
-          </h2>
-          <p className="text-gray-700 max-w-3xl mx-auto mb-8">
-            For historical reports, customized disclosures, or investor
-            inquiries, please contact our investor relations team.
-          </p>
-          <button className="px-8 py-4 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition">
-            Contact Investor Relations
-          </button>
         </div>
       </div>
     </section>

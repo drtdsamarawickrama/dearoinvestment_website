@@ -25,11 +25,12 @@ export default function ManagementPage() {
       img: "/assests/team-prabhash.jpg",
     },
    
+    // {
+    //   name: "Mr. G Dananjaya",
+    //   title: "Chief Operating Officerr",
+    //   img: "/assests/b.png",
+    // },
     {
-      name: "Mr. G Dananjaya",
-      title: "Chief Operating Officerr",
-      img: "/assests/b.png",
-    },{
       name: "Mr. Tharindu Dananjaya",
       title: "Non Board Director/ Chief Information Officer",
       img: "/assests/team-tharindu.jpg",
