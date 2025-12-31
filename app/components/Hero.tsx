@@ -32,15 +32,15 @@ export default function Hero() {
   return (
     <section
       key={currentIndex}
-      className="relative w-full mt-20 h-[80vh] md:h-screen bg-cover bg-center flex items-center transition-all duration-1000"
+      className="relative w-full mt-20 h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-screen bg-cover bg-center flex items-center transition-all duration-1000"
       style={{ backgroundImage: `url(${slides[currentIndex].image})` }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/30"></div>
 
-       {/* Content */}
+      {/* Content */}
       <div
-        className={`relative z-10 w-full max-w-4xl px-10 text-white
+        className={`relative z-10 w-full max-w-4xl px-6 sm:px-10 text-white
           ${isLeft ? "mr-auto text-left animate-slide-left" : "ml-auto text-right animate-slide-right"}
         `}
       >
@@ -49,22 +49,21 @@ export default function Hero() {
             ${isLeft ? "items-start" : "items-end"}
           `}
         >
-          <span className="text-[2rem] md:text-7xl">
+          <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-snug">
             {slides[currentIndex].title[0]}
           </span>
-          <span className="text-[2rem] md:text-7xl">
+          <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-snug">
             {slides[currentIndex].title[1]}
           </span>
-          <span className="text-[2rem] md:text-6xl">
+          <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-snug">
             {slides[currentIndex].title[2]}
           </span>
         </h1>
 
-        <p className="text-xl md:text-2xl font-bold text-gray-200">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-200 max-w-md sm:max-w-lg">
           {slides[currentIndex].subtitle}
         </p>
       </div>
-
     </section>
   );
 }
