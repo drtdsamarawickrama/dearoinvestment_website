@@ -28,7 +28,7 @@ export default function FinancialReportsPage() {
       directorsContribution: "552 Mn",
       totalEquity: "713.34 Mn",
       profitAfterTax: "45.95 Mn",
-      pdf: "/reports/financial-report-2024.pdf",
+      pdf: "/reports/Audit Report 2024.pdf",
     },
     {
       year: 2023,
@@ -39,7 +39,7 @@ export default function FinancialReportsPage() {
       directorsContribution: "470 Mn",
       totalEquity: "585.30 Mn",
       profitAfterTax: "15.30 Mn",
-      pdf: "/reports/financial-report-2023.pdf",
+      pdf: "/reports/Audit Report 2023 (1).pdf",
     },
   ];
 
