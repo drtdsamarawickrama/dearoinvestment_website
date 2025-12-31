@@ -8,11 +8,13 @@ import LegalStatusSection from './components/LegalStatusSection';
 import OnlineStoreSection from './components/ContactSection';
 import TestimonialsSection from './components/TestimonialsSection';
 import NewsSection from './components/NewsSection';
+import Poster from './components/Poster';
 
 
 export default function HomePage() {
   return (
     <>
+     {/* <Poster />  */}
       <Hero />
        <AboutSection />
       <StatsSection />

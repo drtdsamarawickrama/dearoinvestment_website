@@ -1,7 +1,6 @@
 "use client";
 import { Target, Eye, Workflow, Goal, Award, ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef } from "react";
- 
 import { useEffect, useState } from "react";
 
 type SnowStyle = {
@@ -27,7 +26,7 @@ function Snow() {
     setFlakes(generated);
   }, []);
 
-  if (flakes.length === 0) return null; // prevents mismatch
+  if (flakes.length === 0) return null;
 
   return (
     <div className="snow-container">
@@ -78,67 +77,67 @@ export default function AboutSection() {
       img: "/assests/AW2.jpg",
     },
     {
-      title: "Global Finance Awards 2025",
-      desc: "Top global financial service provider of the year.",
-      img: "/assests/award2.jpeg",
+      title: "People's Excellency Awards 2025",
+      desc: "The best SME Service Provider in Sri Lanka.",
+      img: "/assests/people award 2025.jpeg",
     },
   ];
 
   return (
-    <section id="about" className="relative py-24 overflow-hidden bg-white">
-      {/* <Snow /> */}
+    <section id="about" className="relative py-16 sm:py-24 overflow-hidden bg-white">
+      {/* Snow <Snow /> */}
 
       {/* Background Blobs */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-green-300 opacity-20 rounded-full blur-3xl -z-10"></div>
-      <div className="absolute bottom-0 right-0 w-72 h-72 bg-blue-300 opacity-20 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute top-0 left-0 w-56 sm:w-72 h-56 sm:h-72 bg-green-300 opacity-20 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute bottom-0 right-0 w-56 sm:w-72 h-56 sm:h-72 bg-blue-300 opacity-20 rounded-full blur-3xl -z-10"></div>
 
-      <div className="max-w-6xl mx-auto px-6 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 relative z-10">
         {/* About Description */}
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-gray-900">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-6 text-gray-900">
           About Our Company
         </h2>
-        <p className="text-lg text-gray-700 justify-center text-center mb-16 max-w-4xl mx-auto">
+        <p className="text-base sm:text-lg text-gray-700 text-center mb-12 sm:mb-16 max-w-4xl mx-auto">
           Dearo Investment Ltd was established under the Companies Act No. 07 of 2007 and officially incorporated on 1st September 2022 under registration number PB 262527. Though relatively young, the company has quickly positioned itself as a trusted and forward-looking financial services provider, addressing the growing need for secure, accessible, and well-governed financing solutions.
           Dearo Investment Ltd operates with a strong emphasis on risk management, financial discipline, and stakeholder protection. Robust internal controls and comprehensive risk mitigation frameworks are embedded across all financial activities. As part of this approach, insurance-backed protection mechanisms are implemented to safeguard customers and enhance operational resilience against unforeseen risks.
           With a network of 25 branches islandwide, Dearo Investment Ltd has established a strong nationwide presence, enabling inclusive access to financial services across diverse communities. This extensive reach, combined with professional governance and a commitment to sustainable growth, reinforces the company’s focus on long-term value creation, customer confidence, and financial stability.
         </p>
 
         {/* Vision / Mission / Goals / Process Boxes */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-20">
-          <div className="p-6 bg-white shadow-lg rounded-2xl border hover:shadow-2xl transition">
-            <div className="flex items-center gap-3 mb-4">
-              <Target className="text-blue-600" />
-              <h3 className="text-xl font-semibold">Our Mission</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-16 sm:mb-20">
+          <div className="p-4 sm:p-6 bg-white shadow-lg rounded-2xl border hover:shadow-2xl transition">
+            <div className="flex items-center gap-3 mb-3">
+              <Target className="text-blue-600 w-6 h-6 sm:w-7 sm:h-7" />
+              <h3 className="text-lg sm:text-xl font-semibold">Our Mission</h3>
             </div>
-            <p className="text-gray-700">Empowering customers through innovative solutions and service excellence.</p>
+            <p className="text-gray-700 text-sm sm:text-base">Empowering customers through innovative solutions and service excellence.</p>
           </div>
 
-          <div className="p-6 bg-white shadow-lg rounded-2xl border hover:shadow-2xl transition">
-            <div className="flex items-center gap-3 mb-4">
-              <Eye className="text-purple-600" />
-              <h3 className="text-xl font-semibold">Our Vision</h3>
+          <div className="p-4 sm:p-6 bg-white shadow-lg rounded-2xl border hover:shadow-2xl transition">
+            <div className="flex items-center gap-3 mb-3">
+              <Eye className="text-purple-600 w-6 h-6 sm:w-7 sm:h-7" />
+              <h3 className="text-lg sm:text-xl font-semibold">Our Vision</h3>
             </div>
-            <p className="text-gray-700">Inspiring progress through innovation and sustainability.</p>
+            <p className="text-gray-700 text-sm sm:text-base">Inspiring progress through innovation and sustainability.</p>
           </div>
 
-          <div className="p-6 bg-white shadow-lg rounded-2xl border hover:shadow-2xl transition">
-            <div className="flex items-center gap-3 mb-4">
-              <Goal className="text-red-600" />
-              <h3 className="text-xl font-semibold">Our Goals</h3>
+          <div className="p-4 sm:p-6 bg-white shadow-lg rounded-2xl border hover:shadow-2xl transition">
+            <div className="flex items-center gap-3 mb-3">
+              <Goal className="text-red-600 w-6 h-6 sm:w-7 sm:h-7" />
+              <h3 className="text-lg sm:text-xl font-semibold">Our Goals</h3>
             </div>
-            <ul className="list-disc list-inside text-gray-700 space-y-2">
+            <ul className="list-disc list-inside text-gray-700 text-sm sm:text-base space-y-1">
               <li>Long-term value creation</li>
               <li>Continuous innovation</li>
               <li>Sustainable growth</li>
             </ul>
           </div>
 
-          <div className="p-6 bg-white shadow-lg rounded-2xl border hover:shadow-2xl transition">
-            <div className="flex items-center gap-3 mb-4">
-              <Workflow className="text-green-600" />
-              <h3 className="text-xl font-semibold">Our Process</h3>
+          <div className="p-4 sm:p-6 bg-white shadow-lg rounded-2xl border hover:shadow-2xl transition">
+            <div className="flex items-center gap-3 mb-3">
+              <Workflow className="text-green-600 w-6 h-6 sm:w-7 sm:h-7" />
+              <h3 className="text-lg sm:text-xl font-semibold">Our Process</h3>
             </div>
-            <ul className="list-disc list-inside text-gray-700 space-y-2">
+            <ul className="list-disc list-inside text-gray-700 text-sm sm:text-base space-y-1">
               <li>Quality & reliability</li>
               <li>Continuous improvement</li>
               <li>Responsible growth</li>
@@ -147,54 +146,54 @@ export default function AboutSection() {
         </div>
 
         {/* DEARO ACHIEVEMENTS heading */}
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-10 text-gray-900">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-6 sm:mb-10 text-gray-900">
           DEARO ACHIEVEMENTS
         </h2>
 
-        {/* Two animated gold images below heading */}
-        <div className="flex justify-center gap-6 mb-10">
-          <div className="w-100 h-100 rounded-lg overflow-hidden relative bg-white animate-scale">
+        {/* Two animated gold images */}
+        <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mb-8 sm:mb-10">
+          <div className="w-full sm:w-48 h-48 rounded-lg overflow-hidden relative bg-white animate-scale">
             <img src="/assests/award2.jpeg" alt="Left" className="w-full h-full object-contain" />
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none gold-shine"></div>
           </div>
-          <div className="w-100 h-100 rounded-lg overflow-hidden relative bg-white animate-scale">
+          <div className="w-full sm:w-48 h-48 rounded-lg overflow-hidden relative bg-white animate-scale">
             <img src="/assests/award3.jpeg" alt="Right" className="w-full h-full object-contain" />
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none gold-shine"></div>
           </div>
         </div>
 
-        {/* Awards carousel/cards below side images */}
+        {/* Awards carousel/cards */}
         <div className="relative w-full">
           {/* Arrows */}
           <button
             onClick={scrollLeft}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white shadow rounded-full w-10 h-10 flex items-center justify-center z-20 hover:bg-gray-100"
+            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white shadow rounded-full w-10 h-10 flex items-center justify-center z-20 hover:bg-gray-100"
           >
-            <ChevronLeft />
+            <ChevronLeft className="w-5 h-5" />
           </button>
           <button
             onClick={scrollRight}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white shadow rounded-full w-10 h-10 flex items-center justify-center z-20 hover:bg-gray-100"
+            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white shadow rounded-full w-10 h-10 flex items-center justify-center z-20 hover:bg-gray-100"
           >
-            <ChevronRight />
+            <ChevronRight className="w-5 h-5" />
           </button>
 
           <div
             ref={awardsRef}
-            className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth px-10 py-4"
+            className="flex gap-4 sm:gap-6 overflow-x-auto scrollbar-hide scroll-smooth px-2 sm:px-6 py-4"
           >
             {awards.map((award, idx) => (
               <div
                 key={idx}
-                className="flex-shrink-0 w-64 bg-white rounded-2xl shadow-lg border p-4 flex flex-col justify-between hover:shadow-2xl transition"
+                className="flex-shrink-0 w-64 sm:w-72 md:w-80 bg-white rounded-2xl shadow-lg border p-4 flex flex-col justify-between hover:shadow-2xl transition"
                 style={{ minHeight: "500px" }}
               >
-                <div className="flex flex-col gap-3">
-                  <Award className="text-yellow-500 w-12 h-12 mx-auto" />
-                  <h3 className="text-xl font-semibold text-center">{award.title}</h3>
-                  <p className="text-gray-700 text-center text-sm">{award.desc}</p>
+                <div className="flex flex-col gap-2 sm:gap-3">
+                  <Award className="text-yellow-500 w-10 h-10 mx-auto" />
+                  <h3 className="text-lg sm:text-xl font-semibold text-center">{award.title}</h3>
+                  <p className="text-gray-700 text-sm sm:text-base text-center">{award.desc}</p>
                 </div>
-                <div className="w-full h-48 mt-4 overflow-hidden rounded-lg relative bg-gray-100">
+                <div className="w-full h-48 sm:h-56 mt-4 overflow-hidden rounded-lg relative bg-gray-100">
                   <img
                     src={award.img}
                     alt={award.title}
@@ -206,7 +205,7 @@ export default function AboutSection() {
             ))}
           </div>
         </div>
-      </div> 
+      </div>
     </section>
   );
 }
