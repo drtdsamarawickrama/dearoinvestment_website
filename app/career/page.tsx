@@ -94,6 +94,23 @@ export default function CareerPage() {
                 Apply Now
               </button>
             </div>
+            <div className="relative p-6 border rounded-xl shadow hover:shadow-lg transition">
+              <h3 className="text-xl font-bold mb-2">Marketing Officer </h3>
+              <p className="text-gray-700 mb-2">
+               East region | Full-time
+              </p>
+              <p className="text-gray-600 mb-4">
+               Join our marketing team to drive impactful campaigns and engage with our audience.
+              </p>
+              <button
+                onClick={() =>
+                  setOpenImage("/assests/Marketing.jpg")
+                }
+                className="absolute top-6 right-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+              >
+                Apply Now
+              </button>
+            </div>
           </div>
         </div>
 
