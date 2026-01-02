@@ -59,9 +59,9 @@ export default function CareerPage() {
 
             {/* Marketing Executive */}
             <div className="relative p-6 border rounded-xl shadow hover:shadow-lg transition">
-              <h3 className="text-xl font-bold mb-2">Marketing Executive</h3>
+              <h3 className="text-xl font-bold mb-2"> WE ARE HIRING – JUNIOR EXECUTIVE</h3>
               <p className="text-gray-700 mb-2">
-                Location: Colombo | Full-time
+                Island wide | Full-time
               </p>
               <p className="text-gray-600 mb-4">
                 Help us expand our brand presence and connect with our valued
@@ -69,7 +69,25 @@ export default function CareerPage() {
               </p>
               <button
                 onClick={() =>
-                  setOpenImage("/assests/marketing-executive.jpg")
+                  setOpenImage("/assests/mar.jpg")
+                }
+                className="absolute top-6 right-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+              >
+                Apply Now
+              </button>
+            </div> 
+            <div className="relative p-6 border rounded-xl shadow hover:shadow-lg transition">
+              <h3 className="text-xl font-bold mb-2"> Senior Executive </h3>
+              <p className="text-gray-700 mb-2">
+                Island wide | Full-time
+              </p>
+              <p className="text-gray-600 mb-4">
+                Help us expand our brand presence and connect with our valued
+                customers.
+              </p>
+              <button
+                onClick={() =>
+                  setOpenImage("/assests/sen.jpg")
                 }
                 className="absolute top-6 right-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
               >
