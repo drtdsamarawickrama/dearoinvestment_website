@@ -149,7 +149,7 @@ export default function Navbar() {
                 <summary className="cursor-pointer">Investors Relation</summary>
                 <div className="pl-4 mt-0 space-y-2">
                   <a href="/financial-reports" className="block">Financial Reports</a>
-                  <a href="/insurance-partner" className="block">Insurance Partner</a>
+                  <a href="/insurance-partner" className="block">Our Partners</a>
                   <a href="/investor-invitation" className="block">Investor Invitation</a>
                 </div>
               </details>

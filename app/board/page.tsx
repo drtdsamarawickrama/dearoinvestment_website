@@ -8,25 +8,32 @@ export default function BoardMembersPage() {
       img: "/assests/management/team-asitha-suranjith.jpg",
     },
     {
-      name: "Mr. Deepal Piris",
-      title: "Head Of Finance",
-      img: "/assests/management/deepal.jpeg",
+      name: "Mr. Nalin Kumara",
+      title: "Chief Manager – Branch Operations",
+      img: "/assests/management/team-nalin.jpg",
+    },
+     {
+      name: "Mr. Dilshan Nuwantha",
+      title: "Cheif Manager – Branch Development",
+      img: "/assests/management/team-dilshan-nuwantha.jpg",
+    },
+    {
+      name: "Mr. Mahesh Gunarathna",
+      title: "Manager Audit",
+      img: "/assests/management/Mahesh Gunarathna Manager Audit.jpeg",
+    },
+    {
+      name: "Mr. Rajitha Madushanka",
+      title: "Chief Manager Asset Lending – Leasing",
+      img: "/assests/management/team-rajitha.jpg",
     },
     {
       name: "Mrs. D.M.N.N Dassanayaka",
       title: "Head Of HR",
       img: "/assests/management/D.M.N.N Dassanayaka.jpeg",
     },
-    {
-      name: "Mr. Nalin Kumara",
-      title: "Chief Manager – Branch Operations",
-      img: "/assests/management/team-nalin.jpg",
-    },
-    {
-      name: "Mr. Dilshan Nuwantha",
-      title: "Cheif Manager – Branch Development",
-      img: "/assests/management/team-dilshan-nuwantha.jpg",
-    },
+    
+   
     {
       name: "Mrs. Nishadi Saumaya",
       title: "Senior Manager – Region 01",
@@ -37,26 +44,19 @@ export default function BoardMembersPage() {
       title: "Chief Manager – North & East Region",
       img: "/assests/management/A Rex Senior Manager.jpeg",
     },
+    
     {
       name: "Mr. Sumith Weerawardene",
       title: "Zonal Manager- East Region",
       img: "/assests/management/sumith.jpeg",
     },
-    {
-      name: "Mr. Mahesh Gunarathna",
-      title: "Manager Audit",
-      img: "/assests/management/Mahesh Gunarathna Manager Audit.jpeg",
-    },
+    
     {
       name: "Mr. Mohomed Nifri",
       title: "Manager Branch Operation and Development",
       img: "/assests/management/M.A.M Nifri Manager Branch Operation & Development.jpeg",
     },
-    {
-      name: "Mr. Rajitha Madushanka",
-      title: "Chief Manager Asset Lending – Leasing",
-      img: "/assests/management/team-rajitha.jpg",
-    },
+    
     {
       name: "Mr. Chathura Ubesekara",
       title: "Senior Manager Down South Region",
@@ -81,6 +81,10 @@ export default function BoardMembersPage() {
       name: "Mr. Iresh Udayanga",
       title: "Branch Manager – Polonnaruwa",
       img: "/assests/management/iresh.jpeg",
+    }, {
+      name: "Mr. Deepal Piris",
+      title: "Head Of Finance",
+      img: "/assests/management/deepal.jpeg",
     },
   ];
 
