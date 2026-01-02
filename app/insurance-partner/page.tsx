@@ -27,7 +27,7 @@ function PartnerCard({
                  transition-all hover:-translate-y-2 hover:shadow-2xl
                  max-w-xs w-full h-full"
     >
-      {/* IMAGE AREA – FIXED HEIGHT */}
+      {/* IMAGE AREA */}
       <div className="relative w-full h-[120px] mb-6 flex items-center justify-center">
         <Image
           src={image}
@@ -39,8 +39,8 @@ function PartnerCard({
       </div>
 
       {/* CONTENT AREA */}
-      <div className="flex flex-col flex-1">
-        <h3 className="text-2xl font-semibold text-gray-900 mb-2">
+      <div className="flex flex-col">
+        <h3 className="text-2xl font-semibold text-gray-900 mb-3">
           {title}
         </h3>
 
@@ -48,7 +48,8 @@ function PartnerCard({
           {role}
         </p>
 
-        <p className="text-gray-700 leading-relaxed mt-auto">
+        {/* SAME GAP AS ROLE */}
+        <p className="text-gray-700 leading-relaxed mb-3">
           {description}
         </p>
       </div>
@@ -61,11 +62,11 @@ export default function PartnersPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 py-20 space-y-24">
 
-      {/* FINANCIAL PARTNERS */}
+      {/* ================= BANKING PARTNERS ================= */}
       <section className="space-y-12">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Financial Partners
+            Banking Partners
           </h2>
           <p className="text-gray-700">
             Our banking partners provide secure fund management, seamless
@@ -73,7 +74,7 @@ export default function PartnersPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 items-stretch justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-items-center">
           <PartnerCard
             image="/assests/boci.png"
             alt="Bank of Ceylon"
@@ -100,7 +101,7 @@ export default function PartnersPage() {
         </div>
       </section>
 
-      {/* INSURANCE PARTNERS */}
+      {/* ================= INSURANCE PARTNERS ================= */}
       <section className="space-y-12">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -112,7 +113,7 @@ export default function PartnersPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 items-stretch justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-items-center">
           <PartnerCard
             image="/assests/hnbA.jpg"
             alt="HNB Assurance"
@@ -130,16 +131,67 @@ export default function PartnersPage() {
           />
 
           <PartnerCard
-            image="/assests/janashakthi.webp"
-            alt="Janashakthi Insurance"
-            title="Janashakthi Insurance"
-            role="Life & General Insurance Partner"
+            image="/assests/sel.jpg"
+            alt="Ceylinco Insurance"
+            title="Ceylinco Insurance"
+            role="Comprehensive Insurance Solutions Partner"
             description="Provides life and general insurance solutions supporting long-term stability."
           />
         </div>
       </section>
 
-      {/* TRUST SECTION */}
+      {/* ================= FINANCIAL PARTNERS ================= */}
+      <section className="space-y-14">
+        <div className="text-center max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Financial Partners
+          </h2>
+          <p className="text-gray-700">
+            Our financial partners strengthen our services through trusted
+            funding, insurance, and risk management solutions.
+          </p>
+        </div>
+
+        {/* FIRST ROW */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-5xl mx-auto justify-items-center">
+          <PartnerCard
+            image="/assests/fin.png"
+            alt="Fintrex Finance"
+            title="Fintrex Finance"
+            role="Financial Solutions Partner"
+            description="Delivers innovative and structured financial solutions that enhance liquidity, manage credit exposure, and support sustainable business growth."
+          />
+
+          <PartnerCard
+            image="/assests/janashakthi.webp"
+            alt="Janashakthi Finance"
+            title="Janashakthi Finance"
+            role="Uplifting Financial Partner"
+            description="Strengthens financial resilience by providing diversified credit facilities and asset-backed financial protection."
+          />
+        </div>
+
+        {/* SECOND ROW */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-60 max-w-5xl mx-auto justify-items-center">
+          <PartnerCard
+            image="/assests/peoplel.png"
+            alt="Ceylinco Insurance"
+            title="Ceylinco Insurance"
+            role="Insurance Solutions Partner"
+            description="Offers comprehensive life and general insurance coverage to safeguard assets, operations, and long-term financial stability."
+          />
+
+          <PartnerCard
+            image="/assests/lb.png"
+            alt="LB Finance"
+            title="LB Finance"
+            role="Leasing & Credit Partner"
+            description="Provides flexible leasing and financing solutions that empower individuals and businesses with accessible and reliable funding options."
+          />
+        </div>
+      </section>
+
+      {/* ================= TRUST SECTION ================= */}
       <section className="bg-blue-50 rounded-3xl p-10 text-center">
         <h2 className="text-3xl font-bold mb-6 text-gray-900">
           Strengthening Trust Through Partnerships
@@ -152,7 +204,6 @@ export default function PartnersPage() {
           <li>✔ Sustainable investor returns</li>
         </ul>
       </section>
-
     </div>
   );
 }

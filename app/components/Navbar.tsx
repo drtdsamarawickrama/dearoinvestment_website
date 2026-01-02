@@ -89,7 +89,7 @@ export default function Navbar() {
                 </div>
                 <div className="absolute left-0 mt-0 hidden group-hover:block bg-white shadow-xl rounded-md py-2 w-52 z-50">
                   <a href="/financial-reports" className="block px-4 py-2 hover:bg-gray-100">Financial Reports</a>
-                  <a href="/insurance-partner" className="block px-4 py-2 hover:bg-gray-100">Insurance Partner</a>
+                  <a href="/insurance-partner" className="block px-4 py-2 hover:bg-gray-100">Our Partners</a>
                   <a href="/investor-invitation" className="block px-4 py-2 hover:bg-gray-100">Investor Invitation</a>
                 </div>
               </div>

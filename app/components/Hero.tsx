@@ -36,7 +36,7 @@ export default function Hero() {
       style={{ backgroundImage: `url(${slides[currentIndex].image})` }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/30"></div>
+      <div className="absolute inset-0 bg-black/30" />
 
       {/* Content */}
       <div
@@ -44,8 +44,9 @@ export default function Hero() {
           ${isLeft ? "mr-auto text-left animate-slide-left" : "ml-auto text-right animate-slide-right"}
         `}
       >
+        {/* Title */}
         <h1
-          className={`font-bold mb-4 flex flex-col gap-2
+          className={`font-bold mb-3 flex flex-col gap-2
             ${isLeft ? "items-start" : "items-end"}
           `}
         >
@@ -60,7 +61,12 @@ export default function Hero() {
           </span>
         </h1>
 
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-200 max-w-md sm:max-w-lg">
+        {/* Subtitle - RIGHT under title */}
+        <p
+          className={`text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-200 max-w-md
+            ${isLeft ? "text-left" : "text-right ml-auto"}
+          `}
+        >
           {slides[currentIndex].subtitle}
         </p>
       </div>

@@ -28,6 +28,7 @@ const newsItems: NewsItem[] = [
     image: "/assests/baticolo.jpg",
     slug: "batticolo-branch-opening",
   },
+  
  
 ];
 
