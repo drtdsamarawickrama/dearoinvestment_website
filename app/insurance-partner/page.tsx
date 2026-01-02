@@ -23,12 +23,15 @@ function PartnerCard({
 }: PartnerCardProps) {
   return (
     <div
-      className="bg-white rounded-3xl shadow-lg p-8 flex flex-col items-center text-center
-                 transition-all hover:-translate-y-2 hover:shadow-2xl
+      className="bg-white rounded-3xl shadow-lg
+                 p-6 sm:p-8
+                 flex flex-col items-center text-center
+                 transition-all duration-300
+                 hover:-translate-y-2 hover:shadow-2xl
                  max-w-xs w-full h-full"
     >
       {/* IMAGE AREA */}
-      <div className="relative w-full h-[120px] mb-6 flex items-center justify-center">
+      <div className="relative w-full h-[90px] sm:h-[120px] mb-4 sm:mb-6 flex items-center justify-center">
         <Image
           src={image}
           alt={alt}
@@ -38,18 +41,17 @@ function PartnerCard({
         />
       </div>
 
-      {/* CONTENT AREA */}
+      {/* CONTENT */}
       <div className="flex flex-col">
-        <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+        <h3 className="text-lg sm:text-2xl font-semibold text-gray-900 mb-3">
           {title}
         </h3>
 
-        <p className="text-blue-600 font-medium mb-3">
+        <p className="text-blue-600 font-medium text-sm sm:text-base mb-3">
           {role}
         </p>
 
-        {/* SAME GAP AS ROLE */}
-        <p className="text-gray-700 leading-relaxed mb-3">
+        <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-3">
           {description}
         </p>
       </div>
@@ -60,21 +62,21 @@ function PartnerCard({
 /* ================= PAGE ================= */
 export default function PartnersPage() {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-20 space-y-24">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 space-y-20 sm:space-y-24">
 
       {/* ================= BANKING PARTNERS ================= */}
-      <section className="space-y-12">
-        <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+      <section className="space-y-10 sm:space-y-12">
+        <div className="text-center max-w-2xl mx-auto px-2">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
             Banking Partners
           </h2>
-          <p className="text-gray-700">
+          <p className="text-gray-700 text-sm sm:text-base">
             Our banking partners provide secure fund management, seamless
             transactions, and strategic financial support.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 justify-items-center">
           <PartnerCard
             image="/assests/boci.png"
             alt="Bank of Ceylon"
@@ -102,18 +104,18 @@ export default function PartnersPage() {
       </section>
 
       {/* ================= INSURANCE PARTNERS ================= */}
-      <section className="space-y-12">
-        <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+      <section className="space-y-10 sm:space-y-12">
+        <div className="text-center max-w-2xl mx-auto px-2">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
             Insurance Partners
           </h2>
-          <p className="text-gray-700">
+          <p className="text-gray-700 text-sm sm:text-base">
             Our insurance partners provide comprehensive risk coverage and
             protection.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 justify-items-center">
           <PartnerCard
             image="/assests/hnbA.jpg"
             alt="HNB Assurance"
@@ -141,19 +143,19 @@ export default function PartnersPage() {
       </section>
 
       {/* ================= FINANCIAL PARTNERS ================= */}
-      <section className="space-y-14">
-        <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+      <section className="space-y-12 sm:space-y-14">
+        <div className="text-center max-w-2xl mx-auto px-2">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
             Financial Partners
           </h2>
-          <p className="text-gray-700">
+          <p className="text-gray-700 text-sm sm:text-base">
             Our financial partners strengthen our services through trusted
             funding, insurance, and risk management solutions.
           </p>
         </div>
 
         {/* FIRST ROW */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-5xl mx-auto justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto justify-items-center">
           <PartnerCard
             image="/assests/fin.png"
             alt="Fintrex Finance"
@@ -172,7 +174,7 @@ export default function PartnersPage() {
         </div>
 
         {/* SECOND ROW */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-60 max-w-5xl mx-auto justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-20 lg:gap-60 max-w-5xl mx-auto justify-items-center">
           <PartnerCard
             image="/assests/peoplel.png"
             alt="People's Leasing"
@@ -192,12 +194,12 @@ export default function PartnersPage() {
       </section>
 
       {/* ================= TRUST SECTION ================= */}
-      <section className="bg-blue-50 rounded-3xl p-10 text-center">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">
+      <section className="bg-blue-50 rounded-3xl p-8 sm:p-10 text-center">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-gray-900">
           Strengthening Trust Through Partnerships
         </h2>
 
-        <ul className="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto text-left font-medium text-gray-800">
+        <ul className="grid sm:grid-cols-2 gap-3 sm:gap-4 max-w-3xl mx-auto text-left font-medium text-gray-800 text-sm sm:text-base">
           <li>✔ Secure fund management</li>
           <li>✔ Comprehensive risk mitigation</li>
           <li>✔ Regulatory compliance</li>
