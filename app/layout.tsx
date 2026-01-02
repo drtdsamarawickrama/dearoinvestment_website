@@ -19,7 +19,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
-        <Snow /> 
+        {/* <Snow />  */}
       </body>
     </html>
   );

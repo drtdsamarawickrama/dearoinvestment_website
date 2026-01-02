@@ -175,10 +175,10 @@ export default function PartnersPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-60 max-w-5xl mx-auto justify-items-center">
           <PartnerCard
             image="/assests/peoplel.png"
-            alt="Ceylinco Insurance"
-            title="Ceylinco Insurance"
-            role="Insurance Solutions Partner"
-            description="Offers comprehensive life and general insurance coverage to safeguard assets, operations, and long-term financial stability."
+            alt="People's Leasing"
+            title="People's Leasing"
+            role="Leasing Solutions Partner"
+            description="Provides comprehensive leasing solutions to support business expansion and asset acquisition."
           />
 
           <PartnerCard
