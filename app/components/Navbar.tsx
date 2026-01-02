@@ -47,12 +47,45 @@ export default function Navbar() {
                 info@dearoinvestment.com
               </span>
 
-              {/* AUTH LINKS (Centered on Mobile) */}
-              <div className="flex justify-center md:justify-start items-center gap-2 text-xs md:text-sm w-full md:w-auto">
-                <a href="/login" className="hover:underline">Login</a>
-                <span className="opacity-50">|</span>
-                <a href="/register" className="hover:underline">Register</a>
-              </div>
+             {/* ================= TOP BAR ================= */}
+<div className="bg-blue-950 text-white py-1 md:py-2">
+  <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
+
+    {/* LEFT: Social Media Icons (Mobile Only) */}
+    <div className="flex items-center gap-4 md:hidden">
+      {/* Instagram */}
+      <a href="https://www.instagram.com/dearoinvestmentlimited/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
+        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M7 2C4.238 2 2 4.238 2 7v10c0 2.762 2.238 5 5 5h10c2.762 0 5-2.238 5-5V7c0-2.762-2.238-5-5-5H7zm10 1.5c1.93 0 3.5 1.57 3.5 3.5v10c0 1.93-1.57 3.5-3.5 3.5H7c-1.93 0-3.5-1.57-3.5-3.5V7c0-1.93 1.57-3.5 3.5-3.5h10z"/>
+          <path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7zm4.75-.75a1 1 0 11-2 0 1 1 0 012 0z"/>
+        </svg>
+      </a>
+
+      {/* Facebook */}
+      <a href="https://www.facebook.com/dearoinvestmentlimited" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
+        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879v-6.987H7.898v-2.892h2.54V9.845c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.196 2.238.196v2.46h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.892h-2.33v6.987C18.343 21.128 22 16.991 22 12z"/>
+        </svg>
+      </a>
+
+      {/* YouTube */}
+      <a href="https://www.youtube.com/@DearoInvestmentlimited" target="_blank" rel="noopener noreferrer" className="hover:text-red-600">
+        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M19.615 3.184c-1.252-.848-6.29-.848-6.29-.848s-5.039 0-6.29.848C5.337 4.032 5 6.05 5 12s.337 7.968 1.035 8.816c1.252.848 6.29.848 6.29.848s5.039 0 6.29-.848C18.663 19.968 19 17.95 19 12s-.337-7.968-1.385-8.816zM10 15V9l5 3-5 3z"/>
+        </svg>
+      </a>
+    </div>
+
+    {/* RIGHT: Login/Register (All Screens) */}
+    <div className="flex items-center gap-2 text-xs md:text-sm">
+      <a href="/login" className="hover:underline">Login</a>
+      <span className="opacity-50">|</span>
+      <a href="/register" className="hover:underline">Register</a>
+    </div>
+
+  </div>
+</div>
+
 
             </div>
           </div>
