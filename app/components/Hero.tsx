@@ -19,55 +19,64 @@ const slides = [
 
 export default function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [fade, setFade] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % slides.length);
-    }, 5000);
+      setFade(false); // start fade out
+      setTimeout(() => {
+        setCurrentIndex((prev) => (prev + 1) % slides.length);
+        setFade(true); // fade in
+      }, 500); // fade duration
+    }, 5000); // slide duration
     return () => clearInterval(interval);
   }, []);
 
-  const isLeft = slides[currentIndex].align === "left";
+  const slide = slides[currentIndex];
+  const isLeft = slide.align === "left";
 
   return (
     <section
-      key={currentIndex}
-      className="relative w-full mt-20 h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-screen bg-cover bg-center flex items-center transition-all duration-1000"
-      style={{ backgroundImage: `url(${slides[currentIndex].image})` }}
+      className="relative w-full mt-20 h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-screen overflow-hidden flex items-center transition-all duration-500"
+      style={{
+        backgroundImage: `url(${slide.image})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center center",
+      }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/30" />
 
       {/* Content */}
       <div
-        className={`relative z-10 w-full max-w-4xl px-6 sm:px-10 text-white
-          ${isLeft ? "mr-auto text-left animate-slide-left" : "ml-auto text-right animate-slide-right"}
-        `}
+        className={`relative z-10 w-full max-w-4xl px-6 sm:px-10 text-white transition-opacity duration-500 ${
+          fade ? "opacity-100" : "opacity-0"
+        } ${isLeft ? "mr-auto text-left" : "ml-auto text-right"}`}
       >
         {/* Title */}
         <h1
-          className={`font-bold mb-3 flex flex-col gap-2
-            ${isLeft ? "items-start" : "items-end"}
-          `}
+          className={`font-bold mb-3 flex flex-col gap-2 ${
+            isLeft ? "items-start" : "items-end"
+          }`}
         >
-          <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-snug">
-            {slides[currentIndex].title[0]}
-          </span>
-          <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-snug">
-            {slides[currentIndex].title[1]}
-          </span>
-          <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-snug">
-            {slides[currentIndex].title[2]}
-          </span>
+          {slide.title.map((line, idx) => (
+            <span
+              key={idx}
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-snug"
+            >
+              {line}
+            </span>
+          ))}
         </h1>
 
-        {/* Subtitle - RIGHT under title */}
+        {/* Subtitle */}
         <p
-          className={`text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-200 max-w-md
-            ${isLeft ? "text-left" : "text-right ml-auto"}
-          `}
+          className={`text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-200 max-w-md ${
+            isLeft ? "text-left" : "text-right ml-auto"
+          }`}
         >
-          {slides[currentIndex].subtitle}
+          {slide.subtitle}
         </p>
       </div>
     </section>
