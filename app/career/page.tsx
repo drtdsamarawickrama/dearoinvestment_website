@@ -59,7 +59,7 @@ export default function CareerPage() {
 
             {/* Marketing Executive */}
             <div className="relative p-6 border rounded-xl shadow hover:shadow-lg transition">
-              <h3 className="text-xl font-bold mb-2"> WE ARE HIRING – JUNIOR EXECUTIVE</h3>
+              <h3 className="text-xl font-bold mb-2">  JUNIOR EXECUTIVE</h3>
               <p className="text-gray-700 mb-2">
                 Island wide | Full-time
               </p>
