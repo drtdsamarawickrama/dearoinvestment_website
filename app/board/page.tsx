@@ -85,11 +85,17 @@ export default function BoardMembersPage() {
       name: "Mr. Iresh Udayanga",
       title: "Branch Manager – Polonnaruwa",
       img: "/assests/management/iresh.jpeg",
-    }, {
-      name: "Mr. Deepal Piris",
-      title: "Head Of Finance",
-      img: "/assests/management/deepal.jpeg",
     },
+    //  {
+    //   name: "Mr. Iresh Udayanga",
+    //   title: "Branch Manager – Mannar",
+    //   img: "/assests/management/iresh.jpeg",
+    // }, 
+    // {
+    //   name: "Mr. Iresh Udayanga",
+    //   title: "Branch Manager – Kaluwanchikudy",
+    //   img: "/assests/management/iresh.jpeg",
+    // },
   ];
 
   return (
