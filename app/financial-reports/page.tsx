@@ -17,7 +17,7 @@ export default function FinancialReportsPage() {
       liabilities: "828.44 Mn (Directors’ Loans & Deferred Interest)",
       totalEquity: "768.70 Mn",
       profitAfterTax: "55.39 Mn",
-      pdf: "/reports/Audit Report 2025.pdf",
+      pdf: "/reports/docA.pdf",
     },
     {
       year: 2024,
@@ -28,7 +28,7 @@ export default function FinancialReportsPage() {
       directorsContribution: "552 Mn",
       totalEquity: "713.34 Mn",
       profitAfterTax: "45.95 Mn",
-      pdf: "/reports/Audit Report 2024.pdf",
+      pdf: "/reports/Audited Financial Statement 22-23.pdf",
     },
     {
       year: 2023,
@@ -39,7 +39,7 @@ export default function FinancialReportsPage() {
       directorsContribution: "470 Mn",
       totalEquity: "585.30 Mn",
       profitAfterTax: "15.30 Mn",
-      pdf: "/reports/Audit Report 2023 (1).pdf",
+      pdf: "/reports/Audited Financial Statement 23-24.pdf",
     },
   ];
 
