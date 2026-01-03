@@ -19,11 +19,6 @@ export default function ManagementPage() {
       title: "Non Independent Non Executive Director",
       img: "/assests/team-upul.jpg",
     },
-    {
-      name: "Mr. Prabash Gunarathne",
-      title: "Non Independent Non Executive Director ",
-      img: "/assests/team-prabhash.jpg",
-    },
    
     // {
     //   name: "Mr. G Dananjaya",
