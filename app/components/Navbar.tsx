@@ -10,81 +10,98 @@ export default function Navbar() {
     <div className="mb-3">
       <header className="w-full shadow-md fixed top-0 left-0 z-50">
 
-        {/* ================= TOP BAR ================= */}
-        <div className="bg-blue-950 text-white py-1 md:py-2">
-          <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-2">
+<div className="bg-blue-950 text-white py-1 md:py-1">
 
-            {/* LEFT TEXT (Desktop Only) */}
-            <div className="hidden md:block text-left">
-              <p className="leading-relaxed">
-                Building Wealth, Empowering Futures in Sri Lanka
-              </p>
-            </div>
+  <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-1 md:gap-0.5 md:text-[13px]">
 
-            {/* RIGHT INFO */}
-            <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-3 w-full md:w-auto text-center md:text-left">
-
-              {/* Phone & Email (Desktop Only) */}
-              <span className="hidden md:flex items-center gap-2 whitespace-nowrap">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-4 h-4 fill-white"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.59a1 1 0 01-.25 1.01l-2.2 2.19z" />
-                </svg>
-                +94 74 390 8274
-              </span>
-
-              <span className="hidden md:flex items-center gap-2 whitespace-nowrap">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-4 h-4 fill-white"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M2 6a2 2 0 012-2h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6zm2 0l8 5 8-5H4zm16 12V8l-8 5-8-5v10h16z" />
-                </svg>
-                info@dearoinvestment.com
-              </span>
-
-             {/* ================= TOP BAR ================= */}
-<div className="bg-blue-950 text-white py-1 md:py-2">
-  <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-
-    {/* LEFT: Social Media Icons (Mobile Only) */}
-    <div className="flex items-center gap-4 md:hidden">
-      {/* Instagram */}
-      <a href="https://www.instagram.com/dearoinvestmentlimited/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M7 2C4.238 2 2 4.238 2 7v10c0 2.762 2.238 5 5 5h10c2.762 0 5-2.238 5-5V7c0-2.762-2.238-5-5-5H7zm10 1.5c1.93 0 3.5 1.57 3.5 3.5v10c0 1.93-1.57 3.5-3.5 3.5H7c-1.93 0-3.5-1.57-3.5-3.5V7c0-1.93 1.57-3.5 3.5-3.5h10z"/>
-          <path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7zm4.75-.75a1 1 0 11-2 0 1 1 0 012 0z"/>
-        </svg>
-      </a>
-
-      {/* Facebook */}
-      <a href="https://www.facebook.com/dearoinvestmentlimited" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879v-6.987H7.898v-2.892h2.54V9.845c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.196 2.238.196v2.46h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.892h-2.33v6.987C18.343 21.128 22 16.991 22 12z"/>
-        </svg>
-      </a>
-
-      {/* YouTube */}
-      <a href="https://www.youtube.com/@DearoInvestmentlimited" target="_blank" rel="noopener noreferrer" className="hover:text-red-600">
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M19.615 3.184c-1.252-.848-6.29-.848-6.29-.848s-5.039 0-6.29.848C5.337 4.032 5 6.05 5 12s.337 7.968 1.035 8.816c1.252.848 6.29.848 6.29.848s5.039 0 6.29-.848C18.663 19.968 19 17.95 19 12s-.337-7.968-1.385-8.816zM10 15V9l5 3-5 3z"/>
-        </svg>
-      </a>
+    {/* LEFT TEXT (Desktop Only) */}
+    <div className="hidden md:block text-left">
+      <p className="leading-tight">
+        Building Wealth, Empowering Futures in Sri Lanka
+      </p>
     </div>
 
-    {/* RIGHT: Login/Register (All Screens) */}
-    <div className="flex items-center gap-2 text-xs md:text-sm">
-      <a href="/login" className="hover:underline">Login</a>
-      <span className="opacity-50">|</span>
-      <a href="/register" className="hover:underline">Register</a>
-    </div>
+    {/* RIGHT INFO */}
+    <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-1.5 w-full md:w-auto text-center md:text-left">
 
-  </div>
-</div>
+      {/* Phone (Desktop Only) */}
+      <span className="hidden md:flex items-center gap-1 whitespace-nowrap">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-4 h-4 md:w-3 md:h-3 fill-white"
+          viewBox="0 0 24 24"
+        >
+          <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.59a1 1 0 01-.25 1.01l-2.2 2.19z" />
+        </svg>
+        +94 74 390 8274
+      </span><br />
+
+      {/* Email (Desktop Only) */}
+      <span className="hidden md:flex items-center gap-1 whitespace-nowrap">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-4 h-4 md:w-3 md:h-3 fill-white"
+          viewBox="0 0 24 24"
+        >
+          <path d="M2 6a2 2 0 012-2h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6zm2 0l8 5 8-5H4zm16 12V8l-8 5-8-5v10h16z" />
+        </svg>
+        info@dearoinvestment.com
+      </span>
+
+      {/* ================= DUPLICATED TOP BAR ================= */}
+      <div className="bg-blue-950 text-white py-1 md:py-1 w-full">
+        <div className="max-w-7xl mx-auto px-4 flex justify-between items-center md:text-[13px]">
+
+          {/* LEFT: Social Media Icons (Mobile Only) */}
+          <div className="flex items-center gap-4 md:hidden">
+
+            {/* Instagram */}
+            <a
+              href="https://www.instagram.com/dearoinvestmentlimited/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-pink-500"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M7 2C4.238 2 2 4.238 2 7v10c0 2.762 2.238 5 5 5h10c2.762 0 5-2.238 5-5V7c0-2.762-2.238-5-5-5H7zm10 1.5c1.93 0 3.5 1.57 3.5 3.5v10c0 1.93-1.57 3.5-3.5 3.5H7c-1.93 0-3.5-1.57-3.5-3.5V7c0-1.93 1.57-3.5 3.5-3.5h10z" />
+                <path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7zm4.75-.75a1 1 0 11-2 0 1 1 0 012 0z" />
+              </svg>
+            </a>
+
+            {/* Facebook */}
+            <a
+              href="https://www.facebook.com/dearoinvestmentlimited"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-500"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879v-6.987H7.898v-2.892h2.54V9.845c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.196 2.238.196v2.46h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.892h-2.33v6.987C18.343 21.128 22 16.991 22 12z" />
+              </svg>
+            </a>
+
+            {/* YouTube */}
+            <a
+              href="https://www.youtube.com/@DearoInvestmentlimited"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-red-600"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M10 15V9l5 3-5 3z" />
+              </svg>
+            </a>
+          </div>
+
+          {/* RIGHT: Login/Register (All Screens) */}
+          <div className="flex items-center gap-2 text-xs md:text-[13px]">
+            <a href="/login" className="hover:underline">Login</a>
+            <span className="opacity-50">|</span>
+            <a href="/register" className="hover:underline">Register</a>
+          </div>
+
+        </div>
+        </div>
 
 
             </div>
