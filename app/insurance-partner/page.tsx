@@ -206,7 +206,17 @@ export default function PartnersPage() {
             title="Janashakthi Finance"
             role="Financial Partner"
             description="Diversified credit facilities and asset-backed protection."
-          />
+          /><PartnerCard image="/assests/peoplel.png"
+           alt="People's Leasing" 
+           title="People's Leasing" 
+           role="Leasing Solutions Partner"
+          description="Provides comprehensive leasing solutions to support business expansion and asset acquisition." />
+           <PartnerCard 
+           image="/assests/lb.png" 
+           alt="LB Finance"
+            title="LB Finance" 
+            role="Leasing & Credit Partner"
+             description="Provides flexible leasing and financing solutions that empower individuals and businesses with accessible and reliable funding options." />
         </div>
       </section>
 
