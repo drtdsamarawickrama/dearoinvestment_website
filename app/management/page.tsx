@@ -7,28 +7,28 @@ export default function ManagementPage() {
     {
       name: "Mr. Prasanna Sanjeewa Ranasinghe",
       title: "Excicutive Director / Chief Executive Officer",
-      img: "/assests/team-prasanna.jpg",
+      img: "/assests/derector/prasanna 1.png",
     },
     {
       name: "Mr. Niranjan Warnasooriya",
       title: "Non Board Director / Deputy Chief Executive Officer",
-      img: "/assests/team-niranjan-warnasooriya.jpg",
+      img: "/assests/derector/nerangen.png",
     },
     {
       name: "Mr. Upul Edirisooriya",
       title: "Non Independent Non Executive Director",
-      img: "/assests/team-upul.jpg",
+      img: "/assests/derector/upul.png",
     },
    
-    // {
-    //   name: "Mr. G Dananjaya",
-    //   title: "Chief Operating Officerr",
-    //   img: "/assests/b.png",
-    // },
+    {
+      name: "Mr. Arun Kumar",
+      title: "Chief Operating Officer",
+      img: "/assests/derector/arun.jpg",
+    },
     {
       name: "Mr. Tharindu Dananjaya",
       title: "Non Board Director/ Chief Information Officer",
-      img: "/assests/team-tharindu.jpg",
+      img: "/assests/derector/tharindu.png",
     },
   ];
 

@@ -5,12 +5,12 @@ export default function BoardMembersPage() {
     {
       name: "Mr. Asitha Suranjith",
       title: "Head Of Investment and Treasury",
-      img: "/assests/management/team-asitha-suranjith.jpg",
+      img: "/assests/management/asith.jpg",
     },
     {
       name: "Mr. Nalin Kumara",
       title: "Chief Manager – Branch Operations",
-      img: "/assests/management/team-nalin.jpg",
+      img: "/assests/management/nalin.png",
     },
      {
       name: "Mr. Dilshan Nuwantha",
@@ -35,7 +35,7 @@ export default function BoardMembersPage() {
     {
       name: "Mr. Deepal Piris",
       title: "Head Of Finance",
-      img: "/assests/management/deepal.jpeg",
+      img: "/assests/management/deepal.jpg",
     },
    
     {
@@ -46,19 +46,19 @@ export default function BoardMembersPage() {
     {
       name: "Mr. Rex",
       title: "Senior Manager - North & East Region",
-      img: "/assests/management/rex.jpg",
+      img: "/assests/management/rex1.jpg",
     },
     
     {
       name: "Mr. Sumith Weerawardene",
       title: "Zonal Manager- East Region",
-      img: "/assests/management/sumith.jpeg",
+      img: "/assests/management/sumith.png",
     },
     
     {
       name: "Mr. Mohomed Nifri",
       title: "Manager Branch Operation and Development",
-      img: "/assests/management/M.A.M Nifri Manager Branch Operation & Development.jpeg",
+      img: "/assests/management/nifri.jpg",
     },
     
     {
