@@ -46,7 +46,7 @@ export default function BoardMembersPage() {
     {
       name: "Mr. Rex",
       title: "Senior Manager - North & East Region",
-      img: "/assests/management/A Rex Senior Manager.jpeg",
+      img: "/assests/management/rex.jpg",
     },
     
     {
