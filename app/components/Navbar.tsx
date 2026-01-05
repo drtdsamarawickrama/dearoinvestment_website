@@ -174,8 +174,8 @@ export default function Navbar() {
               <details>
                 <summary className="cursor-pointer">Management</summary>
                 <div className="pl-4 mt-0 space-y-2">
-                  <a href="/management" className="block">Our Management</a>
-                  <a href="/board" className="block">Board Members</a>
+                  <a href="/management" className="block">Board of Directors</a>
+                  <a href="/board" className="block">Senior Management</a>
                 </div>
               </details>
 
