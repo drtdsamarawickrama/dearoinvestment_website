@@ -44,8 +44,8 @@ export default function BoardMembersPage() {
       img: "/assests/management/team-nishadi-saumaya.jpg",
     },
     {
-      name: "Mrs. Rex",
-      title: "Chief Manager – North & East Region",
+      name: "Mr. Rex",
+      title: "Senior Manager - North & East Region",
       img: "/assests/management/A Rex Senior Manager.jpeg",
     },
     
@@ -86,16 +86,16 @@ export default function BoardMembersPage() {
       title: "Branch Manager – Polonnaruwa",
       img: "/assests/management/iresh.jpeg",
     },
-    //  {
-    //   name: "Mr. Iresh Udayanga",
-    //   title: "Branch Manager – Mannar",
-    //   img: "/assests/management/iresh.jpeg",
-    // }, 
-    // {
-    //   name: "Mr. Iresh Udayanga",
-    //   title: "Branch Manager – Kaluwanchikudy",
-    //   img: "/assests/management/iresh.jpeg",
-    // },
+     {
+      name: "Mr. T. Sinthushan",
+      title: "Branch Manager – Mannar",
+      img: "/assests/management/iresh.jpeg",
+    }, 
+    {
+      name: "Mr. J.J.Moraies",
+      title: "Branch Manager – Kaluwanchikudy",
+      img: "/assests/management/iresh.jpeg",
+    },
   ];
 
   return (
