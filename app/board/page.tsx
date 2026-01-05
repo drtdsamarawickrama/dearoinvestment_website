@@ -89,12 +89,12 @@ export default function BoardMembersPage() {
      {
       name: "Mr. T. Sinthushan",
       title: "Branch Manager – Mannar",
-      img: "/assests/management/iresh.jpeg",
+      img: "/assests/management/manna.jpg",
     }, 
     {
       name: "Mr. J.J.Moraies",
       title: "Branch Manager – Kaluwanchikudy",
-      img: "/assests/management/iresh.jpeg",
+      img: "/assests/management/kaluwan.jpg",
     },
   ];
 
