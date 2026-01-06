@@ -82,7 +82,7 @@ export default function StatsSection() {
   ];
 
   return (
-    <section className="py-14 sm:py-20 bg-blue-950">
+    <section className="py-14 sm:py-14 bg-blue-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
 
         {/* TITLE */}

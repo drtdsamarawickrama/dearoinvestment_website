@@ -51,7 +51,7 @@ export default function BoardMembersPage() {
     
     {
       name: "Mr. Sumith Weerawardene",
-      title: "Zonal Manager- East Region",
+      title: "Zonal Manager - East Region",
       img: "/assests/management/sumith.png",
     },
     
@@ -96,6 +96,7 @@ export default function BoardMembersPage() {
       title: "Branch Manager – Kaluwanchikudy",
       img: "/assests/management/kaluwan.jpg",
     },
+    
   ];
 
   return (

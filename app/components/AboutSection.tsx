@@ -1,7 +1,6 @@
 "use client";
 import { Target, Eye, Workflow, Goal, Award, ChevronLeft, ChevronRight } from "lucide-react";
-import { useRef } from "react";
-import { useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 
 type SnowStyle = {
   left: string;
@@ -151,14 +150,14 @@ export default function AboutSection() {
         </h2>
 
         {/* Two animated gold images */}
-        <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mb-8 sm:mb-10">
-          <div className="w-full sm:w-48 h-48 rounded-lg overflow-hidden relative bg-white animate-scale">
-            <img src="/assests/award2.jpeg" alt="Left" className="w-full h-full object-contain" />
-            <div className="absolute top-0 left-0 w-full h-full pointer-events-none gold-shine"></div>
+        <div className="flex flex-col sm:flex-row justify-center gap-6 mb-12">
+          <div className="w-60 h-48 rounded-lg overflow-hidden relative bg-white animate-float1">
+            <img src="/assests/award2.jpeg" alt="Left Award" className="w-full h-full object-contain" />
+            <div className="absolute top-0 left-0 w-full h-full pointer-events-none shine"></div>
           </div>
-          <div className="w-full sm:w-48 h-48 rounded-lg overflow-hidden relative bg-white animate-scale">
-            <img src="/assests/award3.jpeg" alt="Right" className="w-full h-full object-contain" />
-            <div className="absolute top-0 left-0 w-full h-full pointer-events-none gold-shine"></div>
+          <div className="w-60 h-48 rounded-lg overflow-hidden relative bg-white animate-float2">
+            <img src="/assests/award3.jpeg" alt="Right Award" className="w-full h-full object-contain" />
+            <div className="absolute top-0 left-0 w-full h-full pointer-events-none shine"></div>
           </div>
         </div>
 
@@ -206,6 +205,36 @@ export default function AboutSection() {
           </div>
         </div>
       </div>
+
+      {/* ================= FLOAT ANIMATION STYLES ================= */}
+      <style jsx>{`
+        @keyframes float1 {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-15px); }
+        }
+        @keyframes float2 {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-25px); }
+        }
+        .animate-float1 { animation: float1 4s ease-in-out infinite; }
+        .animate-float2 { animation: float2 6s ease-in-out infinite; }
+
+        /* Optional shine overlay */
+        .shine {
+          background: linear-gradient(
+            120deg,
+            rgba(255,255,255,0.3) 0%,
+            rgba(255,255,255,0) 50%,
+            rgba(255,255,255,0.3) 100%
+          );
+          transform: rotate(25deg) translateX(-100%);
+          animation: shine 3s infinite linear;
+        }
+        @keyframes shine {
+          0% { transform: rotate(25deg) translateX(-100%); }
+          100% { transform: rotate(25deg) translateX(200%); }
+        }
+      `}</style>
     </section>
   );
 }
