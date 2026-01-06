@@ -6,7 +6,7 @@ export default function ManagementPage() {
   const management = [
     {
       name: "Mr. Prasanna Sanjeewa Ranasinghe",
-      title: "Excicutive Director / Chief Executive Officer",
+      title: " Executive Director / Chief Executive Officer",
       img: "/assests/derector/prasanna 1.png",
     },
     {
