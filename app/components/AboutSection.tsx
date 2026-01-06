@@ -21,16 +21,15 @@ function Snow() {
       fontSize: `${10 + Math.random() * 14}px`,
       opacity: Math.random(),
     }));
-
     setFlakes(generated);
   }, []);
 
-  if (flakes.length === 0) return null;
+  if (!flakes.length) return null;
 
   return (
-    <div className="snow-container">
+    <div className="snow-container absolute inset-0 pointer-events-none -z-20">
       {flakes.map((style, i) => (
-        <span key={i} className="snowflake" style={style}>
+        <span key={i} className="snowflake absolute" style={style}>
           ❄
         </span>
       ))}
@@ -41,45 +40,16 @@ function Snow() {
 export default function AboutSection() {
   const awardsRef = useRef<HTMLDivElement>(null);
 
-  const scrollLeft = () => {
-    awardsRef.current?.scrollBy({ left: -300, behavior: "smooth" });
-  };
-
-  const scrollRight = () => {
-    awardsRef.current?.scrollBy({ left: 300, behavior: "smooth" });
-  };
+  const scrollLeft = () => awardsRef.current?.scrollBy({ left: -300, behavior: "smooth" });
+  const scrollRight = () => awardsRef.current?.scrollBy({ left: 300, behavior: "smooth" });
 
   const awards = [
-    {
-      title: "Peoples Excellency Awards 2024",
-      desc: "The best entrepreneur finance company of the year. The best customer care service of the year. The excellence in work place leadership award of the year. The best joint venture finance company.",
-      img: "/assests/AW1.jpg",
-    },
-    {
-      title: "Iconic Awards 2024",
-      desc: "The best investment product provider. The best customer service excellence of the year. The best projects finance company of the year. The best developing investment company of the year.",
-      img: "/assests/AW5.jpg",
-    },
-    {
-      title: "Asia Miracle Awards 2024",
-      desc: "Best development finance company of the year. Best humanity and social development service provider.",
-      img: "/assests/AW3.jpg",
-    },
-    {
-      title: "BWIO USAAwards 2025",
-      desc: "The best projects finance company of the year. The best entrepreneur finance company of the year.",
-      img: "/assests/AW4.jpg",
-    },
-    {
-      title: "Iconic Awards Bangkok 2025",
-      desc: "The best workplace of the year. The fastest growing micro finance company in Sri Lanka. The best investment product provider of the year. The best in business finance innovation award of the year. The best entrepreneur finance company of the year",
-      img: "/assests/AW2.jpg",
-    },
-    {
-      title: "People's Excellency Awards 2025",
-      desc: "The best SME Service Provider in Sri Lanka.",
-      img: "/assests/people award 2025.jpeg",
-    },
+    { title: "Peoples Excellency Awards 2024", desc: "The best entrepreneur finance company of the year. The best customer care service of the year. The excellence in work place leadership award of the year. The best joint venture finance company.", img: "/assests/AW1.jpg" },
+    { title: "Iconic Awards 2024", desc: "The best investment product provider. The best customer service excellence of the year. The best projects finance company of the year. The best developing investment company of the year.", img: "/assests/AW5.jpg" },
+    { title: "Asia Miracle Awards 2024", desc: "Best development finance company of the year. Best humanity and social development service provider.", img: "/assests/AW3.jpg" },
+    { title: "BWIO USAAwards 2025", desc: "The best projects finance company of the year. The best entrepreneur finance company of the year.", img: "/assests/AW4.jpg" },
+    { title: "Iconic Awards Bangkok 2025", desc: "The best workplace of the year. The fastest growing micro finance company in Sri Lanka. The best investment product provider of the year. The best in business finance innovation award of the year. The best entrepreneur finance company of the year", img: "/assests/AW2.jpg" },
+    { title: "People's Excellency Awards 2025", desc: "The best SME Service Provider in Sri Lanka.", img: "/assests/people award 2025.jpeg" },
   ];
 
   return (
@@ -87,14 +57,12 @@ export default function AboutSection() {
       {/* Snow <Snow /> */}
 
       {/* Background Blobs */}
-      <div className="absolute top-0 left-0 w-56 sm:w-72 h-56 sm:h-72 bg-green-300 opacity-20 rounded-full blur-3xl -z-10"></div>
-      <div className="absolute bottom-0 right-0 w-56 sm:w-72 h-56 sm:h-72 bg-blue-300 opacity-20 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute top-0 left-0 w-44 sm:w-56 md:w-72 h-44 sm:h-56 md:h-72 bg-green-300 opacity-20 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute bottom-0 right-0 w-44 sm:w-56 md:w-72 h-44 sm:h-56 md:h-72 bg-blue-300 opacity-20 rounded-full blur-3xl -z-10"></div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 relative z-10">
         {/* About Description */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-6 text-gray-900">
-          About Our Company
-        </h2>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-6 text-gray-900">About Our Company</h2>
         <p className="text-base sm:text-lg text-gray-700 text-center mb-12 sm:mb-16 max-w-4xl mx-auto">
           Dearo Investment Ltd was established under the Companies Act No. 07 of 2007 and officially incorporated on 1st September 2022 under registration number PB 262527. Though relatively young, the company has quickly positioned itself as a trusted and forward-looking financial services provider, addressing the growing need for secure, accessible, and well-governed financing solutions.
           Dearo Investment Ltd operates with a strong emphasis on risk management, financial discipline, and stakeholder protection. Robust internal controls and comprehensive risk mitigation frameworks are embedded across all financial activities. As part of this approach, insurance-backed protection mechanisms are implemented to safeguard customers and enhance operational resilience against unforeseen risks.
@@ -102,102 +70,52 @@ export default function AboutSection() {
         </p>
 
         {/* Vision / Mission / Goals / Process Boxes */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-16 sm:mb-20">
-          <div className="p-4 sm:p-6 bg-white shadow-lg rounded-2xl border hover:shadow-2xl transition">
-            <div className="flex items-center gap-3 mb-3">
-              <Target className="text-blue-600 w-6 h-6 sm:w-7 sm:h-7" />
-              <h3 className="text-lg sm:text-xl font-semibold">Our Mission</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-16 sm:mb-20">
+          {[
+            { icon: <Target className="text-blue-600 w-6 h-6 sm:w-7 sm:h-7" />, title: "Our Mission", desc: "Empowering customers through innovative solutions and service excellence." },
+            { icon: <Eye className="text-purple-600 w-6 h-6 sm:w-7 sm:h-7" />, title: "Our Vision", desc: "Inspiring progress through innovation and sustainability." },
+            { icon: <Goal className="text-red-600 w-6 h-6 sm:w-7 sm:h-7" />, title: "Our Goals", desc: ["Long-term value creation", "Continuous innovation", "Sustainable growth"] },
+            { icon: <Workflow className="text-green-600 w-6 h-6 sm:w-7 sm:h-7" />, title: "Our Process", desc: ["Quality & reliability", "Continuous improvement", "Responsible growth"] },
+          ].map((item, idx) => (
+            <div key={idx} className="p-4 sm:p-6 bg-white shadow-lg rounded-2xl border hover:shadow-2xl transition">
+              <div className="flex items-center gap-3 mb-3">{item.icon}<h3 className="text-lg sm:text-xl font-semibold">{item.title}</h3></div>
+              {Array.isArray(item.desc) ? (
+                <ul className="list-disc list-inside text-gray-700 text-sm sm:text-base space-y-1">{item.desc.map((d, i) => <li key={i}>{d}</li>)}</ul>
+              ) : (
+                <p className="text-gray-700 text-sm sm:text-base">{item.desc}</p>
+              )}
             </div>
-            <p className="text-gray-700 text-sm sm:text-base">Empowering customers through innovative solutions and service excellence.</p>
-          </div>
-
-          <div className="p-4 sm:p-6 bg-white shadow-lg rounded-2xl border hover:shadow-2xl transition">
-            <div className="flex items-center gap-3 mb-3">
-              <Eye className="text-purple-600 w-6 h-6 sm:w-7 sm:h-7" />
-              <h3 className="text-lg sm:text-xl font-semibold">Our Vision</h3>
-            </div>
-            <p className="text-gray-700 text-sm sm:text-base">Inspiring progress through innovation and sustainability.</p>
-          </div>
-
-          <div className="p-4 sm:p-6 bg-white shadow-lg rounded-2xl border hover:shadow-2xl transition">
-            <div className="flex items-center gap-3 mb-3">
-              <Goal className="text-red-600 w-6 h-6 sm:w-7 sm:h-7" />
-              <h3 className="text-lg sm:text-xl font-semibold">Our Goals</h3>
-            </div>
-            <ul className="list-disc list-inside text-gray-700 text-sm sm:text-base space-y-1">
-              <li>Long-term value creation</li>
-              <li>Continuous innovation</li>
-              <li>Sustainable growth</li>
-            </ul>
-          </div>
-
-          <div className="p-4 sm:p-6 bg-white shadow-lg rounded-2xl border hover:shadow-2xl transition">
-            <div className="flex items-center gap-3 mb-3">
-              <Workflow className="text-green-600 w-6 h-6 sm:w-7 sm:h-7" />
-              <h3 className="text-lg sm:text-xl font-semibold">Our Process</h3>
-            </div>
-            <ul className="list-disc list-inside text-gray-700 text-sm sm:text-base space-y-1">
-              <li>Quality & reliability</li>
-              <li>Continuous improvement</li>
-              <li>Responsible growth</li>
-            </ul>
-          </div>
+          ))}
         </div>
 
         {/* DEARO ACHIEVEMENTS heading */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-6 sm:mb-10 text-gray-900">
-          DEARO ACHIEVEMENTS
-        </h2>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-6 sm:mb-10 text-gray-900">DEARO ACHIEVEMENTS</h2>
 
         {/* Two animated gold images */}
-        <div className="flex flex-col sm:flex-row justify-center gap-6 mb-12">
-          <div className="w-60 h-48 rounded-lg overflow-hidden relative bg-white animate-float1">
-            <img src="/assests/award2.jpeg" alt="Left Award" className="w-full h-full object-contain" />
-            <div className="absolute top-0 left-0 w-full h-full pointer-events-none shine"></div>
-          </div>
-          <div className="w-60 h-48 rounded-lg overflow-hidden relative bg-white animate-float2">
-            <img src="/assests/award3.jpeg" alt="Right Award" className="w-full h-full object-contain" />
-            <div className="absolute top-0 left-0 w-full h-full pointer-events-none shine"></div>
-          </div>
+        <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mb-12">
+          {[ "/assests/award2.jpeg", "/assests/award3.jpeg" ].map((img, idx) => (
+            <div key={idx} className={`w-48 sm:w-60 md:w-72 h-40 sm:h-48 md:h-56 rounded-lg overflow-hidden relative bg-white ${idx === 0 ? "animate-float1" : "animate-float2"}`}>
+              <img src={img} alt={`Award ${idx}`} className="w-full h-full object-contain" />
+              <div className="absolute top-0 left-0 w-full h-full pointer-events-none shine"></div>
+            </div>
+          ))}
         </div>
 
         {/* Awards carousel/cards */}
         <div className="relative w-full">
-          {/* Arrows */}
-          <button
-            onClick={scrollLeft}
-            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white shadow rounded-full w-10 h-10 flex items-center justify-center z-20 hover:bg-gray-100"
-          >
-            <ChevronLeft className="w-5 h-5" />
-          </button>
-          <button
-            onClick={scrollRight}
-            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white shadow rounded-full w-10 h-10 flex items-center justify-center z-20 hover:bg-gray-100"
-          >
-            <ChevronRight className="w-5 h-5" />
-          </button>
+          <button onClick={scrollLeft} className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white shadow rounded-full w-10 h-10 flex items-center justify-center z-20 hover:bg-gray-100"><ChevronLeft className="w-5 h-5" /></button>
+          <button onClick={scrollRight} className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white shadow rounded-full w-10 h-10 flex items-center justify-center z-20 hover:bg-gray-100"><ChevronRight className="w-5 h-5" /></button>
 
-          <div
-            ref={awardsRef}
-            className="flex gap-4 sm:gap-6 overflow-x-auto scrollbar-hide scroll-smooth px-2 sm:px-6 py-4"
-          >
+          <div ref={awardsRef} className="flex gap-4 sm:gap-6 overflow-x-auto scrollbar-hide scroll-smooth px-2 sm:px-6 py-4 snap-x snap-mandatory">
             {awards.map((award, idx) => (
-              <div
-                key={idx}
-                className="flex-shrink-0 w-64 sm:w-72 md:w-80 bg-white rounded-2xl shadow-lg border p-4 flex flex-col justify-between hover:shadow-2xl transition"
-                style={{ minHeight: "500px" }}
-              >
+              <div key={idx} className="flex-shrink-0 w-64 sm:w-72 md:w-80 bg-white rounded-2xl shadow-lg border p-4 flex flex-col justify-between hover:shadow-2xl transition snap-start" style={{ minHeight: "500px" }}>
                 <div className="flex flex-col gap-2 sm:gap-3">
                   <Award className="text-yellow-500 w-10 h-10 mx-auto" />
                   <h3 className="text-lg sm:text-xl font-semibold text-center">{award.title}</h3>
                   <p className="text-gray-700 text-sm sm:text-base text-center">{award.desc}</p>
                 </div>
                 <div className="w-full h-48 sm:h-56 mt-4 overflow-hidden rounded-lg relative bg-gray-100">
-                  <img
-                    src={award.img}
-                    alt={award.title}
-                    className="w-full h-full object-contain"
-                  />
+                  <img src={award.img} alt={award.title} className="w-full h-full object-contain" />
                   <div className="absolute top-0 left-0 w-full h-full pointer-events-none shine"></div>
                 </div>
               </div>
@@ -206,34 +124,18 @@ export default function AboutSection() {
         </div>
       </div>
 
-      {/* ================= FLOAT ANIMATION STYLES ================= */}
       <style jsx>{`
-        @keyframes float1 {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-15px); }
-        }
-        @keyframes float2 {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-25px); }
-        }
-        .animate-float1 { animation: float1 4s ease-in-out infinite; }
-        .animate-float2 { animation: float2 6s ease-in-out infinite; }
+        @keyframes float1 {0%,100%{transform:translateY(0);}50%{transform:translateY(-15px);}}
+        @keyframes float2 {0%,100%{transform:translateY(0);}50%{transform:translateY(-25px);}}
+        .animate-float1 {animation: float1 4s ease-in-out infinite;}
+        .animate-float2 {animation: float2 6s ease-in-out infinite;}
 
-        /* Optional shine overlay */
         .shine {
-          background: linear-gradient(
-            120deg,
-            rgba(255,255,255,0.3) 0%,
-            rgba(255,255,255,0) 50%,
-            rgba(255,255,255,0.3) 100%
-          );
+          background: linear-gradient(120deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.3) 100%);
           transform: rotate(25deg) translateX(-100%);
           animation: shine 3s infinite linear;
         }
-        @keyframes shine {
-          0% { transform: rotate(25deg) translateX(-100%); }
-          100% { transform: rotate(25deg) translateX(200%); }
-        }
+        @keyframes shine {0%{transform:rotate(25deg) translateX(-100%);}100%{transform:rotate(25deg) translateX(200%);}}
       `}</style>
     </section>
   );
