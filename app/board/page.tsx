@@ -96,6 +96,11 @@ export default function BoardMembersPage() {
       title: "Branch Manager – Kaluwanchikudy",
       img: "/assests/management/kaluwan.jpg",
     },
+    {
+      name: "Mr. Kokularajan",
+      title: "Regional Manager  – Batticaloa",
+      img: "/assests/management/koku.png",
+    },
     
   ];
 
