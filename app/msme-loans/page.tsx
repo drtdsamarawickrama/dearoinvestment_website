@@ -9,9 +9,9 @@ export default function MSMELoansPage() {
     <section className="bg-gray-50">
 
       {/* ================= HERO IMAGE ================= */}
-      <div className="relative w-full h-[300px] md:h-[350px] overflow-hidden">
+      <div className="relative w-full h-[300px] md:h-[450px] overflow-hidden">
         <Image
-          src="/assests/msmeloan2.png"
+          src="/assests/newmsme.png"
           alt="MSME Loans"
           fill
           priority

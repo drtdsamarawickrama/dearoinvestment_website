@@ -94,9 +94,17 @@ export default function Footer() {
             Contact Us
           </h3>
           <ul className="space-y-2 text-sm text-gray-400">
-            <li>
-              Email: <a href="info@dearoinvetment.com" className="hover:text-blue-400 transition">info@dearoinvestment.com</a>
-            </li>
+           <li>
+  Email:{" "}
+  <a
+    href="mailto:info@dearoinvestment.com"
+    className="hover:text-blue-400 transition"
+  >
+    info@dearoinvestment.com
+    
+  </a>
+</li>
+
             <li>
               Phone: <a href="tel:+94743908274" className="hover:text-blue-400 transition">074 390 8274</a>
             </li>
