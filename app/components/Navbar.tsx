@@ -11,6 +11,7 @@ export default function Navbar() {
       <header className="w-full shadow-md fixed top-0 left-0 z-50">
 {/* ================= TOP BAR ================= */}
 <div className="bg-blue-950 text-white py-0.5">
+  
 
   <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-0.5 text-[12px]">
 
