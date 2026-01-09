@@ -91,10 +91,13 @@ export default function StatsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-          className="text-2xl sm:text-4xl font-semibold text-center text-white mb-12 sm:mb-14"
+          className="text-3xl md:text-4xl text-center mb-10 md:mb-12 text-[#FFFFFF]"
         >
-          Impact Metrics
+           <span className="font-extrabold">Impact</span>{" "}
+            <span className="font-semibold">Metrics</span>
+
         </motion.h2>
+       
 
         {/* STATS GRID */}
         <motion.div

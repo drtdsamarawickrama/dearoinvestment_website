@@ -92,8 +92,10 @@ export default function AboutSection() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 relative z-10">
         {/* About Description */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-6 text-gray-900">
-          About Our Company
+         {/* TITLE */}
+        <h2 className="text-3xl md:text-4xl text-center mb-10 md:mb-12 text-[#182359]">
+          <span className="font-extrabold">About </span>{" "}
+          <span className="font-semibold">Our Company</span>
         </h2>
         <p className="text-base sm:text-lg text-gray-700 text-center mb-12 sm:mb-16 max-w-4xl mx-auto">
           Dearo Investment Ltd was established under the Companies Act No. 07 of 2007 and officially incorporated on 1st September 2022 under registration number PB 262527. Though relatively young, the company has quickly positioned itself as a trusted and forward-looking financial services provider, addressing the growing need for secure, accessible, and well-governed financing solutions.
@@ -145,8 +147,10 @@ export default function AboutSection() {
         </div>
 
         {/* DEARO ACHIEVEMENTS heading */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-6 sm:mb-10 text-gray-900">
-          DEARO ACHIEVEMENTS
+        {/* TITLE */}
+        <h2 className="text-3xl md:text-4xl text-center mb-10 md:mb-12 text-[#182359]">
+          <span className="font-extrabold">Dearo </span>{" "}
+          <span className="font-semibold">Achivment</span>
         </h2>
 
        {/* Two animated gold images - responsive */}

@@ -62,29 +62,49 @@ export default function ContactSection() {
 
           {/* MAP – CENTER BOX */}
           <div className="bg-white p-4 rounded-2xl shadow-lg">
-            <div className="w-full h-[450px] rounded-xl overflow-hidden border">
+            <div className="w-full h-[450px] rounded-xl overflow-hidden ">
               <LeafletMap />
             </div>
           </div>
 
           {/* SEND MESSAGE */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg flex flex-col  justify-center">
-            <h3 className="text-2xl font-semibold mb-6 text-center text-gray-800">
-              Send Us a Message
-            </h3>
-            <form className="space-y-4">
-              <input className="w-full border p-3 rounded-lg" placeholder="Name" />
-              <input className="w-full border p-3 rounded-lg" placeholder="Email" />
-              <textarea
-                className="w-full border p-3 rounded-lg"
-                rows={4}
-                placeholder="Message"
-              />
-              <button className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">
-                Send Message
-              </button>
-            </form>
-          </div>
+          <div className="bg-white p-8 rounded-2xl shadow-lg flex flex-col justify-center">
+  <h3 className="text-2xl font-semibold mb-6 text-center text-gray-800">
+    Send Us a Message
+  </h3>
+
+  <form className="space-y-4">
+    <input
+      className="w-full border border-gray-300 p-3 rounded-lg
+                 focus:outline-none focus:ring-2 focus:ring-blue-500
+                 focus:border-blue-500 transition"
+      placeholder="Name"
+    />
+
+    <input
+      className="w-full border border-gray-300 p-3 rounded-lg
+                 focus:outline-none focus:ring-2 focus:ring-blue-500
+                 focus:border-blue-500 transition"
+      placeholder="Email"
+    />
+
+    <textarea
+      rows={4}
+      className="w-full border border-gray-300 p-3 rounded-lg
+                 focus:outline-none focus:ring-2 focus:ring-blue-500
+                 focus:border-blue-500 transition"
+      placeholder="Message"
+    />
+
+    <button
+      className="w-full bg-blue-600 text-white py-3 rounded-lg
+                 hover:bg-blue-700 transition font-semibold"
+    >
+      Send Message
+    </button>
+  </form>
+</div>
+
 
         </div>
       </div>

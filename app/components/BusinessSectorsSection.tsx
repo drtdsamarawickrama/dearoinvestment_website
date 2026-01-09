@@ -39,8 +39,10 @@ export default function BusinessSectorsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
 
         {/* TITLE */}
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-[#182359]">
-          Business Sectors
+        {/* TITLE */}
+        <h2 className="text-3xl md:text-4xl text-center mb-10 md:mb-12 text-[#182359]">
+          <span className="font-extrabold">Bussiness</span>{" "}
+          <span className="font-semibold">Sectors</span>
         </h2>
 
         {/* GRID */}
