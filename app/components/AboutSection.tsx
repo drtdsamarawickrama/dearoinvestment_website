@@ -101,7 +101,7 @@ export default function AboutSection() {
         <div className="flex justify-center mb-12">
           <div className="premium-frame">
             <img
-              src="/assests/derector/leader.jpg"   /* 🔁 CHANGE IMAGE HERE */
+              src="/assests/derector/leader1.jpg"   /* 🔁 CHANGE IMAGE HERE */
               alt="About Our Company"
               className="premium-image"
             />
