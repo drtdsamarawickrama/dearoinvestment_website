@@ -22,7 +22,7 @@ export default function ManagementPage() {
    
     {
       name: "Mr. Arun Kumar",
-      title: "Derector / Chief Operating Officer",
+      title: "Director / Chief Operating Officer",
       img: "/assests/derector/arun.jpg",
     },
     {

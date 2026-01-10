@@ -97,6 +97,16 @@ export default function AboutSection() {
           <span className="font-extrabold">About </span>{" "}
           <span className="font-semibold">Our Company</span>
         </h2>
+         {/* ================= PREMIUM IMAGE ================= */}
+        <div className="flex justify-center mb-12">
+          <div className="premium-frame">
+            <img
+              src="/assests/derector/leader.jpg"   /* 🔁 CHANGE IMAGE HERE */
+              alt="About Our Company"
+              className="premium-image"
+            />
+          </div>
+        </div>
         <p className="text-base sm:text-lg text-gray-700 text-center mb-12 sm:mb-16 max-w-4xl mx-auto">
           Dearo Investment Ltd was established under the Companies Act No. 07 of 2007 and officially incorporated on 1st September 2022 under registration number PB 262527. Though relatively young, the company has quickly positioned itself as a trusted and forward-looking financial services provider, addressing the growing need for secure, accessible, and well-governed financing solutions.
           Dearo Investment Ltd operates with a strong emphasis on risk management, financial discipline, and stakeholder protection. Robust internal controls and comprehensive risk mitigation frameworks are embedded across all financial activities. As part of this approach, insurance-backed protection mechanisms are implemented to safeguard customers and enhance operational resilience against unforeseen risks.
@@ -250,6 +260,44 @@ export default function AboutSection() {
           0% { transform: rotate(25deg) translateX(-100%); }
           100% { transform: rotate(25deg) translateX(200%); }
         }
+
+        
+      `}</style>
+
+            {/* ================= PREMIUM IMAGE + EXISTING STYLES ================= */}
+      <style jsx>{`
+        .premium-frame {
+          padding: 6px;
+          border-radius: 24px;
+          background: linear-gradient(
+            120deg,
+            #d4af37,
+            #f5e6a8,
+            #c9a227,
+            #FFFFFF
+          );
+          background-size: 300% 300%;
+          animation: premiumBorder 6s ease infinite;
+          box-shadow:
+            0 20px 40px rgba(0,0,0,0.15),
+            0 0 30px rgba(212,175,55,0.35);
+        }
+
+        .premium-image {
+          max-width: 760px;
+          width: 100%;
+          border-radius: 20px;
+          background: white;
+          display: block;
+        }
+
+        @keyframes premiumBorder {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+
+        /* ===== your existing float + shine styles remain ===== */
       `}</style>
     </section>
   );
