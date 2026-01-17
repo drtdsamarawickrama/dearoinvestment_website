@@ -7,7 +7,7 @@ export default function BoardMembersPage() {
       title: "Head Of Investment and Treasury",
       img: "/assests/management/asith.jpg",
     }, {
-      name: "Mr. Chathura Dissanayaka",
+      name: "Mr. Chathura Disanayaka",
       title: "Senior Manager - Investment & Treasury",
       img: "/assests/management/chathura.jpg",
     },

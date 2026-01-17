@@ -106,7 +106,7 @@ export default function Footer() {
 </li>
 
             <li>
-              Phone: <a href="tel:+94743908274" className="hover:text-blue-400 transition">074 390 8274</a>
+              Phone: <a href="tel:+94743908274" className="hover:text-blue-400 transition">011 478 2400</a>
             </li>
             <li>
               8ᵗʰ Floor, Ceylinco House, No. 69, Janadhipathi Mawatha, Colombo 01
