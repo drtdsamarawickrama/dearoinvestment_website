@@ -6,6 +6,10 @@ export default function BoardMembersPage() {
       name: "Mr. Asitha Suranjith",
       title: "Head Of Investment and Treasury",
       img: "/assests/management/asith.jpg",
+    }, {
+      name: "Mr. Chathura Dissanayaka",
+      title: "Senior Manager - Investment & Treasury",
+      img: "/assests/management/chathura.jpg",
     },
     {
       name: "Mr. Nalin Kumara",

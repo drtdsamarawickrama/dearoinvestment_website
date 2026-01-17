@@ -111,7 +111,7 @@ export default function AboutSection() {
               <Target className="text-blue-600 w-6 h-6 sm:w-7 sm:h-7" />
               <h3 className="text-lg sm:text-xl font-semibold">Our Mission</h3>
             </div>
-            <p className="text-gray-700 text-sm sm:text-base">Empowering customers through innovative solutions and service excellence.</p>
+            <p className="text-gray-700 text-sm sm:text-base">Provide responsible and accessible financial solutions covering all sectors and Inspiring progress through innovation.</p>
           </div>
 
           <div className="p-4 sm:p-6 bg-white shadow-lg rounded-2xl border hover:shadow-2xl transition">
@@ -119,7 +119,7 @@ export default function AboutSection() {
               <Eye className="text-purple-600 w-6 h-6 sm:w-7 sm:h-7" />
               <h3 className="text-lg sm:text-xl font-semibold">Our Vision</h3>
             </div>
-            <p className="text-gray-700 text-sm sm:text-base">Inspiring progress through innovation and sustainability.</p>
+            <p className="text-gray-700 text-sm sm:text-base">To enable sustainable and prosperous livelihoods for communities.</p>
           </div>
 
           <div className="p-4 sm:p-6 bg-white shadow-lg rounded-2xl border hover:shadow-2xl transition">
