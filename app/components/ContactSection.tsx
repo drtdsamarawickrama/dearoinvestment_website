@@ -27,7 +27,7 @@ export default function ContactSection() {
     </p>
     <p>
       <strong>Phone:</strong>{" "}
-      <span className="text-blue-600 font-medium">074 390 8274</span>
+      <span className="text-blue-600 font-medium">011 478 2400</span>
     </p>
     <p>
       <strong>Email:</strong>{" "}
