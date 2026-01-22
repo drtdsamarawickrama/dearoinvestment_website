@@ -67,7 +67,7 @@ export default function TestimonialsSection() {
           <div className="w-full md:w-1/2 md:pl-8 text-left">
             <h3 className="text-2xl text-center font-bold mb-10 text-[#182359] ">A Trusted Partner for Sustainable Investments</h3>
             <p className="text-gray-700 text-justify">
-             Dearo Investment Limited is dedicated to empowering entrepreneurs, SMEs, and individuals across Sri Lanka through accessible and reliable financial solutions. With a strong focus on sustainable growth, community impact, and professional guidance, Dearo supports business development and investment opportunities that contribute to long-term economic progress.
+             Dearo Investment Limited aims to empower entrepreneurs, SMEs, and individuals throughout Sri Lanka by providing them with accessible and reliable business and investment support. With a strong focus on sustainable growth, community impact, and professional guidance, Dearo supports business development and investment opportunities that contribute to long-term economic progress.
             </p>
           </div>
         </div>
@@ -77,7 +77,7 @@ export default function TestimonialsSection() {
           <div className="w-full md:w-1/2 md:pr-8 text-left mb-6 md:mb-0 order-last md:order-first">
             <h3 className="text-2xl text-[#182359] font-bold text-center mb-10">Growing Agriculture, Empowering Farmers</h3>
             <p className="text-gray-700 text-justify">
-           Dearo Investment Limited’s Agri Financing initiative demonstrates the company’s commitment to supporting farmers through tailored agricultural financing solutions. The initiative highlights Dearo’s role in empowering the farming community by providing financial support that enhances agricultural productivity and promotes sustainable prosperity in rural areas of Sri Lanka.
+          Dearo Investment Limited’s Agri Development Support initiative underscores the company’s commitment to advancing the agricultural sector through tailored agricultural development solutions. By providing structured agri development support, Dearo empowers the farming community, enhances productivity, and fosters sustainable prosperity in rural areas across Sri Lanka.
             </p>
           </div>
           <div className="w-full md:w-1/2 relative">

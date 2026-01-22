@@ -22,8 +22,7 @@ export default function ContactSection() {
   {/* Office Details */}
   <div className="space-y-3 text-gray-700">
     <p>
-      <strong>Address:</strong> 8th Floor, Ceylinco House, No 69,
-      Janadhipathi Mawatha, Colombo 01
+      <strong>Address:</strong>  8ᵗʰ Floor, Ceylinco House, No. 69, Janadhipathi Mawatha, Colombo 01
     </p>
     <p>
       <strong>Phone:</strong>{" "}

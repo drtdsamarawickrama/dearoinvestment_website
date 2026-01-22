@@ -24,11 +24,7 @@ export default function Footer() {
           </div>
 
           <p className="text-gray-400 leading-snug text-justify text-sm hover:text-white transition">
-            Dearo Investment Limited is on a rapid growth path, committed to
-            shaping the future of individuals and communities. As a leading
-            player in the International MSME sector, Dearo promotes green
-            financing, financial independence for women, and global financial
-            inclusion.
+            Dearo Investment Limited is on a rapid growth path, committed to shaping the future of individuals and communities. As an emerging player in the international MSME space, Dearo promotes investment practices, economic empowerment for women, and inclusive participation in global economic opportunities.
           </p>
         </div>
 
@@ -54,10 +50,10 @@ export default function Footer() {
           </h3>
           <ul className="space-y-1 text-sm">
             {[
-              "Personal Loans",
-              "Mortgage Loans",
-              "Hire Purchase",
-              "Housing Loans",
+              "Personal Investment Capital",
+              "Mortgage Investment Capital",
+              "Hire Purchase Investment ",
+              "Housing Investment Capital",
               
               
             ].map((item) => (
@@ -73,11 +69,11 @@ export default function Footer() {
           </h3>
           <ul className="space-y-1 text-sm">
             {[
-              "Joint Venture Loans",
-             "MSME Loans",
-             "Business Loans",
-             "Project Loans",
-             "Agriculture Loans",
+              "Joint Venture Collaborations",
+             "MSME Capital Solutions",
+             "Business Growth Solutions",
+             "Project Development Solutions",
+             "Agri Capital Investment",
              
              
              

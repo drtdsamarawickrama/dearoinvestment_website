@@ -22,10 +22,10 @@ export default function MSMELoansPage() {
       {/* ================= HERO TEXT ================= */}
       <div className="text-center mt-6 px-4 sm:px-6 md:px-0">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 text-gray-900">
-          MSME Loans
+          MSME Capital Solutions
         </h1>
         <p className="text-xl sm:text-2xl md:text-2xl text-gray-700 max-w-2xl mx-auto">
-          Empowering small and medium enterprises with flexible and reliable financing solutions.
+          Empowering small and medium enterprises with flexible and reliable funding solutions.
         </p>
       </div>
 
@@ -38,7 +38,7 @@ export default function MSMELoansPage() {
             Empowering MSME Growth
           </h2>
           <p className="text-gray-700 leading-relaxed text-sm md:text-base text-center">
-            Our MSME Loan solutions are designed to support entrepreneurs,
+            Our MSME Capital solutions are designed to support entrepreneurs,
             small businesses, and growing enterprises by providing flexible
             financing for working capital, business expansion, asset purchases,
             and operational needs.
@@ -62,10 +62,7 @@ export default function MSMELoansPage() {
               <h3 className="font-semibold text-base md:text-lg text-gray-900 mb-2">
                 ✔ {item}
               </h3>
-              <p className="text-gray-700 text-sm">
-                Designed to meet your business financing needs efficiently
-                and transparently.
-              </p>
+            
             </div>
           ))}
         </div>
@@ -100,12 +97,12 @@ export default function MSMELoansPage() {
         {/* BENEFITS */}
         <div className="bg-white rounded-3xl p-6 md:p-10 shadow-lg">
           <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center">
-            Why Choose Our MSME Loans?
+            Why Choose Our MSME Capital Solutions?
           </h3>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 text-gray-700 font-medium text-sm md:text-base">
-            <p>✔ Tailored financial solutions</p>
-            <p>✔ Transparent loan structures</p>
+            {/* <p>✔ Tailored financial solutions</p>
+            <p>✔ Transparent loan structures</p> */}
             <p>✔ Trusted banking & insurance partners</p>
             <p>✔ Regulatory-compliant lending</p>
             <p>✔ Dedicated customer support</p>
@@ -119,8 +116,8 @@ export default function MSMELoansPage() {
             Ready to Grow Your Business?
           </h3>
           <p className="text-gray-700 mb-6 max-w-2xl mx-auto text-sm md:text-base">
-            Take the next step toward business success with our MSME Loan
-            solutions. Apply today and secure the financing your business needs.
+            Take the next step toward business success with our MSME Capital Solution. 
+            Apply today and secure the financing your business needs.
           </p>
         </div>
 

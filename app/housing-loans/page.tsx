@@ -28,11 +28,11 @@ export default function HousingLoansPage() {
         {/* Text Below Image */}
         <div className="max-w-3xl mx-auto px-6 py-8 md:py-12 text-center">
           <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-            Dearo Housing Loans
+            Dearo Housing Investment Capital
           </h1>
           <p className="mt-4 text-base md:text-lg text-gray-700">
             Turn your dream of owning a home into reality with Dearo
-            Housing Loans. We provide secure, long-term financing
+            Housing Investment Capital. We provide secure, long-term funding
             solutions to help you build, purchase, or renovate your
             home—backed by transparent terms and dependable service you
             can trust.
@@ -97,7 +97,7 @@ export default function HousingLoansPage() {
                   <span className="text-2xl font-bold text-[#335DD0FF]">
                     Aligned
                   </span>
-                  <p>Loan Value</p>
+                  <p>Funding Amount</p>
                 </div>
                 <p>Based on income & property value</p>
               </div>
@@ -134,28 +134,13 @@ export default function HousingLoansPage() {
               </h3>
               <ul className="list-disc pl-5 space-y-2 text-gray-700">
                 <li>Property must be residential with clear ownership</li>
-                <li>Loan approval subject to valuation & legal checks</li>
+               
                 <li>Property insurance is mandatory</li>
                 <li>Tenure depends on age, income & loan structure</li>
               </ul>
             </div>
 
-            {/* Documents */}
-            <div className="bg-white p-6 rounded-xl shadow">
-              <h3 className="text-lg font-semibold text-[#335DD0FF] mb-4">
-                What You'll Need to Apply
-              </h3>
-              <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                <li>Completed housing loan application form</li>
-                <li>NIC / Passport / Driving License</li>
-                <li>Proof of income & recent bank statements</li>
-                <li>Property deeds & ownership documents</li>
-                <li>Approved valuation report</li>
-                <li>Building plans (if applicable)</li>
-                <li>Address verification documents</li>
-                <li>Insurance documents (if available)</li>
-              </ul>
-            </div>
+           
 
           </div>
         </div>

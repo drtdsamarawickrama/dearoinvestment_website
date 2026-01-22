@@ -135,11 +135,11 @@ export default function Navbar() {
                   Business Services <ChevronDown size={16} />
                 </div>
                 <div className="absolute left-0 mt-0 hidden group-hover:block bg-white shadow-xl rounded-md py-2 w-52 z-50">
-                  <a href="/msme-loans" className="block px-4 py-2 hover:bg-gray-100">MSME Loans</a>
-                  <a href="/business-loans" className="block px-4 py-2 hover:bg-gray-100">Business Loans</a>
-                  <a href="/project-loans" className="block px-4 py-2 hover:bg-gray-100">Project Loans</a>
-                  <a href="/agriculture-loans" className="block px-4 py-2 hover:bg-gray-100">Agriculture Loans</a>
-                  <a href="/join-venture-loans" className="block px-4 py-2 hover:bg-gray-100">Join Venture Loans</a>
+                  <a href="/msme-loans" className="block px-4 py-2 hover:bg-gray-100">MSME Capital Solutions</a>
+                  <a href="/business-loans" className="block px-4 py-2 hover:bg-gray-100">Business Growth Solutions</a>
+                  <a href="/project-loans" className="block px-4 py-2 hover:bg-gray-100">Project Development Solutions</a>
+                  <a href="/agriculture-loans" className="block px-4 py-2 hover:bg-gray-100">Agri  Capital Investment</a>
+                  <a href="/join-venture-loans" className="block px-4 py-2 hover:bg-gray-100">Join Venture Collaborations</a>
                 </div>
               </div>
 
@@ -149,10 +149,10 @@ export default function Navbar() {
                   Personal Services <ChevronDown size={16} />
                 </div>
                 <div className="absolute left-0 mt-0 hidden group-hover:block bg-white shadow-xl rounded-md py-2 w-52 z-50">
-                  <a href="/personnel-loans" className="block px-4 py-2 hover:bg-gray-100">Personal Loans</a>
-                  <a href="/hirepurchase-loans" className="block px-4 py-2 hover:bg-gray-100">Hire Purchase Loans</a>
-                  <a href="/mortgage-loans" className="block px-4 py-2 hover:bg-gray-100">Mortgage Loans</a>
-                  <a href="/housing-loans" className="block px-4 py-2 hover:bg-gray-100">Housing Loans</a>
+                  <a href="/personnel-loans" className="block px-4 py-2 hover:bg-gray-100">Personal Investment Capital</a>
+                  <a href="/hirepurchase-loans" className="block px-4 py-2 hover:bg-gray-100">Hire Purchase Investment </a>
+                  <a href="/mortgage-loans" className="block px-4 py-2 hover:bg-gray-100">Mortgage  Investment Capital</a>
+                  <a href="/housing-loans" className="block px-4 py-2 hover:bg-gray-100">Housing Investment Capital</a>
                 </div>
               </div>
 

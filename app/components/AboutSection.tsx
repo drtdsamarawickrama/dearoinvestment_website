@@ -50,29 +50,25 @@ export default function AboutSection() {
   };
 
   const awards = [
-    {
-      title: "Peoples Excellency Awards 2024",
-      desc: "The best entrepreneur finance company of the year. The best customer care service of the year. The excellence in work place leadership award of the year. The best joint venture finance company.",
-      img: "/assests/AW1.jpg",
-    },
+   
     {
       title: "Iconic Awards 2024",
-      desc: "The best investment product provider. The best customer service excellence of the year. The best projects finance company of the year. The best developing investment company of the year.",
+      desc: "The best investment product provider. The best customer service excellence of the year. The best projects  investment of the year. The best developing investment company of the year.",
       img: "/assests/AW5.jpg",
     },
     {
       title: "Asia Miracle Awards 2024",
-      desc: "Best development finance company of the year. Best humanity and social development service provider.",
+      desc: "Best development investment company of the year. Best humanity and social development service provider.",
       img: "/assests/AW3.jpg",
     },
     {
       title: "BWIO USAAwards 2025",
-      desc: "The best projects finance company of the year. The best entrepreneur finance company of the year.",
+      desc: "The best projects investment company of the year. The best entrepreneur investment company of the year.",
       img: "/assests/AW4.jpg",
     },
     {
       title: "Iconic Awards Bangkok 2025",
-      desc: "The best workplace of the year. The fastest growing micro finance company in Sri Lanka. The best investment product provider of the year. The best in business finance innovation award of the year. The best entrepreneur finance company of the year",
+      desc: "The best workplace of the year. The best investment product provider of the year. The best in business investment innovation award of the year. The best entrepreneur finance company of the year",
       img: "/assests/AW2.jpg",
     },
     {
@@ -99,9 +95,12 @@ export default function AboutSection() {
         </h2>
        
         <p className="text-base sm:text-lg text-gray-700 text-center mb-12 sm:mb-16 max-w-4xl mx-auto">
-          Dearo Investment Ltd was established under the Companies Act No. 07 of 2007 and officially incorporated on 1st September 2022 under registration number PB 262527. Though relatively young, the company has quickly positioned itself as a trusted and forward-looking financial services provider, addressing the growing need for secure, accessible, and well-governed financing solutions.
-          Dearo Investment Ltd operates with a strong emphasis on risk management, financial discipline, and stakeholder protection. Robust internal controls and comprehensive risk mitigation frameworks are embedded across all financial activities. As part of this approach, insurance-backed protection mechanisms are implemented to safeguard customers and enhance operational resilience against unforeseen risks.
-          With a network of 25 branches islandwide, Dearo Investment Ltd has established a strong nationwide presence, enabling inclusive access to financial services across diverse communities. This extensive reach, combined with professional governance and a commitment to sustainable growth, reinforces the company’s focus on long-term value creation, customer confidence, and financial stability.
+         Dearo Investment Ltd was established under the Companies Act No. 07 of 2007 and officially incorporated on 1st September 2022 under registration number PB 262527. Though relatively young, the company has quickly positioned itself as a trusted and forward-looking financial matter solution provider, addressing the growing need for secure, accessible, and well-governed financial matter support.
+
+Dearo Investment Ltd operates with a strong emphasis on risk management, disciplined operational practices, and stakeholder protection. Robust internal controls and comprehensive risk mitigation frameworks are embedded across all investment activities. As part of this approach, insurance-backed protection mechanisms are implemented to safeguard customers and enhance operational resilience against unforeseen risks.
+
+With a network of 25 branches islandwide, Dearo Investment Ltd has established a strong nationwide presence, enabling inclusive access to its services across diverse communities. This extensive reach, combined with professional governance and a commitment to sustainable growth, reinforces the company’s focus on long-term value creation, customer confidence, and operational stability.
+
         </p>
 
         {/* Vision / Mission / Goals / Process Boxes */}

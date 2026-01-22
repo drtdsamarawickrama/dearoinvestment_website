@@ -28,11 +28,11 @@ export default function MortgageLoansPage() {
         {/* Text Below Image */}
         <div className="max-w-3xl mx-auto px-6 py-8 md:py-12 text-center">
           <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-            Dearo Mortgage Loans
+            Dearo Mortgage Investment Capital
           </h1>
           <p className="mt-4 text-base md:text-lg text-gray-700">
             Secure funding against your property with confidence. Dearo
-            Mortgage Loans offer reliable, long-term financing solutions
+            Mortgage Investment Capital offer reliable, long-term financing solutions
             by leveraging the value of your residential, commercial, or
             land assets—helping you meet major financial goals while
             maintaining stability and peace of mind.
@@ -87,7 +87,7 @@ export default function MortgageLoansPage() {
                   <span className="text-2xl font-bold text-[#335DD0FF]">
                     Higher
                   </span>
-                  <p>Loan Amounts</p>
+                
                 </div>
                 <p>Based on property value</p>
               </div>
@@ -97,7 +97,7 @@ export default function MortgageLoansPage() {
                   <span className="text-2xl font-bold text-[#335DD0FF]">
                     Longer
                   </span>
-                  <p>Tenures</p>
+                 
                 </div>
                 <p>Comfortable repayments</p>
               </div>
@@ -107,7 +107,7 @@ export default function MortgageLoansPage() {
                   <span className="text-2xl font-bold text-[#335DD0FF]">
                     Flexible
                   </span>
-                  <p>Repayment</p>
+                 
                 </div>
                 <p>Tailored to income patterns</p>
               </div>
@@ -117,7 +117,7 @@ export default function MortgageLoansPage() {
                   <span className="text-2xl font-bold text-[#335DD0FF]">
                     Secure
                   </span>
-                  <p>Financing</p>
+                 
                 </div>
                 <p>Asset-backed confidence</p>
               </div>
@@ -134,7 +134,7 @@ export default function MortgageLoansPage() {
               </h3>
               <ul className="list-disc pl-5 space-y-2 text-gray-700">
                 <li>Property must have clear legal ownership and title</li>
-                <li>Loan value subject to professional valuation</li>
+               
                 <li>Insurance coverage on mortgaged property is mandatory</li>
                 <li>Repayment tenure depends on income & property type</li>
               </ul>

@@ -22,10 +22,10 @@ export default function BusinessLoansPage() {
       {/* ================= HERO TEXT ================= */}
       <div className="text-center mt-6 px-4 sm:px-6 md:px-0">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-gray-900">
-          Business Loans
+          Business Development Solution
         </h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl text-gray-600">
-          Tailored financing solutions to expand your business, invest in assets, and grow operations efficiently.
+          We provide capital solutions to help businesses expand operations, invest in assets, and grow efficiently with flexible funding options and strategic investment-related support.
         </p>
       </div>
 
@@ -38,7 +38,7 @@ export default function BusinessLoansPage() {
             Empower Your Business
           </h2>
           <p className="text-gray-600 leading-relaxed text-base md:text-lg">
-            Our Business Loan solutions support SMEs in expanding operations, investing in assets, and managing cash flow effectively. Flexible repayment plans and competitive interest rates ensure your business thrives sustainably.
+            Our Business solutions support SMEs in expanding operations, investing in assets, and managing cash flow effectively. Flexible repayment plans and competitive interest rates ensure your business thrives sustainably.
           </p>
         </div>
 
@@ -59,9 +59,7 @@ export default function BusinessLoansPage() {
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 ✔ {item}
               </h3>
-              <p className="text-gray-600 text-sm md:text-base">
-                Efficiently designed to meet your business financing needs with clarity and transparency.
-              </p>
+             
             </div>
           ))}
         </div>
@@ -97,12 +95,11 @@ export default function BusinessLoansPage() {
         {/* BENEFITS */}
         <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg">
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">
-            Why Choose Our Business Loans?
+            Why Choose Our Business Development Solution?
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700 font-medium text-sm md:text-base">
-            <p>✔ Tailored financial solutions</p>
-            <p>✔ Transparent loan structures</p>
+           
             <p>✔ Trusted banking & insurance partners</p>
             <p>✔ Regulatory-compliant lending</p>
             <p>✔ Dedicated customer support</p>

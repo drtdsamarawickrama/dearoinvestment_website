@@ -145,7 +145,7 @@ export default function PartnersPage() {
         </div>
       </section>
 
-      {/* ================= INSURANCE PARTNERS ================= */}
+      {/* ================= INSURANCE PARTNERS =================
       <section className="space-y-10">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
@@ -179,7 +179,7 @@ export default function PartnersPage() {
             description="Life and general insurance solutions for long-term stability."
           />
         </div>
-      </section>
+      </section> */}
 
       {/* ================= FINANCIAL PARTNERS ================= */}
       <section className="space-y-12">

@@ -28,11 +28,11 @@ export default function CommunityLoanPage() {
         <div className="max-w-7xl mx-auto px-6 py-8 md:py-12">
           <div className="max-w-3xl mx-auto px-6 py-8 md:py-12 text-center">
   <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-    Dearo Personal Loans
+    Personal Investment Capital
   </h1>
   <p className="mt-4 text-base md:text-lg text-gray-700">
     Fulfill your dreams and manage your financial needs effortlessly
-    with a Personal Loan from Dearo Investment. Whether it’s for
+    with a Personal Investment Capital from Dearo Investment. Whether it’s for
     education, home improvements, or personal milestones, we make it
     easy to access funds when you need them.
   </p>
@@ -43,7 +43,7 @@ export default function CommunityLoanPage() {
        
 
         {/* ===== PAGE CONTENT ===== */}
-        <div className="max-w-7xl mx-auto px-6 py-16">
+        {/* <div className="max-w-7xl mx-auto px-6 py-16"> */}
           {/* Features Grid */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* How You Can Use the Funds */}
@@ -86,7 +86,7 @@ export default function CommunityLoanPage() {
               </div>
             </div>
 
-            {/* Key Loan Conditions */}
+            {/* Key Loan Conditions
             <div className="space-y-6 text-gray-800">
               <div className="flex justify-between items-center">
                 <div>
@@ -128,22 +128,22 @@ export default function CommunityLoanPage() {
                 <p>Loan must settle before retirement</p>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          {/* Info Section */}
-          <div className="grid md:grid-cols-2 gap-8">
+         
+          {/* <div className="grid md:grid-cols-2 gap-8"> */}
             {/* Important to Know */}
-            <div className="bg-white p-6 rounded-xl shadow">
-              <h3 className="text-lg font-semibold text-[#335DD0FF] mb-4">
+            {/* <div className="bg-white p-6 rounded-xl shadow"> */}
+              {/* <h3 className="text-lg font-semibold text-[#335DD0FF] mb-4">
                 Important to Know Before You Apply
-              </h3>
-              <ul className="list-disc pl-5 space-y-2 text-gray-700">
+              </h3> */}
+              {/* <ul className="list-disc pl-5 space-y-2 text-gray-700">
                 <li>Minimum monthly income: Rs 150,000/-</li>
                 <li>Loan must be fully repaid before retirement</li>
                 <li>Maximum repayment period: 5 years</li>
                 <li>Salary must be credited to a Commercial Bank account</li>
-              </ul>
-            </div>
+              </ul> */}
+            {/* </div> */}
 
             {/* Documents */}
             <div className="bg-white p-6 rounded-xl shadow">
@@ -162,7 +162,7 @@ export default function CommunityLoanPage() {
               </ul>
             </div>
           </div>
-        </div>
+        
       </section>
     </main>
   );

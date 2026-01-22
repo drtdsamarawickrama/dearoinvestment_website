@@ -1,6 +1,6 @@
 const services = [
   { 
-    title: "Agriculture Loans", 
+    title: "Agriculture Capital Investment", 
     description: "Your Insurance Partner for comprehensive coverage and peace of mind.", 
     image: "/assests/agri.jpg",
   },
@@ -15,7 +15,7 @@ const services = [
     image: "/assests/goldloan.jpg",
   },
   { 
-    title: "SME/Project Loans", 
+    title: "SME/Project Development Capital Investment", 
     description: "Invest today for tomorrow's success.", 
     image: "/assests/sme.jpg",
   },
