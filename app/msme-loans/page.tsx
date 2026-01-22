@@ -11,7 +11,7 @@ export default function MSMELoansPage() {
       {/* ================= HERO IMAGE ================= */}
       <div className="relative w-full h-[300px] md:h-[450px] overflow-hidden">
         <Image
-          src="/assests/newmsme.png"
+          src="/assests/msmeloan2.png"
           alt="MSME Loans"
           fill
           priority
