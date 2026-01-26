@@ -11,27 +11,37 @@ import {
 } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
-/* ---------------- Animations ---------------- */
+/* ================= ANIMATION VARIANTS ================= */
+
 const container: Variants = {
   hidden: {},
   show: {
-    transition: { staggerChildren: 0.15 },
-  },
-};
-
-const item: Variants = {
-  hidden: { opacity: 0, y: 18 },
-  show: {
-    opacity: 1,
-    y: 0,
     transition: {
-      duration: 0.8,
-      ease: [0.16, 1, 0.3, 1],
+      staggerChildren: 0.18,
+      delayChildren: 0.12,
     },
   },
 };
 
-/* ---------- Scroll Count (Responsive) ---------- */
+const item: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 12,
+    scale: 0.96,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.9,
+      ease: [0.22, 1, 0.36, 1], // premium ease
+    },
+  },
+};
+
+/* ================= COUNT UP COMPONENT ================= */
+
 function CountUpOnView({
   value,
   suffix = "",
@@ -40,14 +50,13 @@ function CountUpOnView({
   suffix?: string;
 }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-60px" });
+  const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   const motionValue = useMotionValue(0);
   const rounded = useTransform(motionValue, (latest) =>
     Math.floor(latest).toLocaleString()
   );
 
-  // Detect mobile vs desktop
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -58,8 +67,8 @@ function CountUpOnView({
     if (!isInView) return;
 
     const controls = animate(motionValue, value, {
-      duration: isMobile ? 2.6 : 2, // 📱 slower, 🖥 faster
-      ease: [0.16, 1, 0.3, 1],
+      duration: isMobile ? 2.4 : 1.9,
+      ease: [0.22, 1, 0.36, 1],
     });
 
     return controls.stop;
@@ -73,6 +82,8 @@ function CountUpOnView({
   );
 }
 
+/* ================= MAIN COMPONENT ================= */
+
 export default function StatsSection() {
   const stats = [
     { label: "Branches", value: 25, suffix: "+", icon: Building2 },
@@ -82,24 +93,25 @@ export default function StatsSection() {
   ];
 
   return (
-    <section className="py-14 sm:py-14 bg-blue-950">
+    <section className="py-14 sm:py-16 bg-blue-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
 
-        {/* TITLE */}
+        {/* ================= TITLE ================= */}
         <motion.h2
-          initial={{ opacity: 0, y: 12 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-          className="text-3xl md:text-4xl text-center mb-10 md:mb-12 text-[#FFFFFF]"
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{
+            duration: 1,
+            ease: [0.22, 1, 0.36, 1],
+          }}
+          className="text-3xl md:text-4xl text-center mb-10 md:mb-12 text-white"
         >
-           <span className="font-extrabold">Impact</span>{" "}
-            <span className="font-semibold">Metrics</span>
-
+          <span className="font-extrabold">Impact</span>{" "}
+          <span className="font-semibold">Metrics</span>
         </motion.h2>
-       
 
-        {/* STATS GRID */}
+        {/* ================= STATS GRID ================= */}
         <motion.div
           variants={container}
           initial="hidden"
@@ -113,8 +125,11 @@ export default function StatsSection() {
               <motion.div
                 key={idx}
                 variants={item}
-                whileHover={{ y: -4 }}
-                className="text-center flex flex-col items-center
+                whileHover={{
+                  y: -2,
+                  transition: { duration: 0.25, ease: "easeOut" },
+                }}
+                className="flex flex-col items-center text-center
                            rounded-2xl p-6 sm:p-7
                            bg-white/5 backdrop-blur-md
                            border border-white/10
