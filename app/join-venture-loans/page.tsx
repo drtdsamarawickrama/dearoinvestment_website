@@ -1,98 +1,142 @@
 import Image from "next/image";
-import { Building, ChartLine, Shield } from "lucide-react";
+import {
+  Users,
+  TrendingUp,
+  ShieldCheck,
+  Layers,
+} from "lucide-react";
 
-// export const metadata = {
-//   title: "Join Venture Loans | Dearo Investment Limited",
-//   description:
-//     "Financial support for joint venture partnerships and collaborative business projects.",
-// };
+export const metadata = {
+  title: "Join Venture Loans | Dearo Investment Limited",
+  description:
+    "Structured Join Venture Loan solutions supporting partnership-driven businesses with working capital and strategic growth financing.",
+};
 
 export default function JoinVentureLoansPage() {
-  const features = [
-    {
-      icon: <Building className="w-8 h-8 text-blue-600" />,
-      title: "Suitable For",
-      
-    },
-    {
-      icon: <ChartLine className="w-8 h-8 text-blue-600" />,
-      title: "Key Advantages",
-     
-    },
-    {
-      icon: <Shield className="w-8 h-8 text-blue-600" />,
-      title: "Our Commitment",
-     
-    },
-  ];
-
-  
-
   return (
-    <section className="bg-gray-50">
+    <main className="bg-[#020617] text-gray-200 overflow-hidden">
 
-      {/* ================= HERO IMAGE ================= */}
-      <div className="relative w-full h-[260px] sm:h-[300px] md:h-[350px] overflow-hidden">
-        <Image
-          src="/assests/join1.png"
-          alt="Join Venture Loans"
-          fill
-          priority
-          className="object-cover object-center"
-        />
-      </div>
+      {/* ================= SPLIT HERO ================= */}
+      <section className="grid lg:grid-cols-2 min-h-[90vh]">
 
-      {/* ================= HERO CONTENT ================= */}
-      <div className="max-w-6xl mx-auto px-6 py-10 text-center">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-          Join Venture Collaboration
-        </h1>
-        <p className="max-w-3xl mx-auto text-gray-700 text-base sm:text-lg">
-          Collaborative capital solutions for partners engaging in large-scale projects.
-        </p>
-      </div>
+        {/* LEFT CONTENT */}
+        <div className="flex flex-col justify-center px-6 md:px-14">
+         
+          <h1 className="text-4xl md:text-6xl mt-15 font-extrabold leading-tight mb-6">
+            Join Venture <br />
+            <span className="text-cyan-400">Loan Solutions</span>
+          </h1>
 
-      {/* ================= FEATURES ================= */}
-      <div className="max-w-6xl mx-auto px-6 py-16 space-y-16">
-
-        <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Why Choose Our Join Venture Collaboration?
-          </h2>
-          <p className="text-gray-700 mt-4">
-           Structured capital, risk-sharing options, and expert advisory support designed to empower joint venture projects, enabling strategic growth, shared success, and efficient execution.
+          <p className="text-gray-400 text-lg max-w-xl mb-8">
+            The Join Venture Loan is designed to support established join
+            ventures and partnership-based businesses by providing structured
+            funding to strengthen operations and support strategic growth.
+            By enabling partners to share financial responsibility while
+          maintaining operational continuity, the Join Venture Loan promotes
+          stability, collaboration, and sustainable growth for
+          partnership-driven enterprises.
           </p>
+
+          
         </div>
 
-        <div className="grid gap-8 md:grid-cols-3">
-          {features.map((f, idx) => (
-            <div
-              key={idx}
-              className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
-            >
-              <div className="mb-4">{f.icon}</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                {f.title}
-              </h3>
-             
+        {/* RIGHT IMAGE */}
+        <div className="relative mt-25 h-[300px] md:h-[400px]  rounded-3xl overflow-hidden">
+          <Image
+            src="/assests/pro.png"
+            alt="Join Venture Loans"
+            fill
+            priority
+            className="object-cover opacity-90"
+          />
+          <div className="absolute inset-0 bg-gradient-to-l from-[#020617] via-transparent to-transparent" />
+        </div>
+      </section>
+
+      {/* ================= OVERVIEW ================= */}
+      <section className="max-w-6xl mx-auto px-6 py-20 text-center">
+        <p className="text-gray-400 text-lg max-w-3xl mx-auto">
+          
+        </p>
+      </section>
+
+      {/* ================= PURPOSE (TIMELINE STYLE) ================= */}
+      <section className="bg-[#020617] border-t border-white/10 py-20 px-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+          Purpose of the <span className="text-cyan-400">Join Venture Loan</span>
+        </h2>
+
+        <div className="max-w-4xl mx-auto space-y-10">
+          {[
+            "Supporting working capital requirements of ongoing join venture operations",
+            "Addressing short-term liquidity gaps to maintain business continuity",
+            "Financing the expansion and scaling of existing join venture businesses",
+            "Facilitating shared risk and responsibility among join venture partners",
+          ].map((text, i) => (
+            <div key={i} className="flex items-start gap-6">
+              <div className="w-10 h-10 rounded-full bg-cyan-400 flex items-center justify-center text-[#020617] font-bold">
+                {i + 1}
+              </div>
+              <p className="text-gray-300 text-lg">{text}</p>
             </div>
           ))}
         </div>
+      </section>
 
-       
-       
+      {/* ================= KEY BENEFITS (GLASS CARDS) ================= */}
+      <section className="max-w-7xl mx-auto px-6 py-20">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-14">
+          Key <span className="text-cyan-400">Benefits</span>
+        </h2>
 
-        {/* ================= CTA =================
-        <div className="text-center pt-10">
-          <h3 className="text-3xl font-bold text-gray-900 mb-4">
-            Ready to Partner on a Project?
-          </h3>
-          <p className="text-gray-700 max-w-2xl mx-auto">
-            Apply for a Join Venture Loan today and secure structured financing and expert support for your collaborative business project.
-          </p>
-        </div> */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {[
+            {
+              icon: Layers,
+              text: "Structured funding aligned with join venture cash flows",
+            },
+            {
+              icon: TrendingUp,
+              text: "Flexible repayment arrangements based on business performance",
+            },
+            {
+              icon: ShieldCheck,
+              text: "Clear accountability and governance among partners",
+            },
+            {
+              icon: Users,
+              text: "Enhanced financial stability for partnership-driven enterprises",
+            },
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-8 text-center shadow-lg hover:shadow-cyan-500/10 transition"
+            >
+              <item.icon className="w-10 h-10 mx-auto text-cyan-400 mb-4" />
+              <p className="text-gray-300 font-medium">{item.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
-      </div>
-    </section>
+      {/* ================= FINAL CTA ================= */}
+      <section className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border-t border-white/10 py-20 text-center px-6">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          Strengthen Your <span className="text-cyan-400">Join Venture</span>
+        </h2>
+        <p className="text-gray-400 max-w-2xl mx-auto mb-8">
+          Partner with Dearo Investment Limited to access structured,
+          performance-aligned financing designed to support collaboration,
+          stability, and long-term growth.
+        </p>
+        <a
+          href="/contact"
+          className="inline-block bg-cyan-400 text-[#020617] px-8 py-3 rounded-full font-semibold hover:bg-white transition"
+        >
+          Speak to Our Team
+        </a>
+      </section>
+
+    </main>
   );
 }

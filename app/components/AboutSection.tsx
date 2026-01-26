@@ -68,7 +68,7 @@ export default function AboutSection() {
     },
     {
       title: "Iconic Awards Bangkok 2025",
-      desc: "The best workplace of the year. The best investment product provider of the year. The best in business investment innovation award of the year. The best entrepreneur finance company of the year",
+      desc: "The best workplace of the year. The fastest growing micro investment company in Sri Lanka. The best investment product provider of the year. The best in business investment innovation award of the year. The best entrepreneur finance company of the year",
       img: "/assests/AW2.jpg",
     },
     {
@@ -95,13 +95,11 @@ export default function AboutSection() {
         </h2>
        
         <p className="text-base sm:text-lg text-gray-700 text-center mb-12 sm:mb-16 max-w-4xl mx-auto">
-         Dearo Investment Ltd was established under the Companies Act No. 07 of 2007 and officially incorporated on 1st September 2022 under registration number PB 262527. Though relatively young, the company has quickly positioned itself as a trusted and forward-looking financial matter solution provider, addressing the growing need for secure, accessible, and well-governed financial matter support.
+         Dearo Investment Ltd was established under the Companies Act No. 07 of 2007 and officially incorporated on 1st September 2022 under registration number PB 262527. Though relatively young, the company has rapidly positioned itself as a trusted and forward-looking provider of structured financial matter solutions, addressing the growing demand for secure, accessible, and well-governed financial support.
 
-Dearo Investment Ltd operates with a strong emphasis on risk management, disciplined operational practices, and stakeholder protection. Robust internal controls and comprehensive risk mitigation frameworks are embedded across all investment activities. As part of this approach, insurance-backed protection mechanisms are implemented to safeguard customers and enhance operational resilience against unforeseen risks.
+Dearo Investment Ltd operates with a strong emphasis on risk management, disciplined operational practices, and stakeholder protection. Robust internal controls and comprehensive risk mitigation frameworks are embedded across all business activities to ensure transparency, stability, and responsible decision-making.
 
-With a network of 25 branches islandwide, Dearo Investment Ltd has established a strong nationwide presence, enabling inclusive access to its services across diverse communities. This extensive reach, combined with professional governance and a commitment to sustainable growth, reinforces the company’s focus on long-term value creation, customer confidence, and operational stability.
-
-        </p>
+With a network of 25 branches islandwide, Dearo Investment Ltd has established a strong nationwide presence, enabling inclusive access to its services across diverse communities. This extensive reach, combined with sound governance and a commitment to sustainable growth, reinforces the company’s focus on long-term value creation, customer confidence, and operational resilience.</p>
 
         {/* Vision / Mission / Goals / Process Boxes */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-16 sm:mb-20">

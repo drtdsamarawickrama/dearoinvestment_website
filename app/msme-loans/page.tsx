@@ -1,127 +1,125 @@
 import Image from "next/image";
+import {
+  TrendingUp,
+  Users,
+  Factory,
+  Briefcase,
+  Layers,
+  ArrowRight,
+} from "lucide-react";
 
 export const metadata = {
-  title: "MSME Loans | Dearo Investment Limited",
+  title: "MSME Growth Solutions | Dearo Investment Limited",
 };
 
-export default function MSMELoansPage() {
+export default function MSMEGrowthPage() {
   return (
-    <section className="bg-gray-50">
+    <section className="bg-[#0F172A] text-white">
 
-      {/* ================= HERO IMAGE ================= */}
-      <div className="relative w-full h-[300px] md:h-[450px] overflow-hidden">
-        <Image
-          src="/assests/msmeloan2.png"
-          alt="MSME Loans"
-          fill
-          priority
-          className="object-cover object-[center_right]"
-        />
-      </div>
+      {/* ===== HERO SPLIT ===== */}
+      <div className="grid lg:grid-cols-2 min-h-[90vh]">
+        {/* Left Content */}
+        <div className="flex flex-col justify-center px-6 md:px-16">
+          <span className="uppercase tracking-widest text-sm text-[#38BDF8] mb-4">
+            MSME Growth Platform
+          </span>
 
-      {/* ================= HERO TEXT ================= */}
-      <div className="text-center mt-6 px-4 sm:px-6 md:px-0">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 text-gray-900">
-          MSME Capital Solutions
-        </h1>
-        <p className="text-xl sm:text-2xl md:text-2xl text-gray-700 max-w-2xl mx-auto">
-          Empowering small and medium enterprises with flexible and reliable funding solutions.
-        </p>
-      </div>
+          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+            Empowering <br />
+            <span className="text-[#38BDF8]">Small & Medium Enterprises</span>
+          </h1>
 
-      {/* ================= CONTENT ================= */}
-      <div className="max-w-6xl mx-auto px-6 md:px-20 py-14 md:py-20 space-y-16">
-
-        {/* INTRO */}
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-5 text-center">
-            Empowering MSME Growth
-          </h2>
-          <p className="text-gray-700 leading-relaxed text-sm md:text-base text-center">
-            Our MSME Capital solutions are designed to support entrepreneurs,
-            small businesses, and growing enterprises by providing flexible
-            financing for working capital, business expansion, asset purchases,
-            and operational needs.
+          <p className="text-gray-300 text-lg max-w-xl mb-8">
+            Structured business support designed to help MSMEs scale operations,
+            strengthen cash flow, and achieve long-term sustainability with
+            confidence.
           </p>
+
+          <a
+            href="/contact"
+            className="inline-flex items-center gap-2 bg-[#38BDF8] text-[#0F172A] px-6 py-3 rounded-full font-semibold w-fit hover:bg-white transition"
+          >
+            Explore Opportunities <ArrowRight size={18} />
+          </a>
         </div>
 
-        {/* FEATURES */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+        {/* Right Image */}
+        <div className="relative  mt-25 h-[300px] md:h-[400px] rounded-3xl overflow-hidden">
+          <Image
+            src="/assests/msmelo.png"
+            alt="MSME Business Growth"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-l from-[#0F172A] via-[#0F172A]/60 to-transparent" />
+        </div>
+      </div>
+
+      {/* ===== HIGHLIGHT STRIP ===== */}
+      <div className="bg-[#020617] py-12">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6 text-center">
           {[
-            "Flexible loan amounts",
-            "Competitive interest rates",
-            "Quick approval & disbursement",
-            "Minimal documentation",
-            "Structured repayment plans",
-            "Support for new & existing businesses",
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition"
-            >
-              <h3 className="font-semibold text-base md:text-lg text-gray-900 mb-2">
-                ✔ {item}
-              </h3>
-            
+            { icon: TrendingUp, title: "Growth Focused", text: "Built for scalable expansion" },
+            { icon: Layers, title: "Structured Support", text: "Clear, organized solutions" },
+            { icon: Users, title: "MSME Centric", text: "Designed around real business needs" },
+          ].map((item, i) => (
+            <div key={i} className="flex flex-col items-center gap-3">
+              <item.icon className="w-10 h-10 text-[#38BDF8]" />
+              <h3 className="font-semibold text-lg">{item.title}</h3>
+              <p className="text-gray-400 text-sm">{item.text}</p>
             </div>
           ))}
         </div>
-
-        {/* ELIGIBILITY & PURPOSE */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
-          <div>
-            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
-              Eligibility
-            </h3>
-            <ul className="space-y-3 text-gray-700 list-disc pl-6 text-sm md:text-base">
-              <li>Sole proprietors & partnerships</li>
-              <li>Small & medium enterprises</li>
-              <li>Registered or well-established businesses</li>
-              <li>Businesses with stable cash flow</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
-              Loan Purposes
-            </h3>
-            <ul className="space-y-3 text-gray-700 list-disc pl-6 text-sm md:text-base">
-              <li>Working capital requirements</li>
-              <li>Business expansion</li>
-              <li>Machinery & equipment purchase</li>
-              <li>Inventory & operational expenses</li>
-            </ul>
-          </div>
-        </div>
-
-        {/* BENEFITS */}
-        <div className="bg-white rounded-3xl p-6 md:p-10 shadow-lg">
-          <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center">
-            Why Choose Our MSME Capital Solutions?
-          </h3>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 text-gray-700 font-medium text-sm md:text-base">
-            {/* <p>✔ Tailored financial solutions</p>
-            <p>✔ Transparent loan structures</p> */}
-            <p>✔ Trusted banking & insurance partners</p>
-            <p>✔ Regulatory-compliant lending</p>
-            <p>✔ Dedicated customer support</p>
-            <p>✔ Long-term business stability</p>
-          </div>
-        </div>
-
-        {/* CTA */}
-        <div className="text-center">
-          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            Ready to Grow Your Business?
-          </h3>
-          <p className="text-gray-700 mb-6 max-w-2xl mx-auto text-sm md:text-base">
-            Take the next step toward business success with our MSME Capital Solution. 
-            Apply today and secure the financing your business needs.
-          </p>
-        </div>
-
       </div>
+
+      {/* ===== WHO CAN APPLY – GLASS CARDS ===== */}
+      <div className="py-20 px-6 bg-gradient-to-b from-[#0F172A] to-[#020617]">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-14">
+          Who Can Apply
+        </h2>
+
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {[
+            { icon: Briefcase, label: "Sole Proprietors & Partnerships" },
+            { icon: Factory, label: "Small & Medium Enterprises" },
+            { icon: Users, label: "Established Businesses" },
+            { icon: TrendingUp, label: "Stable Cash-Flow Businesses" },
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:scale-105 transition"
+            >
+              <item.icon className="w-10 h-10 mx-auto text-[#38BDF8] mb-4" />
+              <p className="font-medium">{item.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ===== ELIGIBLE USES – TIMELINE STYLE ===== */}
+      <div className="bg-[#020617] py-20 px-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+          How MSMEs Use This Support
+        </h2>
+
+        <div className="max-w-4xl mx-auto space-y-8">
+          {[
+            "Working capital optimization",
+            "Business expansion & scaling",
+            "Machinery and equipment upgrades",
+            "Inventory and operational growth",
+          ].map((text, i) => (
+            <div key={i} className="flex items-start gap-6">
+              <div className="w-10 h-10 rounded-full bg-[#38BDF8] flex items-center justify-center text-[#020617] font-bold">
+                {i + 1}
+              </div>
+              <p className="text-gray-300 text-lg">{text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
     </section>
   );
 }

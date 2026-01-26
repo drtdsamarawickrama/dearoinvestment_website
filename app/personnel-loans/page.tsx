@@ -1,169 +1,152 @@
-"use client";
+import Link from "next/link";
+import { TrendingUp, ShieldCheck, Globe, Leaf, Landmark } from "lucide-react";
 
-import {
-  Home,
-  Users,
-  Award,
-  Activity,
-  Building,
-  CreditCard,
-  UserCheck,
-} from "lucide-react";
+export const metadata = {
+  title: "Personal Loans | Dearo Investment Limited",
+  description:
+    "Flexible personal loan solutions to support individuals with healthcare, education, home, and lifestyle financial needs.",
+};
 
-export default function CommunityLoanPage() {
+export default function PersonalLoansPage() {
+  const features = [
+    {
+      icon: TrendingUp,
+      title: "Tailored Loan Structures",
+      text: "Flexible personal loans designed to match individual financial requirements and repayment capacity.",
+    },
+    {
+      icon: ShieldCheck,
+      title: "Transparent Terms",
+      text: "Clear documentation and responsible lending practices to ensure predictable and safe financing.",
+    },
+    {
+      icon: Globe,
+      title: "Quick & Efficient Process",
+      text: "Simple application process with timely approvals to meet urgent and planned financial needs.",
+    },
+    {
+      icon: Leaf,
+      title: "Flexible Repayment",
+      text: "Repayment schedules aligned with income patterns for stress-free financial management.",
+    },
+  ];
+
+  const timeline = [
+    {
+      title: "Healthcare & Medical",
+      desc: "Covering medical treatments, health emergencies, and wellness investments.",
+    },
+    {
+      title: "Education & Skills",
+      desc: "Supporting tuition fees, skill development, certifications, and educational growth.",
+    },
+    {
+      title: "Home & Lifestyle",
+      desc: "Funding renovations, improvements, and lifestyle needs for individuals and families.",
+    },
+    {
+      title: "Emergencies & Miscellaneous",
+      desc: "Immediate funding for unexpected expenses and personal financial requirements.",
+    },
+  ];
+
   return (
-    <main className="pt-0">
-      {/* ===== HERO SECTION ===== */}
-      <section className="bg-gray-50">
-        <div className="w-full overflow-hidden">
-          {/* Background Image */}
-          <img
-            src="/assests/personal.jpg"
-            alt="Dearo Personal Loans"
-            className="w-full h-[300px] md:h-[420px] object-cover"
-          />
+    <main className="bg-[#0B1220] text-white">
+
+      {/* ================= SPLIT HERO ================= */}
+      <section className="min-h-[90vh] grid lg:grid-cols-2">
+        
+        {/* Left Content */}
+        <div className="flex items-center px-8 md:px-16 bg-gradient-to-br ">
+          <div>
+            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+              <span className="text-[#4F7CFF]">Personal Loan Solutions</span> <br />
+              Flexible Funding for Individuals
+            </h1>
+
+            <p className="mt-6 text-gray-300 max-w-xl">
+              Personal loan solutions provide convenient, transparent, and flexible financing to support 
+              medical expenses, education, household improvements, emergencies, and lifestyle planning.
+            </p>
+          </div>
         </div>
 
-        {/* Text Below Image */}
-        <div className="max-w-7xl mx-auto px-6 py-8 md:py-12">
-          <div className="max-w-3xl mx-auto px-6 py-8 md:py-12 text-center">
-  <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-    Personal Investment Capital
-  </h1>
-  <p className="mt-4 text-base md:text-lg text-gray-700">
-    Fulfill your dreams and manage your financial needs effortlessly
-    with a Personal Investment Capital from Dearo Investment. Whether it’s for
-    education, home improvements, or personal milestones, we make it
-    easy to access funds when you need them.
-  </p>
-  </div>
-  </div>
-
-
-       
-
-        {/* ===== PAGE CONTENT ===== */}
-        {/* <div className="max-w-7xl mx-auto px-6 py-16"> */}
-          {/* Features Grid */}
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {/* How You Can Use the Funds */}
-            <div className="space-y-6">
-              <div className="flex items-center gap-3">
-                <Home className="w-8 h-8 text-[#335DD0FF]" />
-                <span>Home improvements and renovations</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Users className="w-8 h-8 text-[#335DD0FF]" />
-                <span>Education and professional development</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Activity className="w-8 h-8 text-[#335DD0FF]" />
-                <span>Major life events or personal milestones</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Award className="w-8 h-8 text-[#335DD0FF]" />
-                <span>Other personal needs requiring immediate funds</span>
-              </div>
-            </div>
-
-            {/* Why This Product Works for You */}
-            <div className="space-y-6">
-              <div className="flex items-center gap-3">
-                <CreditCard className="w-8 h-8 text-[#335DD0FF]" />
-                <span>Flexible repayment options (EMI or Reducing Balance)</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Users className="w-8 h-8 text-[#335DD0FF]" />
-                <span>Quick processing with efficient fund delivery</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Building className="w-8 h-8 text-[#335DD0FF]" />
-                <span>Responsible lending aligned with income plans</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <UserCheck className="w-8 h-8 text-[#335DD0FF]" />
-                <span>Loan tenure structured before retirement</span>
-              </div>
-            </div>
-
-            {/* Key Loan Conditions
-            <div className="space-y-6 text-gray-800">
-              <div className="flex justify-between items-center">
-                <div>
-                  <span className="text-2xl font-bold text-[#335DD0FF]">
-                    Rs. 150,000/-
-                  </span>
-                  <p>Minimum Monthly Income</p>
-                </div>
-                <p>Eligibility requirement</p>
-              </div>
-
-              <div className="flex justify-between items-center">
-                <div>
-                  <span className="text-2xl font-bold text-[#335DD0FF]">
-                    5 Years
-                  </span>
-                  <p>Maximum Tenure</p>
-                </div>
-                <p>Depends on age & service</p>
-              </div>
-
-              <div className="flex justify-between items-center">
-                <div>
-                  <span className="text-2xl font-bold text-[#335DD0FF]">
-                    Mandatory
-                  </span>
-                  <p>Salary Routing</p>
-                </div>
-                <p>Commercial Bank account</p>
-              </div>
-
-              <div className="flex justify-between items-center">
-                <div>
-                  <span className="text-2xl font-bold text-[#335DD0FF]">
-                    Required
-                  </span>
-                  <p>Retirement Clearance</p>
-                </div>
-                <p>Loan must settle before retirement</p>
-              </div>
-            </div>
-          </div> */}
-
-         
-          {/* <div className="grid md:grid-cols-2 gap-8"> */}
-            {/* Important to Know */}
-            {/* <div className="bg-white p-6 rounded-xl shadow"> */}
-              {/* <h3 className="text-lg font-semibold text-[#335DD0FF] mb-4">
-                Important to Know Before You Apply
-              </h3> */}
-              {/* <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                <li>Minimum monthly income: Rs 150,000/-</li>
-                <li>Loan must be fully repaid before retirement</li>
-                <li>Maximum repayment period: 5 years</li>
-                <li>Salary must be credited to a Commercial Bank account</li>
-              </ul> */}
-            {/* </div> */}
-
-            {/* Documents */}
-            <div className="bg-white p-6 rounded-xl shadow">
-              <h3 className="text-lg font-semibold text-[#335DD0FF] mb-4">
-                What You'll Need to Apply
-              </h3>
-              <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                <li>Completed loan application form</li>
-                <li>Employer letter (employment, salary & deductions)</li>
-                <li>Bank statements – past 6 months</li>
-                <li>Salary slips – past 3 months</li>
-                <li>NIC / Passport / Driving License</li>
-                <li>Address verification documents</li>
-                <li>Guarantor documents (if applicable)</li>
-                <li>Educational or professional certificates (if available)</li>
-              </ul>
-            </div>
-          </div>
-        
+        {/* Right Image */}
+        <div className="relative mt-25 h-[470px] md:h-[400px] rounded-3xl overflow-hidden">
+          <img
+            src="/assests/per.png"
+            alt="Personal Loans"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-l from-black/60 to-transparent" />
+        </div>
       </section>
+
+      {/* ================= GLASS FEATURE CARDS ================= */}
+      <section className="relative z-10 -mt-12 pt-13 px-4 md:px-8 pb-16">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {features.map((item, i) => (
+            <div
+              key={i}
+              className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 shadow-xl hover:scale-105 transition transform"
+            >
+              <item.icon className="w-10 h-10 text-[#4F7CFF] mb-4" />
+              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+              <p className="text-gray-300 text-sm">{item.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ================= PURPOSE OF PERSONAL LOANS ================= */}
+      <section className="max-w-7xl mx-auto px-4 py-24">
+        <h2 className="text-2xl md:text-4xl font-bold text-center mb-16">
+          Purpose of Personal Loans
+        </h2>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-15">
+          {timeline.map((item, idx) => (
+            <div
+              key={idx}
+              className="relative backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:scale-105 transition transform"
+            >
+              
+              {/* Title */}
+              <h3 className="text-xl md:text-2xl font-semibold text-[#4F7CFF] mb-3 text-center">
+                {item.title}
+              </h3>
+
+              {/* Description */}
+              <p className="text-gray-300 text-sm md:text-base text-center">
+                {item.desc}
+              </p>
+
+              {/* Decorative underline */}
+              <div className="mt-4 w-16 h-1 mx-auto bg-gradient-to-r from-[#4F7CFF] to-[#335DD0FF] rounded-full" />
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ================= CTA ================= */}
+      <section className="bg-gradient-to-r from-[#0F172A] to-[#020617] py-20">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <Landmark className="w-12 h-12 mx-auto text-[#4F7CFF] mb-6" />
+          <h3 className="text-3xl md:text-4xl font-bold">
+            Get Your Personal Loan Today
+          </h3>
+          <p className="mt-6 text-gray-300">
+            Apply for a Personal Loan with Dearo Investment Limited to get quick, reliable, and tailored financing for your personal needs.
+          </p>
+
+          <Link href="/contact">
+            <button className="mt-10 px-10 py-4 rounded-full bg-[#335DD0FF] font-semibold hover:bg-blue-600 transition">
+              Contact Our Team
+            </button>
+          </Link>
+        </div>
+      </section>
+
     </main>
   );
 }

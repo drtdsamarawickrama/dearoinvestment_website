@@ -86,9 +86,7 @@ export default function PartnersPage() {
               <span className="px-4 py-2 rounded-full bg-white/10 backdrop-blur text-xs sm:text-sm">
                 Banking Partners
               </span>
-              <span className="px-4 py-2 rounded-full bg-white/10 backdrop-blur text-xs sm:text-sm">
-                Insurance Partners
-              </span>
+             
               <span className="px-4 py-2 rounded-full bg-white/10 backdrop-blur text-xs sm:text-sm">
                 Financial Institutions
               </span>
@@ -145,42 +143,7 @@ export default function PartnersPage() {
         </div>
       </section>
 
-      {/* ================= INSURANCE PARTNERS =================
-      <section className="space-y-10">
-        <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Insurance Partners
-          </h2>
-          <p className="text-gray-700 text-sm sm:text-base">
-            Comprehensive protection and risk coverage.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
-          <PartnerCard
-            image="/assests/hnbA.jpg"
-            alt="HNB Assurance"
-            title="HNB Assurance"
-            role="Risk Protection Partner"
-            description="Structured insurance coverage for operational stability."
-          />
-          <PartnerCard
-            image="/assests/people.jpg"
-            alt="People’s Insurance"
-            title="People’s Insurance"
-            role="Portfolio Risk Partner"
-            description="Enhances portfolio security and asset protection."
-          />
-          <PartnerCard
-            image="/assests/sel.jpg"
-            alt="Ceylinco Insurance"
-            title="Ceylinco Insurance"
-            role="Insurance Solutions Partner"
-            description="Life and general insurance solutions for long-term stability."
-          />
-        </div>
-      </section> */}
-
+     
       {/* ================= FINANCIAL PARTNERS ================= */}
       <section className="space-y-12">
         <div className="text-center max-w-2xl mx-auto">

@@ -50,10 +50,10 @@ export default function Footer() {
           </h3>
           <ul className="space-y-1 text-sm">
             {[
-              "Personal Investment Capital",
-              "Mortgage Investment Capital",
-              "Hire Purchase Investment ",
-              "Housing Investment Capital",
+              "Personal Loans",
+              "Mortgage Loans",
+              "Hire Purchase/Vehical Loans ",
+              "Housing Loans",
               
               
             ].map((item) => (
@@ -69,11 +69,11 @@ export default function Footer() {
           </h3>
           <ul className="space-y-1 text-sm">
             {[
-              "Joint Venture Collaborations",
-             "MSME Capital Solutions",
-             "Business Growth Solutions",
-             "Project Development Solutions",
-             "Agri Capital Investment",
+              "Joint Venture Loans",
+             "MSME Loans",
+             "Business Loans",
+             "Project Loans",
+             "Agri Loans",
              
              
              

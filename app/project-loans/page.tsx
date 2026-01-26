@@ -1,99 +1,163 @@
 import Image from "next/image";
-import { Building, ChartLine, Settings, Clock } from "lucide-react";
+import {
+  Building,
+  Factory,
+  Hotel,
+  Settings,
+  CheckCircle,
+} from "lucide-react";
 
 export const metadata = {
   title: "Project Loans | Dearo Investment Limited",
   description:
-    "Structured project loan solutions to support large-scale developments and long-term investments.",
+    "Structured project loan solutions supporting medium to large-scale developments from planning to completion.",
 };
 
 export default function ProjectLoansPage() {
-  const features = [
-    {
-      icon: <Building className="w-8 h-8 text-blue-600" />,
-      title: "Construction & Real Estate",
-      desc: "Finance large-scale construction and property development projects.",
-    },
-    {
-      icon: <ChartLine className="w-8 h-8 text-blue-600" />,
-      title: "Infrastructure Development",
-      desc: "Support roads, bridges, utilities, and other infrastructure initiatives.",
-    },
-    {
-      icon: <Settings className="w-8 h-8 text-blue-600" />,
-      title: "Manufacturing Projects",
-      desc: "Invest in machinery, factories, and production expansion.",
-    },
-    {
-      icon: <Clock className="w-8 h-8 text-blue-600" />,
-      title: "Renewable Energy",
-      desc: "Fund solar, wind, and other sustainable energy projects.",
-    },
-  ];
-
-  
-
   return (
-    <section className="bg-gray-50">
+    <main className="bg-[#020617] text-gray-200">
 
-      {/* ================= HERO SECTION (VISIBLE ON ALL DEVICES) ================= */}
-      <div className="relative w-full h-[300px] md:h-[350px] overflow-hidden">
-        <Image
-          src="/assests/project1.jpg"
-          alt="Project Development Support"
-          fill
-          priority
-          className="object-cover object-center"
-        />
-      </div>
+      {/* ================= SPLIT HERO ================= */}
+      <section className="grid lg:grid-cols-2 min-h-[90vh]">
 
-      <div className="text-center mt-6 px-6">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4">
-          Project Loans
-        </h2>
-        <p className="max-w-2xl text-lg text-gray-700 mx-auto">
-          Structured funding solution for large-scale developments, construction, and long-term projects.
-        </p>
-      </div>
+        {/* LEFT CONTENT */}
+        <div className="flex flex-col justify-center px-6 md:px-14">
+          <span className="uppercase tracking-widest text-sm text-cyan-400 mb-4">
+            Project Loan Solutions
+          </span>
 
-      {/* ================= FEATURES ================= */}
-      <div className="max-w-6xl mx-auto px-6 py-20 space-y-16">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Why Choose Our Project Development Support?</h2>
-          <p className="text-gray-700 mt-3 max-w-2xl mx-auto">
-            Our project development support is designed to empower businesses and developers with flexible, structured financing.
+          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mt-10 mb-6">
+            Structured Funding for <br />
+            <span className="text-cyan-400">Project Success</span>
+          </h1>
+
+          <p className="text-gray-400 text-lg max-w-xl mb-8">
+            The Project Loan is designed to support standalone and structured
+            projects by providing funding from planning through to completion,
+            enabling disciplined execution, cost control, and long-term value
+            creation.By aligning funding with project milestones and operational
+          requirements, Project Loans enable timely execution, effective cost
+          management, and successful delivery of medium to large-scale ventures.
           </p>
+
+          
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((f, index) => (
+        {/* RIGHT IMAGE */}
+        <div className="relative  mt-25 h-[300px] md:h-[400px] rounded-3xl overflow-hidden">
+          <Image
+            src="/assests/pro.png"
+            alt="Project Loans"
+            fill
+            priority
+            className="object-cover opacity-90"
+          />
+          <div className="absolute inset-0 bg-gradient-to-l from-[#020617] via-transparent to-transparent" />
+        </div>
+      </section>
+
+    
+      
+
+      {/* ================= KEY FOCUS AREAS ================= */}
+      <section className="max-w-7xl mx-auto px-6 py-20">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-14">
+          Key <span className="text-cyan-400">Focus Areas</span>
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {[
+            {
+              icon: Building,
+              title: "Construction & Infrastructure",
+              desc: "Large-scale construction and infrastructure development projects",
+            },
+            {
+              icon: Hotel,
+              title: "Tourism & Hospitality",
+              desc: "Hotels, resorts, and tourism-driven developments",
+            },
+            {
+              icon: Factory,
+              title: "Manufacturing & Industrial Services",
+              desc: "Factories, plants, and industrial service expansions",
+            },
+          ].map((item, i) => (
             <div
-              key={index}
-              className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
+              key={i}
+              className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-8 text-center shadow-lg hover:shadow-cyan-500/10 transition"
             >
-              <div className="mb-4">{f.icon}</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">{f.title}</h3>
-              <p className="text-gray-700 text-sm">{f.desc}</p>
+              <item.icon className="w-10 h-10 mx-auto text-cyan-400 mb-4" />
+              <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+              <p className="text-gray-400">{item.desc}</p>
             </div>
           ))}
         </div>
+      </section>
 
-        {/* ================= PROCESS ================= */}
-        <div>
-        
-        
-        </div>
+      {/* ================= PURPOSE OF FINANCING (TIMELINE) ================= */}
+      <section className="bg-[#020617] border-t border-white/10 py-20 px-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+          Purpose of <span className="text-cyan-400">Financing</span>
+        </h2>
 
-        {/* ================= CTA ================= */}
-        <div className="text-center mt-16">
-          <h3 className="text-3xl font-bold text-gray-900 mb-4">
-            Ready to Start Your Project?
-          </h3>
-          <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-            Apply for a Project Development Support today and secure the financing your large-scale development needs.
-          </p>
+        <div className="max-w-4xl mx-auto space-y-10">
+          {[
+            "Financing new projects from planning to completion",
+            "Supporting project expansion and capacity enhancement",
+            "Funding modernization and operational upgrades",
+            "Facilitating efficient execution of capital-intensive projects",
+          ].map((text, i) => (
+            <div key={i} className="flex items-start gap-6">
+              <div className="w-10 h-10 rounded-full bg-cyan-400 flex items-center justify-center text-[#020617] font-bold">
+                {i + 1}
+              </div>
+              <p className="text-gray-300 text-lg">{text}</p>
+            </div>
+          ))}
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* ================= STRUCTURE HIGHLIGHTS ================= */}
+      <section className="max-w-7xl mx-auto px-6 py-20">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-14">
+          Project Loan <span className="text-cyan-400">Structure</span>
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {[
+            "Funding aligned with project milestones",
+            "Phased disbursement based on progress",
+            "Clear governance and accountability frameworks",
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-8 text-center"
+            >
+              <CheckCircle className="w-10 h-10 mx-auto text-cyan-400 mb-4" />
+              <p className="text-gray-300 font-medium">{item}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ================= FINAL CTA ================= */}
+      <section className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border-t border-white/10 py-20 text-center px-6">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          Deliver Your Project with <span className="text-cyan-400">Confidence</span>
+        </h2>
+        <p className="text-gray-400 max-w-2xl mx-auto mb-8">
+          Partner with Dearo Investment Limited to access disciplined,
+          milestone-driven project financing designed for sustainable success.
+        </p>
+        <a
+          href="/contact"
+          className="inline-block bg-cyan-400 text-[#020617] px-8 py-3 rounded-full font-semibold hover:bg-white transition"
+        >
+          Contact Our Team
+        </a>
+      </section>
+
+    </main>
   );
 }

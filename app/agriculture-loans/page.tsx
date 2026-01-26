@@ -1,77 +1,153 @@
 import Image from "next/image";
-import { Leaf, Tractor, Droplet, Sun } from "lucide-react"; // example icons
+import {
+  Leaf,
+  Tractor,
+  Droplets,
+  Warehouse,
+  Cpu,
+  LineChart,
+} from "lucide-react";
 
+export const metadata = {
+  title: "Agriculture Capital Investment | Dearo Investment Limited",
+  description:
+    "Flexible capital solutions supporting smart agriculture, agribusiness growth, and rural development initiatives.",
+};
 
-
-export default function AgricultureLoansPage() {
-  const features = [
-    { icon: <Leaf className="w-8 h-8 text-green-600" />, title: "Crop Cultivation",  },
-    { icon: <Tractor className="w-8 h-8 text-green-600" />, title: "Machinery & Equipment", },
-    { icon: <Droplet className="w-8 h-8 text-green-600" />, title: "Livestock & Dairy", },
-    { icon: <Sun className="w-8 h-8 text-green-600" />, title: "Rural Development", },
-  ];
-
-  const process = [
-    "Submit loan application",
-    "Eligibility & documentation review",
-    "Loan approval & disbursement",
-    "Ongoing support & monitoring",
-  ];
-
+export default function AgricultureCapitalInvestmentPage() {
   return (
-    <section className="bg-gray-50">
+    <section className="bg-[#052815] text-white">
 
-      {/* ================= HERO IMAGE ================= */}
-      <div className="relative w-full h-[300px] md:h-[350px] overflow-hidden">
-        <Image
-          src="/assests/agrits.png" // replace with your image
-          alt="Agriculture Loans"
-          fill
-          priority
-          className="object-cover object-center"
-        />
-      </div>
+      {/* ================= HERO SECTION ================= */}
+      <div className="relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-14 items-center">
 
-      {/* ================= HERO TEXT (Centered) ================= */}
-      <div className="text-center mt-6 px-4 sm:px-6 md:px-0">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-          Agriculture Capital Investment
-        </h2>
-        <p className="max-w-2xl mx-auto text-lg md:text-xl text-gray-700">
-          Flexible funding solutions for farmers, agribusinesses, and rural development.
-        </p>
-      </div>
+          {/* Hero Text */}
+          <div>
+            
 
-      {/* ================= FEATURES ================= */}
-      <div className="max-w-6xl mx-auto px-6 py-20 space-y-16">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Why Choose Our Agriculture Capital Investment ?</h2>
-          <p className="text-gray-700 mt-3 max-w-2xl mx-auto">
-           We provide flexible capital solutions for farmers, agribusinesses, and rural development initiatives, enabling growth, modernization, and sustainable impact across the agricultural sector.
-          </p>
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+               Dearo Agri Loans 
+            Empowering Smart Agriculture
+            </h1>
+
+            <p className="mt-6 text-gray-300 text-lg max-w-xl">
+              Flexible capital solutions designed to support farmers,
+              agribusinesses, and rural development initiatives—enabling
+              modernization, productivity, and long-term sustainability.Our Agri loans supports both traditional
+            agriculture and smart farming solutions by providing structured
+            funding for innovation, efficiency, and value creation across the
+            agricultural sector.
+            </p>
+          </div>
+
+          {/* Hero Image */}
+          <div className="relative  mt-[80px] h-[300px] md:h-[400px] rounded-3xl overflow-hidden">
+            <Image
+              src="/assests/ag.png"
+              alt="Agriculture Capital Investment"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-black/30" />
+          </div>
         </div>
+      </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((f, idx) => (
-            <div key={idx} className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
-              <div className="mb-4">{f.icon}</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">{f.title}</h3>
-             
+      
+
+      {/* ================= KEY FOCUS AREAS ================= */}
+      <div className="max-w-7xl mx-auto px-6 py-16 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        {[
+          {
+            icon: <Leaf className="w-8 h-8 text-green-400" />,
+            title: "Crop Cultivation",
+            desc: "Smart farming methods and high-yield production systems.",
+          },
+          {
+            icon: <Tractor className="w-8 h-8 text-green-400" />,
+            title: "Machinery & Equipment",
+            desc: "Modern machinery, automation, and smart farm equipment.",
+          },
+          {
+            icon: <Warehouse className="w-8 h-8 text-green-400" />,
+            title: "Livestock & Dairy",
+            desc: "Technology-assisted feeding, breeding, and farm management.",
+          },
+          {
+            icon: <LineChart className="w-8 h-8 text-green-400" />,
+            title: "Rural Development",
+            desc: "Infrastructure, storage, and agri-processing facilities.",
+          },
+        ].map((item, i) => (
+          <div
+            key={i}
+            className="rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 p-8 hover:bg-white/10 transition"
+          >
+            <div className="mb-4">{item.icon}</div>
+            <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+            <p className="text-gray-300 text-sm">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+
+      {/* ================= SMART FARMING TIMELINE ================= */}
+      <div className="max-w-6xl mx-auto px-6 py-20">
+        <h2 className="text-3xl md:text-4xl font-bold mb-14">
+          Smart Farming Technology Support
+        </h2>
+
+        <div className="space-y-12 border-l border-white/10 pl-8">
+          {[
+            {
+              icon: <Cpu className="w-6 h-6 text-green-400" />,
+              text: "Precision agriculture and smart farming systems",
+            },
+            {
+              icon: <Droplets className="w-6 h-6 text-green-400" />,
+              text: "Advanced irrigation and water-management solutions",
+            },
+            {
+              icon: <Warehouse className="w-6 h-6 text-green-400" />,
+              text: "Post-harvest handling, storage, and cold-chain development",
+            },
+            {
+              icon: <LineChart className="w-6 h-6 text-green-400" />,
+              text: "Digital tools for monitoring, data analysis, and productivity improvement",
+            },
+          ].map((item, i) => (
+            <div key={i} className="relative">
+              <span className="absolute -left-[46px] top-1 w-10 h-10 rounded-full bg-white/10 flex items-center justify-center backdrop-blur">
+                {item.icon}
+              </span>
+              <p className="text-gray-300">{item.text}</p>
             </div>
           ))}
         </div>
+      </div>
 
-       
-        
-
-        {/* ================= CTA ================= */}
-        <div className="text-center mt-16">
-          <h3 className="text-3xl font-bold text-gray-900 mb-4">Ready to Grow Your Agri business ?</h3>
-          <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-            Apply for an Agriculture Capital Investment today and secure the funding support your farm or agribusiness needs.
+      {/* ================= CTA ================= */}
+      <div className="bg-white/5 border-t border-white/10">
+        <div className="max-w-6xl mx-auto px-6 py-16 text-center">
+          <h3 className="text-3xl font-bold mb-4">
+            Invest in Sustainable Agriculture
+          </h3>
+          <p className="text-gray-300 max-w-2xl mx-auto">
+            Partner with Dearo Investment Limited to modernize agriculture,
+            improve productivity, and build long-term value through smart
+            capital investment.
           </p>
+<br/>
+          <a
+          href="/contact"
+          className="inline-block bg-white text-[#020617] px-8 py-3 rounded-full font-semibold hover:bg-white transition"
+        >
+          Contact Us
+        </a>
         </div>
       </div>
+
     </section>
   );
 }

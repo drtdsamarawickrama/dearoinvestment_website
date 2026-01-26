@@ -40,14 +40,12 @@ export default function BoardMembersPage() {
       name: "Mr. Deepal Piris",
       title: "Head Of Finance",
       img: "/assests/management/deepal.jpg",
+    }, {
+      name: "Mr. M.N.S Samaraweera",
+      title: "Operation Manager ",
+      img: "/assests/management/samaraweera.jpg",
     },
-   
-    {
-      name: "Mrs. Nishadi Saumaya",
-      title: "Senior Manager – Region 01",
-      img: "/assests/management/team-nishadi-saumaya.jpg",
-    },
-    {
+   {
       name: "Mr. Rex",
       title: "Senior Manager - North & East Region",
       img: "/assests/management/rex1.jpg",
@@ -70,36 +68,8 @@ export default function BoardMembersPage() {
       title: "Senior Manager Down South Region",
       img: "/assests/management/chathura.jpeg",
     },
-    {
-      name: "Mrs. Vakeeshvary",
-      title: "Branch Manager – Chenkalady",
-      img: "/assests/management/Vakeeshvary Branch Manager Chenkalady.jpeg",
-    },
-    {
-      name: "Mr. Sockalingam Priyatharshan",
-      title: "Branch Manager – Batticaloa",
-      img: "/assests/management/Sockalingam Priyatharshan Branch Manager.jpeg",
-    },
-    {
-      name: "Mr. Harsha Priyankara",
-      title: "Branch Manager – Mahiyanganaya",
-      img: "/assests/management/harsha.jpeg",
-    },
-    {
-      name: "Mr. Iresh Udayanga",
-      title: "Branch Manager – Polonnaruwa",
-      img: "/assests/management/iresh.jpeg",
-    },
-     {
-      name: "Mr. J.J.Moraies",
-      title: "Branch Manager – Mannar",
-      img: "/assests/management/manna.jpg",
-    }, 
-    {
-      name: "Mr. T. Sinthushan",
-      title: "Branch Manager – Kaluwanchikudy",
-      img: "/assests/management/kaluwan.jpg",
-    },
+   
+    
     {
       name: "Mr. Kokularajan",
       title: "Regional Manager  – Batticaloa",

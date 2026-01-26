@@ -135,11 +135,11 @@ export default function Navbar() {
                   Business Services <ChevronDown size={16} />
                 </div>
                 <div className="absolute left-0 mt-0 hidden group-hover:block bg-white shadow-xl rounded-md py-2 w-52 z-50">
-                  <a href="/msme-loans" className="block px-4 py-2 hover:bg-gray-100">MSME Capital Solutions</a>
-                  <a href="/business-loans" className="block px-4 py-2 hover:bg-gray-100">Business Growth Solutions</a>
-                  <a href="/project-loans" className="block px-4 py-2 hover:bg-gray-100">Project Development Solutions</a>
-                  <a href="/agriculture-loans" className="block px-4 py-2 hover:bg-gray-100">Agri  Capital Investment</a>
-                  <a href="/join-venture-loans" className="block px-4 py-2 hover:bg-gray-100">Join Venture Collaborations</a>
+                  <a href="/msme-loans" className="block px-4 py-2 hover:bg-gray-100">MSME Loans</a>
+                  <a href="/business-loans" className="block px-4 py-2 hover:bg-gray-100">Business Loans</a>
+                  <a href="/project-loans" className="block px-4 py-2 hover:bg-gray-100">Project Loans</a>
+                  <a href="/agriculture-loans" className="block px-4 py-2 hover:bg-gray-100">Agriculture Loans</a>
+                  <a href="/join-venture-loans" className="block px-4 py-2 hover:bg-gray-100">Join Venture Loans</a>
                 </div>
               </div>
 
@@ -149,10 +149,10 @@ export default function Navbar() {
                   Personal Services <ChevronDown size={16} />
                 </div>
                 <div className="absolute left-0 mt-0 hidden group-hover:block bg-white shadow-xl rounded-md py-2 w-52 z-50">
-                  <a href="/personnel-loans" className="block px-4 py-2 hover:bg-gray-100">Personal Investment Capital</a>
-                  <a href="/hirepurchase-loans" className="block px-4 py-2 hover:bg-gray-100">Hire Purchase Investment </a>
-                  <a href="/mortgage-loans" className="block px-4 py-2 hover:bg-gray-100">Mortgage  Investment Capital</a>
-                  <a href="/housing-loans" className="block px-4 py-2 hover:bg-gray-100">Housing Investment Capital</a>
+                  <a href="/personnel-loans" className="block px-4 py-2 hover:bg-gray-100">Personal Loans</a>
+                  <a href="/hirepurchase-loans" className="block px-4 py-2 hover:bg-gray-100">Hire Purchase/Vehicle Loans</a>
+                  <a href="/mortgage-loans" className="block px-4 py-2 hover:bg-gray-100">Mortgage Loans</a>
+                  <a href="/housing-loans" className="block px-4 py-2 hover:bg-gray-100">Housing Loans</a>
                 </div>
               </div>
 
@@ -167,54 +167,101 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* MOBILE MENU */}
-          {mobileOpen && (
-            <div className="md:hidden bg-white p-4 space-y-4 border-t">
-              <a href="/about" className="block">About</a>
+          
+{/* MOBILE MENU */}
+<div className={`fixed inset-0 z-50 md:hidden ${mobileOpen ? "pointer-events-auto" : "pointer-events-none"}`}>
 
-              <details>
-                <summary className="cursor-pointer">Management</summary>
-                <div className="pl-4 mt-0 space-y-2">
-                  <a href="/management" className="block">Board of Directors</a>
-                  <a href="/board" className="block">Senior Management</a>
-                </div>
-              </details>
+  {/* Dark Glass Overlay */}
+  <div
+    onClick={() => setMobileOpen(false)}
+    className={`absolute inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-300 ${
+      mobileOpen ? "opacity-100" : "opacity-0"
+    }`}
+  />
 
-              <details>
-                <summary className="cursor-pointer">Investors Relation</summary>
-                <div className="pl-4 mt-0 space-y-2">
-                  <a href="/financial-reports" className="block">Financial Reports</a>
-                  <a href="/insurance-partner" className="block">Our Partners</a>
-                  <a href="/investor-invitation" className="block">Investor Invitation</a>
-                </div>
-              </details>
+  {/* Drawer */}
+  <div
+    className={`absolute top-0 right-0 h-full w-[85%] max-w-sm
+      bg-white/80 backdrop-blur-2xl
+      shadow-2xl border-l border-white/30
+      transform transition-transform duration-500 ease-[cubic-bezier(.22,.61,.36,1)]
+      ${mobileOpen ? "translate-x-0" : "translate-x-full"}
+    `}
+  >
+    {/* Header */}
+    <div className="px-6 py-4 border-b border-white/30 flex justify-between items-center">
+      <img src="/assests/company_logo.png" alt="Logo" className="w-28" />
+      <button onClick={() => setMobileOpen(false)} className="text-xl font-semibold">
+        ✕
+      </button>
+    </div>
 
-              <details>
-                <summary className="cursor-pointer font-medium">Business Services</summary>
-                <div className="pl-4 mt-2 space-y-2">
-                  <a href="/msme-loans" className="block">MSME Loans</a>
-                  <a href="/business-loans" className="block">Business Loans</a>
-                  <a href="/project-loans" className="block">Project Loans</a>
-                  <a href="/agriculture-loans" className="block">Agriculture Loans</a>
-                  <a href="/join-venture-loans" className="block">Joint Venture Loans</a>
-                </div>
-              </details>
+    {/* Menu */}
+    <div className="p-6 space-y-5 text-[15px] font-medium">
 
-              <details>
-                <summary className="cursor-pointer font-medium">Personal Services</summary>
-                <div className="pl-4 mt-2 space-y-2">
-                  <a href="/personnel-loans" className="block">Personal Loans</a>
-                  <a href="/hirepurchase-loans" className="block">Hire Purchase Loans</a>
-                  <a href="/mortgage-loans" className="block">Mortgage Loans</a>
-                  <a href="/housing-loans" className="block">Housing Loans</a>
-                </div>
-              </details>
+      <a href="/about" className="block hover:text-blue-600 transition">
+        About
+      </a>
 
-              <a href="/news" className="block">News</a>
-              <a href="/career" className="hover:text-blue-600 transition font-semibold">Career</a>
-              <a href="/contact" className="block">Contact</a>
-            </div>
-          )}
+      <details className="group">
+        <summary className="cursor-pointer flex justify-between items-center">
+          Management
+          <ChevronDown className="group-open:rotate-180 transition-transform" size={18} />
+        </summary>
+        <div className="pl-4 mt-2 space-y-2 text-gray-700">
+          <a href="/management" className="block">Board of Directors</a>
+          <a href="/board" className="block">Senior Management</a>
+        </div>
+      </details>
+
+      <details className="group">
+        <summary className="cursor-pointer flex justify-between items-center">
+          Investor Relations
+          <ChevronDown className="group-open:rotate-180 transition-transform" size={18} />
+        </summary>
+        <div className="pl-4 mt-2 space-y-2 text-gray-700">
+          <a href="/financial-reports" className="block">Financial Reports</a>
+          <a href="/insurance-partner" className="block">Our Partners</a>
+          <a href="/investor-invitation" className="block">Investor Invitation</a>
+        </div>
+      </details>
+
+      <details className="group">
+        <summary className="cursor-pointer flex justify-between items-center">
+          Business Services
+          <ChevronDown className="group-open:rotate-180 transition-transform" size={18} />
+        </summary>
+        <div className="pl-4 mt-2 space-y-2 text-gray-700">
+          <a href="/msme-loans" className="block">MSME Loans</a>
+          <a href="/business-loans" className="block">Business Loans</a>
+          <a href="/project-loans" className="block">Project Loans</a>
+          <a href="/agriculture-loans" className="block">Agriculture Loans</a>
+          <a href="/join-venture-loans" className="block">Joint Venture Loans</a>
+        </div>
+      </details>
+
+      <details className="group">
+        <summary className="cursor-pointer flex justify-between items-center">
+          Personal Services
+          <ChevronDown className="group-open:rotate-180 transition-transform" size={18} />
+        </summary>
+        <div className="pl-4 mt-2 space-y-2 text-gray-700">
+          <a href="/personnel-loans" className="block">Personal Loans</a>
+          <a href="/hirepurchase-loans" className="block">Hire Purchase</a>
+          <a href="/mortgage-loans" className="block">Mortgage Loans</a>
+          <a href="/housing-loans" className="block">Housing Loans</a>
+        </div>
+      </details>
+
+      <a href="/news" className="block hover:text-blue-600 transition">News</a>
+      <a href="/career" className="block font-semibold hover:text-blue-600 transition">Career</a>
+      <a href="/contact" className="block hover:text-blue-600 transition">Contact</a>
+
+    </div>
+  </div>
+</div>
+
+        
         </nav>
       </header>
     </div>
