@@ -26,7 +26,7 @@ export default function HousingLoansPage() {
         <div className="flex flex-col justify-center px-6 md:px-12 lg:px-16">
           
 
-            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6 mt-[-100]"><span className="text-[#4F7CFF]">Dearo</span>
+            <h1 className="text-4xl md:text-6xl mt-20 font-extrabold leading-tight mb-6 "><span className="text-[#4F7CFF]">Dearo</span>
           <br/> Housing Loan
           </h1>
 

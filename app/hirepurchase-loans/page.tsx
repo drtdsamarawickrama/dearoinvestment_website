@@ -24,7 +24,7 @@ export default function HirePurchaseLoansPage() {
             Vehicle Hire Purchase Solutions
           </span>
 
-          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mt-11 mb-6">
+          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mt-30 mb-6">
             Drive Forward with <br />
             <span className="text-cyan-400">Confidence & Clarity</span>
           </h1>

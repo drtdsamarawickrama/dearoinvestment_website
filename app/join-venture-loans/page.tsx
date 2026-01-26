@@ -22,7 +22,7 @@ export default function JoinVentureLoansPage() {
         {/* LEFT CONTENT */}
         <div className="flex flex-col justify-center px-6 md:px-14">
          
-          <h1 className="text-4xl md:text-6xl mt-15 font-extrabold leading-tight mb-6">
+          <h1 className="text-4xl md:text-6xl mt-30 font-extrabold leading-tight mb-6">
             Join Venture <br />
             <span className="text-cyan-400">Loan Solutions</span>
           </h1>

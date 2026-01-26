@@ -24,7 +24,7 @@ export default function MortgageLoansPage() {
             Mortgage Solutions
           </span>
 
-          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+          <h1 className="text-4xl md:text-6xl mt-20 font-extrabold leading-tight mb-6">
             Secure Funding Backed by <br />
             <span className="text-cyan-400">Your Property</span>
           </h1>

@@ -59,7 +59,7 @@ export default function PersonalLoansPage() {
         {/* Left Content */}
         <div className="flex items-center px-8 md:px-16 bg-gradient-to-br ">
           <div>
-            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl mt-30 font-extrabold leading-tight mb-6">
               <span className="text-[#4F7CFF]">Personal Loan Solutions</span> <br />
               Flexible Funding for Individuals
             </h1>
