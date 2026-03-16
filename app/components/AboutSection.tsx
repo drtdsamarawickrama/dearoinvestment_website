@@ -176,7 +176,7 @@ With a network of 25 branches islandwide, Dearo Investment Ltd has established a
 
 
         {/* Awards carousel/cards */}
-        <div className="relative w-full">
+        <div className="relative w-8xl mx-auto">
           {/* Arrows */}
           <button
             onClick={scrollLeft}
