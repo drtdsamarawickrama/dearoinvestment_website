@@ -7,7 +7,7 @@ export default function CustomerServiceSection() {
 
   return (
     <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-20 text-center">
+      <div className="max-w-8xl mx-auto px-20 text-center">
         
         {/* Title */}
         <h2 className="text-4xl font-bold mb-10 text-[#182359]">

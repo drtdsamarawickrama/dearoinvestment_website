@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="absolute inset-0 opacity-10 bg-right bg-contain bg-no-repeat pointer-events-none"></div>
 {/* bg-[url('/patterns/hex-pattern.png')] */}
       {/* Main Grid */}
-      <div className="relative max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-6">
+      <div className="relative max-w-8xl mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-6">
 
         {/* LOGO + DESCRIPTION */}
         <div>

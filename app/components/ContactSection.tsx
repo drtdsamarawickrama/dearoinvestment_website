@@ -5,7 +5,7 @@ export default function ContactSection() {
    
   return (
     <section className="py-28 bg-gray-100">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-8xl mx-auto px-4">
 
         {/* ONE ROW LAYOUT */}
         <div className="grid lg:grid-cols-3 gap-8 items-stretch">

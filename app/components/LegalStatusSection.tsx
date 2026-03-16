@@ -9,7 +9,7 @@ export default function LegalStatusSection() {
             <img
               src="/assests/legal1.jpg"
               alt="Legal Status"
-              className="w-full h-full rounded-2xl object-cover shadow-xl"
+              className="w-8xl h-full rounded-2xl object-cover shadow-xl"
             />
             {/* Accent Overlay */}
             <div className="absolute inset-0 rounded-2xl ring-1 ring-black/5" />

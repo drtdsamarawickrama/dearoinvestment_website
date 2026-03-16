@@ -76,7 +76,7 @@ function YouTubeVideo({
 export default function TestimonialsSection() {
   return (
     <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-8xl mx-auto px-4">
 
         {/* Video 1 */}
         <div className="flex flex-col md:flex-row items-center mb-16">
