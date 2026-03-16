@@ -13,7 +13,7 @@ export default function Navbar() {
 <div className="bg-blue-950 text-white py-0.5">
   
 
-  <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-0.5 text-[12px]">
+  <div className="max-w-8xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-0.5 text-[12px]">
 
     {/* LEFT TEXT (Desktop Only) */}
     <div className="hidden md:block text-left">
