@@ -95,7 +95,7 @@ export default function Navbar() {
 
         {/* ================= MAIN NAVBAR ================= */}
         <nav className="bg-white">
-          <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
+          <div className="max-w-8xl mx-auto flex items-center justify-between px-4 py-2">
 
             {/* LOGO */}
             <a href="/" className="flex items-center gap-2">
