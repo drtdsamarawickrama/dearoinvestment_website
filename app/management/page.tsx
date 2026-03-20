@@ -21,7 +21,7 @@ export default function ManagementPage() {
     },
    
     {
-      name: "Mr. Sithhara Thewar Pushparaj Arun Kumar",
+      name: "Mr.Pushparaj Arun Kumar",
       title: "Director / Chief Operating Officer",
       img: "/assests/derector/arun.jpg",
     },
