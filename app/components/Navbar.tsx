@@ -106,7 +106,7 @@ export default function Navbar() {
             <div className="hidden md:flex items-center gap-8 text-[15px] font-medium">
               <a href="/about" className="hover:text-blue-600 transition">About</a>
 
-              {/* Management Dropdown */}
+              {/* Management Dropdown
               <div className="group relative cursor-pointer">
                 <div className="flex items-center gap-1 hover:text-blue-600 transition">
                   Management <ChevronDown size={16} />
@@ -115,7 +115,7 @@ export default function Navbar() {
                   <a href="/management" className="block px-4 py-2 hover:bg-gray-100">Board Of Directors</a>
                   <a href="/board" className="block px-4 py-2 hover:bg-gray-100">Senior Management</a>
                 </div>
-              </div>
+              </div> */}
 
               {/* Investors Dropdown */}
               <div className="group relative cursor-pointer">
