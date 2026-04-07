@@ -23,15 +23,15 @@ export default function AboutPage() {
       <AboutSection />
 
        {/* PREMIUM IMAGE */}
-      <div className="flex justify-center my-12">
+      {/* <div className="flex justify-center my-12">
         <div className="premium-frame">
           <img
             src="/assests/derector/leader1.jpg"
             alt="About Our Company"
             className="premium-image"
           />
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </main>
   );
 }
