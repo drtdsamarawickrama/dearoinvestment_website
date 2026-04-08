@@ -203,7 +203,7 @@ export default function Navbar() {
         About
       </a>
 
-      <details className="group">
+      {/* <details className="group">
         <summary className="cursor-pointer flex justify-between items-center">
           Management
           <ChevronDown className="group-open:rotate-180 transition-transform" size={18} />
@@ -212,7 +212,7 @@ export default function Navbar() {
           <a href="/management" className="block">Board of Directors</a>
           <a href="/board" className="block">Senior Management</a>
         </div>
-      </details>
+      </details> */}
 
       <details className="group">
         <summary className="cursor-pointer flex justify-between items-center">
