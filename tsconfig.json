@@ -14,14 +14,13 @@
     "jsx": "react-jsx",
     "incremental": true,
 
-    // ✅ Remove baseUrl (deprecated)
+    // ✅ Use ONLY ONE paths config
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./app/*"]
     },
 
-    // ✅ Silence deprecation (temporary safety)
-    "ignoreDeprecations": "5.0",
-    
+    // ✅ Silence deprecation (for now)
+    "ignoreDeprecations": "6.0",
 
     "plugins": [
       {
