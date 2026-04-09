@@ -20,7 +20,7 @@
     },
 
     // ✅ Silence deprecation (for now)
-    "ignoreDeprecations": "6.0",
+    
 
     "plugins": [
       {
