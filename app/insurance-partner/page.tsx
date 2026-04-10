@@ -59,7 +59,7 @@ function PartnerCard({
 /* ================= PAGE ================= */
 export default function PartnersPage() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 space-y-20">
+    <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 space-y-20">
 
       {/* ================= HERO / HANDSHAKE SECTION ================= */}
       <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white">
