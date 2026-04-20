@@ -9,84 +9,84 @@ export default function Navbar() {
   return (
     <div className="mb-3">
       <header className="w-full shadow-md fixed top-0 left-0 z-50">
-{/* ================= TOP BAR ================= */}
-<div className="bg-blue-950 text-white py-0.5">
-  
+        {/* ================= TOP BAR ================= */}
+        <div className="bg-blue-950 text-white py-0.5">
 
-  <div className="max-w-8xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-0.5 text-[12px]">
 
-    {/* LEFT TEXT (Desktop Only) */}
-    <div className="hidden md:block text-left">
-      <p className="leading-tight">
-        Building Wealth, Empowering Futures in Sri Lanka
-      </p>
-    </div>
+          <div className="max-w-8xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-0.5 text-[12px]">
 
-    {/* RIGHT INFO */}
-    <div className="flex flex-col md:flex-row md:items-center gap-1 w-full md:w-auto text-center md:text-left">
+            {/* LEFT TEXT (Desktop Only) */}
+            <div className="hidden md:block text-left">
+              <p className="leading-tight">
+                Building Wealth, Empowering Futures in Sri Lanka
+              </p>
+            </div>
 
-      {/* Phone (Desktop Only) */}
-      <span className="hidden md:flex items-center gap-1 whitespace-nowrap">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-3 h-3 fill-white"
-          viewBox="0 0 24 24"
-        >
-          <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.59a1 1 0 01-.25 1.01l-2.2 2.19z" />
-        </svg>
-       011 478 2400
-      </span>
+            {/* RIGHT INFO */}
+            <div className="flex flex-col md:flex-row md:items-center gap-1 w-full md:w-auto text-center md:text-left">
 
-      {/* Email (Desktop Only) */}
-      <span className="hidden md:flex items-center gap-1 whitespace-nowrap">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-3 h-3 fill-white"
-          viewBox="0 0 24 24"
-        >
-          <path d="M2 6a2 2 0 012-2h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6zm2 0l8 5 8-5H4zm16 12V8l-8 5-8-5v10h16z" />
-        </svg>
-        info@dearoinvestment.com
-      </span>
+              {/* Phone (Desktop Only) */}
+              <span className="hidden md:flex items-center gap-1 whitespace-nowrap">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-3 h-3 fill-white"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.59a1 1 0 01-.25 1.01l-2.2 2.19z" />
+                </svg>
+                011 478 2400
+              </span>
 
-             {/* ================= TOP BAR ================= */}
-<div className="bg-blue-950 text-white py-1 md:py-2">
-  <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
+              {/* Email (Desktop Only) */}
+              <span className="hidden md:flex items-center gap-1 whitespace-nowrap">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-3 h-3 fill-white"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M2 6a2 2 0 012-2h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6zm2 0l8 5 8-5H4zm16 12V8l-8 5-8-5v10h16z" />
+                </svg>
+                info@dearoinvestment.com
+              </span>
 
-    {/* LEFT: Social Media Icons (Mobile Only) */}
-    <div className="flex items-center gap-4 md:hidden">
-      {/* Instagram */}
-      <a href="https://www.instagram.com/dearoinvestmentlimited/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M7 2C4.238 2 2 4.238 2 7v10c0 2.762 2.238 5 5 5h10c2.762 0 5-2.238 5-5V7c0-2.762-2.238-5-5-5H7zm10 1.5c1.93 0 3.5 1.57 3.5 3.5v10c0 1.93-1.57 3.5-3.5 3.5H7c-1.93 0-3.5-1.57-3.5-3.5V7c0-1.93 1.57-3.5 3.5-3.5h10z"/>
-          <path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7zm4.75-.75a1 1 0 11-2 0 1 1 0 012 0z"/>
-        </svg>
-      </a>
+              {/* ================= TOP BAR ================= */}
+              <div className="bg-blue-950 text-white py-1 md:py-2">
+                <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
 
-      {/* Facebook */}
-      <a href="https://www.facebook.com/dearoinvestmentlimited" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879v-6.987H7.898v-2.892h2.54V9.845c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.196 2.238.196v2.46h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.892h-2.33v6.987C18.343 21.128 22 16.991 22 12z"/>
-        </svg>
-      </a>
+                  {/* LEFT: Social Media Icons (Mobile Only) */}
+                  <div className="flex items-center gap-4 md:hidden">
+                    {/* Instagram */}
+                    <a href="https://www.instagram.com/dearoinvestmentlimited/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7 2C4.238 2 2 4.238 2 7v10c0 2.762 2.238 5 5 5h10c2.762 0 5-2.238 5-5V7c0-2.762-2.238-5-5-5H7zm10 1.5c1.93 0 3.5 1.57 3.5 3.5v10c0 1.93-1.57 3.5-3.5 3.5H7c-1.93 0-3.5-1.57-3.5-3.5V7c0-1.93 1.57-3.5 3.5-3.5h10z" />
+                        <path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7zm4.75-.75a1 1 0 11-2 0 1 1 0 012 0z" />
+                      </svg>
+                    </a>
 
-      {/* YouTube */}
-      <a href="https://www.youtube.com/@DearoInvestmentlimited" target="_blank" rel="noopener noreferrer" className="hover:text-red-600">
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M19.615 3.184c-1.252-.848-6.29-.848-6.29-.848s-5.039 0-6.29.848C5.337 4.032 5 6.05 5 12s.337 7.968 1.035 8.816c1.252.848 6.29.848 6.29.848s5.039 0 6.29-.848C18.663 19.968 19 17.95 19 12s-.337-7.968-1.385-8.816zM10 15V9l5 3-5 3z"/>
-        </svg>
-      </a>
-    </div>
+                    {/* Facebook */}
+                    <a href="https://www.facebook.com/dearoinvestmentlimited" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879v-6.987H7.898v-2.892h2.54V9.845c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.196 2.238.196v2.46h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.892h-2.33v6.987C18.343 21.128 22 16.991 22 12z" />
+                      </svg>
+                    </a>
 
-    {/* RIGHT: Login/Register (All Screens) */}
-    <div className="flex items-center gap-2 text-xs md:text-sm">
-      <a href="/login" className="hover:underline">Login</a>
-      <span className="opacity-50">|</span>
-      <a href="/register" className="hover:underline">Register</a>
-    </div>
+                    {/* YouTube */}
+                    <a href="https://www.youtube.com/@DearoInvestmentlimited" target="_blank" rel="noopener noreferrer" className="hover:text-red-600">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19.615 3.184c-1.252-.848-6.29-.848-6.29-.848s-5.039 0-6.29.848C5.337 4.032 5 6.05 5 12s.337 7.968 1.035 8.816c1.252.848 6.29.848 6.29.848s5.039 0 6.29-.848C18.663 19.968 19 17.95 19 12s-.337-7.968-1.385-8.816zM10 15V9l5 3-5 3z" />
+                      </svg>
+                    </a>
+                  </div>
 
-  </div>
-</div>
+                  {/* RIGHT: Login/Register (All Screens) */}
+                  <div className="flex items-center gap-2 text-xs md:text-sm">
+                    <a href="/login" className="hover:underline">Login</a>
+                    <span className="opacity-50">|</span>
+                    <a href="/register" className="hover:underline">Register</a>
+                  </div>
+
+                </div>
+              </div>
 
 
             </div>
@@ -106,7 +106,21 @@ export default function Navbar() {
             <div className="hidden md:flex items-center gap-8 text-[15px] font-medium">
               <a href="/about" className="hover:text-blue-600 transition">About</a>
 
-             
+              {/* Management Dropdown (Desktop) */}
+              <div className="group relative cursor-pointer">
+                <div className="flex items-center gap-1 hover:text-blue-600 transition">
+                  Management <ChevronDown size={16} />
+                </div>
+
+                <div className="absolute left-0 mt-0 hidden group-hover:block bg-white shadow-xl rounded-md py-2 w-56 z-50">
+                  <a href="/management" className="block px-4 py-2 hover:bg-gray-100">
+                    Board of Directors
+                  </a>
+                  <a href="/board" className="block px-4 py-2 hover:bg-gray-100">
+                    Senior Management
+                  </a>
+                </div>
+              </div>
               {/* Investors Dropdown */}
               <div className="group relative cursor-pointer">
                 <div className="flex items-center gap-1 hover:text-blue-600 transition">
@@ -157,101 +171,100 @@ export default function Navbar() {
             </button>
           </div>
 
-          
-{/* MOBILE MENU */}
-<div className={`fixed inset-0 z-50 md:hidden ${mobileOpen ? "pointer-events-auto" : "pointer-events-none"}`}>
 
-  {/* Dark Glass Overlay */}
-  <div
-    onClick={() => setMobileOpen(false)}
-    className={`absolute inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-300 ${
-      mobileOpen ? "opacity-100" : "opacity-0"
-    }`}
-  />
+          {/* MOBILE MENU */}
+          <div className={`fixed inset-0 z-50 md:hidden ${mobileOpen ? "pointer-events-auto" : "pointer-events-none"}`}>
 
-  {/* Drawer */}
-  <div
-    className={`absolute top-0 right-0 h-full w-[85%] max-w-sm
+            {/* Dark Glass Overlay */}
+            <div
+              onClick={() => setMobileOpen(false)}
+              className={`absolute inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-300 ${mobileOpen ? "opacity-100" : "opacity-0"
+                }`}
+            />
+
+            {/* Drawer */}
+            <div
+              className={`absolute top-0 right-0 h-full w-[85%] max-w-sm
       bg-white/80 backdrop-blur-2xl
       shadow-2xl border-l border-white/30
       transform transition-transform duration-500 ease-[cubic-bezier(.22,.61,.36,1)]
       ${mobileOpen ? "translate-x-0" : "translate-x-full"}
     `}
-  >
-    {/* Header */}
-    <div className="px-6 py-4 border-b border-white/30 flex justify-between items-center">
-      <img src="/assests/company_logo.png" alt="Logo" className="w-28" />
-      <button onClick={() => setMobileOpen(false)} className="text-xl font-semibold">
-        ✕
-      </button>
-    </div>
+            >
+              {/* Header */}
+              <div className="px-6 py-4 border-b border-white/30 flex justify-between items-center">
+                <img src="/assests/company_logo.png" alt="Logo" className="w-28" />
+                <button onClick={() => setMobileOpen(false)} className="text-xl font-semibold">
+                  ✕
+                </button>
+              </div>
 
-    {/* Menu */}
-    <div className="p-6 space-y-5 text-[15px] font-medium">
+              {/* Menu */}
+              <div className="p-6 space-y-5 text-[15px] font-medium">
 
-      <a href="/about" className="block hover:text-blue-600 transition">
-        About
-      </a>
+                <a href="/about" className="block hover:text-blue-600 transition">
+                  About
+                </a>
 
-      {/* <details className="group">
-        <summary className="cursor-pointer flex justify-between items-center">
-          Management
-          <ChevronDown className="group-open:rotate-180 transition-transform" size={18} />
-        </summary>
-        <div className="pl-4 mt-2 space-y-2 text-gray-700">
-          <a href="/management" className="block">Board of Directors</a>
-          <a href="/board" className="block">Senior Management</a>
-        </div>
-      </details> */}
+                <details className="group">
+                  <summary className="cursor-pointer flex justify-between items-center">
+                    Management
+                    <ChevronDown className="group-open:rotate-180 transition-transform" size={18} />
+                  </summary>
+                  <div className="pl-4 mt-2 space-y-2 text-gray-700">
+                    <a href="/management" className="block">Board of Directors</a>
+                    <a href="/board" className="block">Senior Management</a>
+                  </div>
+                </details>
 
-      <details className="group">
-        <summary className="cursor-pointer flex justify-between items-center">
-          Investor Relations
-          <ChevronDown className="group-open:rotate-180 transition-transform" size={18} />
-        </summary>
-        <div className="pl-4 mt-2 space-y-2 text-gray-700">
-          {/* <a href="/financial-reports" className="block">Financial Reports</a> */}
-          <a href="/insurance-partner" className="block">Our Partners</a>
-          <a href="/investor-invitation" className="block">Investor Invitation</a>
-        </div>
-      </details>
+                <details className="group">
+                  <summary className="cursor-pointer flex justify-between items-center">
+                    Investor Relations
+                    <ChevronDown className="group-open:rotate-180 transition-transform" size={18} />
+                  </summary>
+                  <div className="pl-4 mt-2 space-y-2 text-gray-700">
+                    {/* <a href="/financial-reports" className="block">Financial Reports</a> */}
+                    <a href="/insurance-partner" className="block">Our Partners</a>
+                    <a href="/investor-invitation" className="block">Investor Invitation</a>
+                  </div>
+                </details>
 
-      <details className="group">
-        <summary className="cursor-pointer flex justify-between items-center">
-          Business Services
-          <ChevronDown className="group-open:rotate-180 transition-transform" size={18} />
-        </summary>
-        <div className="pl-4 mt-2 space-y-2 text-gray-700">
-          <a href="/msme-loans" className="block">MSME Loans</a>
-          <a href="/business-loans" className="block">Business Loans</a>
-          <a href="/project-loans" className="block">Project Loans</a>
-          <a href="/agriculture-loans" className="block">Agriculture Loans</a>
-          <a href="/join-venture-loans" className="block">Joint Venture Loans</a>
-        </div>
-      </details>
+                <details className="group">
+                  <summary className="cursor-pointer flex justify-between items-center">
+                    Business Services
+                    <ChevronDown className="group-open:rotate-180 transition-transform" size={18} />
+                  </summary>
+                  <div className="pl-4 mt-2 space-y-2 text-gray-700">
+                    <a href="/msme-loans" className="block">MSME Loans</a>
+                    <a href="/business-loans" className="block">Business Loans</a>
+                    <a href="/project-loans" className="block">Project Loans</a>
+                    <a href="/agriculture-loans" className="block">Agriculture Loans</a>
+                    <a href="/join-venture-loans" className="block">Joint Venture Loans</a>
+                  </div>
+                </details>
 
-      <details className="group">
-        <summary className="cursor-pointer flex justify-between items-center">
-          Personal Services
-          <ChevronDown className="group-open:rotate-180 transition-transform" size={18} />
-        </summary>
-        <div className="pl-4 mt-2 space-y-2 text-gray-700">
-          <a href="/personnel-loans" className="block">Personal Loans</a>
-          <a href="/hirepurchase-loans" className="block">Hire Purchase</a>
-          <a href="/mortgage-loans" className="block">Mortgage Loans</a>
-          <a href="/housing-loans" className="block">Housing Loans</a>
-        </div>
-      </details>
+                <details className="group">
+                  <summary className="cursor-pointer flex justify-between items-center">
+                    Personal Services
+                    <ChevronDown className="group-open:rotate-180 transition-transform" size={18} />
+                  </summary>
+                  <div className="pl-4 mt-2 space-y-2 text-gray-700">
+                    <a href="/personnel-loans" className="block">Personal Loans</a>
+                    <a href="/hirepurchase-loans" className="block">Hire Purchase</a>
+                    <a href="/mortgage-loans" className="block">Mortgage Loans</a>
+                    <a href="/housing-loans" className="block">Housing Loans</a>
+                  </div>
+                </details>
 
-      <a href="/news" className="block hover:text-blue-600 transition">News</a>
-      <a href="/career" className="block font-semibold hover:text-blue-600 transition">Career</a>
-      <a href="/contact" className="block hover:text-blue-600 transition">Contact</a>
+                <a href="/news" className="block hover:text-blue-600 transition">News</a>
+                <a href="/career" className="block font-semibold hover:text-blue-600 transition">Career</a>
+                <a href="/contact" className="block hover:text-blue-600 transition">Contact</a>
 
-    </div>
-  </div>
-</div>
+              </div>
+            </div>
+          </div>
 
-        
+
         </nav>
       </header>
     </div>
