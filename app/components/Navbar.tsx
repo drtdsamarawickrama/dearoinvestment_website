@@ -107,7 +107,7 @@ export default function Navbar() {
               <a href="/about" className="hover:text-blue-600 transition">About</a>
 
               {/* Management Dropdown (Desktop) */}
-              <div className="group relative cursor-pointer">
+              {/* <div className="group relative cursor-pointer">
                 <div className="flex items-center gap-1 hover:text-blue-600 transition">
                   Management <ChevronDown size={16} />
                 </div>
@@ -120,7 +120,7 @@ export default function Navbar() {
                     Senior Management
                   </a>
                 </div>
-              </div>
+              </div> */}
               {/* Investors Dropdown */}
               <div className="group relative cursor-pointer">
                 <div className="flex items-center gap-1 hover:text-blue-600 transition">
@@ -205,8 +205,8 @@ export default function Navbar() {
                 <a href="/about" className="block hover:text-blue-600 transition">
                   About
                 </a>
-
-                <details className="group">
+            {/* Management Dropdown (Mobile) */}
+                {/* <details className="group">
                   <summary className="cursor-pointer flex justify-between items-center">
                     Management
                     <ChevronDown className="group-open:rotate-180 transition-transform" size={18} />
@@ -215,7 +215,7 @@ export default function Navbar() {
                     <a href="/management" className="block">Board of Directors</a>
                     <a href="/board" className="block">Senior Management</a>
                   </div>
-                </details>
+                </details> */}
 
                 <details className="group">
                   <summary className="cursor-pointer flex justify-between items-center">
