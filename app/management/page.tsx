@@ -35,6 +35,11 @@ export default function ManagementPage() {
       title: "Non-Independent Director",
       img: "/assests/derector/Seiichirou-Ukegawa.webp",
     },
+     {
+      name: "Mr. Iwatsuka Sangyo",
+      title: "Non-Independent Director",
+      img: "/assests/derector/Iwatsuka-Sangyo.jpeg",
+    },
   ];
 
   return (
