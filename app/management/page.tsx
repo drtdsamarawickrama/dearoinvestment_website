@@ -9,26 +9,31 @@ export default function ManagementPage() {
       title: " Executive Director / Chief Executive Officer",
       img: "/assests/derector/prasanna 1.png",
     },
-    {
-      name: "Mr. Niranjan Warnasooriya",
-      title: "Non Board Director / Deputy Chief Executive Officer",
-      img: "/assests/derector/nerangen.png",
-    },
-    {
-      name: "Mr. Upul Edirisooriya",
-      title: "Non Independent Non Executive Director",
-      img: "/assests/derector/upul.png",
-    },
+    // {
+    //   name: "Mr. Niranjan Warnasooriya",
+    //   title: "Non Board Director / Deputy Chief Executive Officer",
+    //   img: "/assests/derector/nerangen.png",
+    // },
+    // {
+    //   name: "Mr. Upul Edirisooriya",
+    //   title: "Non Independent Non Executive Director",
+    //   img: "/assests/derector/upul.png",
+    // },
    
-    {
-      name: "Mr.Pushparaj Arun Kumar",
-      title: "Director / Chief Operating Officer",
-      img: "/assests/derector/arun.jpg",
-    },
-    {
-      name: "Mr. Tharindu Dananjaya",
-      title: "Non Board Director/ Chief Information Officer",
-      img: "/assests/derector/tharindu.png",
+    // {
+    //   name: "Mr.Pushparaj Arun Kumar",
+    //   title: "Director / Chief Operating Officer",
+    //   img: "/assests/derector/arun.jpg",
+    // },
+    // {
+    //   name: "Mr. Tharindu Dananjaya",
+    //   title: "Non Board Director/ Chief Information Officer",
+    //   img: "/assests/derector/tharindu.png",
+    // },
+     {
+      name: "Mr. Seiichirou Ukegawa",
+      title: "Non-Independent Director",
+      img: "/assests/derector/Seiichirou-Ukegawa.webp",
     },
   ];
 
