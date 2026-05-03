@@ -40,6 +40,11 @@ export default function ManagementPage() {
       title: "Non-Independent Director",
       img: "/assests/derector/Iwatsuka-Sangyo.jpeg",
     },
+    {
+      name: "Mr. As Shek Moulavi Abdul Jabbar Bahji",
+      title: "Islamic Investment Consultant",
+      img: "/assests/derector/ms.jpeg",
+    },
   ];
 
   return (
