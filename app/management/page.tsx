@@ -36,7 +36,7 @@ export default function ManagementPage() {
       img: "/assests/derector/Seiichirou-Ukegawa.webp",
     },
      {
-      name: "Mr. Iwatsuka Sangyo",
+      name: "Mr.Jūzō Sakai",
       title: "Non-Independent Director",
       img: "/assests/derector/Iwatsuka-Sangyo.jpeg",
     },
