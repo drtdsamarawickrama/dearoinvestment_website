@@ -43,7 +43,7 @@ export default function ManagementPage() {
     {
       name: "Mr. As Shek Moulavi Abdul Jabbar Bahji",
       title: "Islamic Investment Consultant",
-      img: "/assests/derector/ms.jpeg",
+      img: "/assests/derector/ms.png",
     },
   ];
 
