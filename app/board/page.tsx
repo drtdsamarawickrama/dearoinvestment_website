@@ -36,15 +36,7 @@ export default function BoardMembersPage() {
       title: "Head Of HR",
       img: "/assests/management/D.M.N.N Dassanayaka.jpeg",
     },
-    {
-      name: "Mr. Deepal Piris",
-      title: "Head Of Finance",
-      img: "/assests/management/deepal.jpg",
-    }, {
-      name: "Mr. M.N.S Samaraweera",
-      title: "Operation Manager ",
-      img: "/assests/management/samaraweera.jpg",
-    },
+    
    {
       name: "Mr. Rex",
       title: "Senior Manager - North & East Region",
