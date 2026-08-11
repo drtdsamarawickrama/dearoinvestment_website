@@ -153,15 +153,7 @@ With a network of 25 branches islandwide, Dearo Investment Ltd has established a
 
        {/* Two animated gold images - responsive */}
 <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mb-12">
-  {/* Left Award */}
-  <div className="w-48 sm:w-60 md:w-72 h-40 sm:h-48 md:h-56 rounded-lg overflow-hidden relative bg-white animate-float1">
-    <img
-      src="/assests/award2.jpeg"
-      alt="Left Award"
-      className="w-full h-full object-contain mx-auto"
-    />
-    <div className="absolute top-0 left-0 w-full h-full pointer-events-none shine"></div>
-  </div>
+
 
   {/* Right Award */}
   <div className="w-48 sm:w-60 md:w-72 h-40 sm:h-48 md:h-56 rounded-lg overflow-hidden relative bg-white animate-float2">
