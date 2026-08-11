@@ -62,7 +62,7 @@ export default function AboutSection() {
       img: "/assests/AW3.jpg",
     },
     {
-      title: "BWIO USAAwards 2025",
+      title: "BWIO USA Awards 2025",
       desc: "The best projects investment company of the year. The best entrepreneur investment company of the year.",
       img: "/assests/AW4.jpg",
     },
@@ -156,7 +156,7 @@ With a network of 25 branches islandwide, Dearo Investment Ltd has established a
 
 
   {/* Right Award */}
-  <div className="w-48 sm:w-60 md:w-72 h-40 sm:h-48 md:h-56 rounded-lg overflow-hidden relative bg-white animate-float2">
+  <div className="w-48 sm:w-60 md:w-72 h-40 sm:h-48 md:h-56 rounded-lg overflow-hidden bg-white animate-float2 flex items-center justify-center relative">
     <img
       src="/assests/award3.jpeg"
       alt="Right Award"
