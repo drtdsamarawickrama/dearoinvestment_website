@@ -205,7 +205,7 @@ export default function Navbar() {
                 <a href="/about" className="block hover:text-blue-600 transition">
                   About
                 </a>
-            {/* Management Dropdown (Mobile) */}
+            {/* Management Dropdown (Mobile)
                 <details className="group">
                   <summary className="cursor-pointer flex justify-between items-center">
                     Management
@@ -215,7 +215,7 @@ export default function Navbar() {
                     <a href="/management" className="block">Board of Directors</a>
                     <a href="/board" className="block">Senior Management</a>
                   </div>
-                </details>
+                </details> */}
 
                 <details className="group">
                   <summary className="cursor-pointer flex justify-between items-center">
