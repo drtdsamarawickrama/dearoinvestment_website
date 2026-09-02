@@ -244,8 +244,7 @@ With a network of 25 branches islandwide, Dearo Investment Ltd has established a
         
       `}</style>
 
-            {/* ================= PREMIUM IMAGE + EXISTING STYLES ================= */}
-     
+        
     </section>
   );
 }
