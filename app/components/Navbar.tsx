@@ -106,21 +106,7 @@ export default function Navbar() {
             <div className="hidden md:flex items-center gap-8 text-[15px] font-medium">
               <a href="/about" className="hover:text-blue-600 transition">About</a>
 
-              {/* Management Dropdown (Desktop)
-              <div className="group relative cursor-pointer">
-                <div className="flex items-center gap-1 hover:text-blue-600 transition">
-                  Management <ChevronDown size={16} />
-                </div>
-
-                <div className="absolute left-0 mt-0 hidden group-hover:block bg-white shadow-xl rounded-md py-2 w-56 z-50">
-                  <a href="/management" className="block px-4 py-2 hover:bg-gray-100">
-                    Board of Directors
-                  </a>
-                  <a href="/board" className="block px-4 py-2 hover:bg-gray-100">
-                    Senior Management
-                  </a>
-                </div>
-              </div> */}
+             
               {/* Investors Dropdown */}
               <div className="group relative cursor-pointer">
                 <div className="flex items-center gap-1 hover:text-blue-600 transition">
@@ -205,7 +191,7 @@ export default function Navbar() {
                 <a href="/about" className="block hover:text-blue-600 transition">
                   About
                 </a>
-            {/* Management Dropdown (Mobile) */}
+            {/* Management Dropdown (Mobile)
                 <details className="group">
                   <summary className="cursor-pointer flex justify-between items-center">
                     Management
@@ -214,8 +200,8 @@ export default function Navbar() {
                   <div className="pl-4 mt-2 space-y-2 text-gray-700">
                     <a href="/management" className="block">Board of Directors</a>
                     <a href="/board" className="block">Senior Management</a>
-                  </div>
-                </details>
+                  </div> */}
+                {/* </details> */}
 
                 <details className="group">
                   <summary className="cursor-pointer flex justify-between items-center">
