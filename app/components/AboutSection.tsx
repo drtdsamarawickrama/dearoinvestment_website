@@ -190,7 +190,7 @@ With a network of 25 branches islandwide, Dearo Investment Ltd has established a
             {awards.map((award, idx) => (
               <div
                 key={idx}
-                className="flex-shrink-0 w-64 sm:w-72 md:w-80 bg-white rounded-2xl shadow-lg border p-4 flex flex-col justify-between hover:shadow-2xl transition"
+                className="shrink-0 w-64 sm:w-72 md:w-80 bg-white rounded-2xl shadow-lg border p-4 flex flex-col justify-between hover:shadow-2xl transition"
                 style={{ minHeight: "500px" }}
               >
                 <div className="flex flex-col gap-2 sm:gap-3">
