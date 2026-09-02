@@ -148,7 +148,7 @@ With a network of 25 branches islandwide, Dearo Investment Ltd has established a
         {/* TITLE */}
         <h2 className="text-3xl md:text-4xl text-center mb-10 md:mb-12 text-[#182359]">
           <span className="font-extrabold">Dearo </span>{" "}
-          <span className="font-semibold">Achievements</span>
+          <span className="font-semibold">Achievements </span>
         </h2>
 
        {/* Two animated gold images - responsive */}
